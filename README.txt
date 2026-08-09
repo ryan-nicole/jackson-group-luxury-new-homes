@@ -1,41 +1,53 @@
-JACKSON GROUP — SPRINT 5: SELLER EXPERIENCE
+JACKSON GROUP — SPRINT 6 PART A
 
-UPLOAD TO YOUR EXISTING GITHUB REPOSITORY:
-Upload the entire "sell" folder.
+THIS PACKAGE INCLUDES:
+1. Updated homepage (index.html)
+2. Updated root styles.css
+3. Existing homepage script.js
+4. New rebate center:
+   rebates/index.html
+   rebates/rebates.css
+   rebates/rebates.js
 
-FILES:
-sell/index.html
-sell/sell.css
-sell/sell.js
+HOMEPAGE UPDATE:
+Adds a new trust section:
+"Backed by More Than 30 Years of Real Estate Experience"
 
-WHAT THIS SPRINT ADDS:
-- Luxury seller landing page
-- Buy + sell coordination message
-- Why Sell With Jackson Group
-- Buy + Sell Timeline
-- Home Value Review CTA
-- Seller planning questions
-- Seller consultation form
-- New-construction intent capture
-- Rebate-interest capture
-- Wise Agent CRM tag planning
-- Seller FAQ
-- Final seller CTA
+Trust cards:
+- 30+ Years of Real Estate Experience
+- New Construction Specialists
+- New Home Rebate Guidance
+- Luxury Client Experience
 
-IMPORTANT:
-This is a front-end seller experience.
-The seller form does not yet send data to Wise Agent CRM.
-That secure backend integration will be connected later with the buyer registration flow.
+REBATE CENTER PART A:
+- Luxury hero
+- 30+ years trust message
+- The Jackson Group Difference
+- Premium New Home Rebate Estimator
+- Elegant results card
+- Register Before You Tour CTA
+- Explore Communities CTA
+- Part A completion section
 
-FUTURE WISE AGENT LOGIC:
-Suggested tags based on responses:
-- Website Lead
-- Seller Lead
-- Needs to Sell
-- New Construction
-- Rebate Interest
-- <Current City>
-- <Next City>
-- <Builder>
+UPLOAD:
+Upload the files/folders from this package into the SAME GitHub repository.
+Do not delete your existing communities, builders, register, sell, or other folders.
 
-This lets one contact carry both seller and buyer intent instead of creating disconnected workflows.
+GitHub should show:
+- index.html modified
+- styles.css modified
+- rebates/index.html modified/replaced
+- rebates/rebates.css new
+- rebates/rebates.js new
+
+Commit changes and Vercel will redeploy automatically.
+
+SPRINT 6 PART B WILL ADD:
+- How New Home Rebates Work
+- Explore Communities
+- Explore Builders
+- FAQ
+- Our Approach
+- Before You Tour
+- Resources
+- Final CTA
