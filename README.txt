@@ -1,41 +1,36 @@
-JACKSON GROUP — SPRINT 2: GEORGETOWN COMMUNITY TEMPLATE
+JACKSON GROUP — SPRINT 3: HIGHLAND HOMES BUILDER TEMPLATE
 
-UPLOAD THESE ITEMS TO THE SAME GITHUB REPOSITORY:
+UPLOAD TO YOUR EXISTING GITHUB REPOSITORY:
 1. styles.css
-2. communities/georgetown/index.html
+2. assets/highland-homes-logo.jpg
+3. builders/highland-homes/index.html
 
-DO NOT DELETE YOUR OTHER FILES OR FOLDERS.
+DO NOT DELETE THE REST OF YOUR WEBSITE.
 
 WHAT THIS SPRINT ADDS:
-- Georgetown luxury community hero
-- Georgetown at a Glance (no typical-home-price field)
-- Why Buyers Love Georgetown
-- About Georgetown
-- Featured Georgetown communities
-- Builders in Georgetown
-- Available Homes area pre-built for future automated inventory
-- Jackson Group "What You Should Know" / Before You Tour section
+- Highland Homes hero with builder logo
+- Original Jackson Group-written Highland Homes summary
+- Builder Highlights
+- Why Buyers Consider Highland Homes
+- Communities Featuring Highland Homes
+- Where Highland Homes Builds (city-first navigation)
+- Available Homes automation-ready display
+- Jackson Group "What You Should Know" section
 - New Home Rebates
-- Lifestyle
-- Schools
-- Market Insights
-- Selling Your Current Home
-- Georgetown FAQ
-- Nearby Communities
+- Highland-specific FAQ
 - Final Register Before You Tour CTA
 
-IMPORTANT:
-The Available Homes cards are deliberately placeholders in Sprint 2.
-They are the display layer for the future automated daily builder-inventory system.
-Do not manually maintain them yet.
+NOT INCLUDED:
+- Compare Builders
+- Founded date
+- Headquarters
 
-Some links (such as Sell Your Home and future nearby-city pages) may point to pages that
-are planned but not built yet.
+INVENTORY:
+The Available Homes section is intentionally a display placeholder.
+The backend automation will be connected in a later sprint.
 
-UPLOAD PROCESS:
-- Open the existing GitHub repository.
-- Add file > Upload files.
-- Upload this new styles.css and the communities folder from this package.
-- GitHub should show styles.css as modified and Georgetown's page as updated.
-- Commit changes.
-- Vercel will redeploy automatically.
+UPLOAD:
+- Add file > Upload files in GitHub
+- Upload styles.css, assets folder, and builders folder from this ZIP
+- Commit changes
+- Vercel should redeploy automatically
