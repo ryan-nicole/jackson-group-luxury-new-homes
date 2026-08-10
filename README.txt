@@ -1,15 +1,21 @@
-JACKSON GROUP — HOMEPAGE NAV SPACING UPDATE
+JACKSON GROUP — HOW IT WORKS
 
-This keeps Search Homes in the top navigation but makes the desktop navigation
-more refined and less crowded.
+Upload the entire how-it-works folder into the SAME GitHub repository.
 
-Changes:
-- Smaller nav text
-- Tighter, even spacing between navigation links
-- Slightly smaller Register Before You Tour button
-- Prevents nav labels from wrapping
-- Additional compact sizing for medium-width desktop/laptop screens
-- Mobile behavior remains controlled by the existing responsive site styles
+URL:
+your-domain.com/how-it-works/
 
-UPLOAD:
-Replace ONLY the root index.html with this version.
+Includes:
+- Search Homes
+- Estimate Rebate
+- Register Before You Tour
+- Builder Form
+- Tour & Compare
+- Offer/Savings Strategy
+- Contract → Closing → Rebate
+- Already Visited a Builder?
+- Need to Sell First?
+- FAQ
+- Final CTA
+
+This page explains the entire Jackson Group new-construction buyer journey in one place.
