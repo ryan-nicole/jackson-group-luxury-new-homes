@@ -1,21 +1,25 @@
-JACKSON GROUP — HOW IT WORKS
+JACKSON GROUP — FAQ PAGE
 
-Upload the entire how-it-works folder into the SAME GitHub repository.
+Upload the entire faq folder to the SAME GitHub repository.
 
 URL:
-your-domain.com/how-it-works/
+your-domain.com/faq/
 
-Includes:
+Includes FAQ sections for:
+- About Jackson Group
+- New Home Rebates
+- Builder Tours
+- Registration
 - Search Homes
-- Estimate Rebate
-- Register Before You Tour
-- Builder Form
-- Tour & Compare
-- Offer/Savings Strategy
-- Contract → Closing → Rebate
-- Already Visited a Builder?
-- Need to Sell First?
-- FAQ
-- Final CTA
+- Selling Your Current Home
 
-This page explains the entire Jackson Group new-construction buyer journey in one place.
+Also includes:
+- Search Homes CTA
+- Rebate Center CTA
+- Register Before You Tour CTA
+- 30+ years messaging
+- Responsive luxury design
+
+NOTE:
+This page is informational and avoids promising rebate eligibility,
+inventory or builder-specific outcomes.
