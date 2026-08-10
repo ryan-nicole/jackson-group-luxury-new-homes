@@ -1,21 +1,37 @@
-JACKSON GROUP — WEIR, TEXAS (MERITAGE-FOCUSED REVISION)
+JACKSON GROUP — COMMUNITY GUIDE
 
-This replaces the previous Weir package.
+This is the main /communities/ landing page.
 
-CHANGE:
-- D.R. Horton has been completely removed.
-- Meritage Homes is the only specifically named builder on the Weir page.
-- Vantage remains the featured Weir community.
-- Future builders are referenced generically until their Weir communities can be verified.
+IMPORTANT:
+If you already have a communities/index.html file, this package is intended
+to REPLACE that landing page — it does NOT replace any individual city folders.
 
-Upload and replace:
-communities/weir/index.html
-communities/weir/weir.css
+Upload:
+communities/index.html
+communities/community-guide.css
 
-SEO remains:
-- homes in Weir TX
-- homes for sale in Weir TX
-- Weir TX homes
-- new homes in Weir TX
-- new construction homes in Weir TX
-- home builders in Weir TX
+Keep all existing folders:
+communities/georgetown/
+communities/round-rock/
+communities/hutto/
+communities/liberty-hill/
+communities/leander/
+communities/taylor/
+communities/cedar-park/
+communities/weir/
+
+The guide links directly to all eight city pages.
+
+SEO strategy:
+The page acts as a central hub for Texas community/city searches while each
+individual city page targets its own local search terms.
+
+Included:
+- Luxury Community Guide hero
+- 30+ years trust strip
+- 8 city cards
+- City → builder → home → rebate journey
+- Rebate Center CTA
+- Seller CTA
+- Before-you-tour style final CTA
+- Responsive design
