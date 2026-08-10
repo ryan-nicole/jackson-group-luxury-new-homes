@@ -1,29 +1,20 @@
-JACKSON GROUP — SEARCH HOMES
+JACKSON GROUP — HOMEPAGE SEARCH HOMES NAV UPDATE
 
-Upload the entire homes folder to the SAME GitHub repository.
+This update adds:
 
-URL:
-your-domain.com/homes/
+Search Homes
 
-CURRENT FUNCTION:
-- Search by city → routes to the relevant city guide
-- Search by builder → routes to the relevant builder guide
-- Search by goal → routes to Community Guide, Rebate Center, Seller or Registration
-- Popular city links
-- Builder links
-- Future live inventory search preview
+as the FIRST item in the homepage top navigation.
 
-FUTURE BACKEND:
-This same page can become the live inventory search without redesigning it.
-Future filters can include:
-- city
-- builder
-- community
-- price
-- move-in status
-- home type
-- bedrooms/bathrooms
-- square footage
+Navigation becomes:
+Search Homes | Explore Communities | Builders | New Home Rebates | How It Works | FAQ
 
-SEO:
-Targets broad home-search intent while preserving Jackson Group's new-construction specialty.
+The existing gold "Register Before You Tour" button remains on the right.
+
+UPLOAD:
+Replace ONLY your root index.html with the index.html in this package.
+
+The new Search Homes link points to:
+homes/index.html
+
+Make sure you have already uploaded the Search Homes /homes/ folder.
