@@ -1,19 +1,39 @@
-WEIR AREA BUILDER UPDATE
+JACKSON GROUP — BUILDER GUIDE SPRINT
 
-Replace the existing communities/weir files with this package.
+Upload the entire builders folder to the same GitHub repository.
 
-Current research found Meritage Homes / Travena as the clearly verifiable
-production new-home presence in the immediate Weir search market. Some Travena
-inventory uses Weir/78674 in real-estate search results while Meritage markets
-the community as Georgetown, so the page now explains that boundary accurately.
+Includes:
+- Main /builders/ Builder Guide
+- Highland Homes
+- Perry Homes
+- Chesmar Homes
+- KB Home
+- D.R. Horton
+- Brohn Homes
+- Taylor Morrison
+- Toll Brothers
+- Meritage Homes
 
-PUBLIC PAGE:
-No Last Verified date.
+Each builder page:
+- Builder overview
+- Jackson Group city links
+- Future available-home feed area
+- Rebate Center CTA
+- Register Before You Tour CTA
+- 30+ years messaging
 
-FUTURE ADMIN:
-Keep source URL, last checked date, status, detected changes and review queue
-there instead.
+IMPORTANT:
+This is the public builder-page layer. The future backend/admin system will
+manage source URLs, freshness, discovered communities and inventory. Internal
+last-verified information is not displayed publicly.
 
-As additional builders become verifiably active in Weir or the immediate Weir
-new-home market, the future automated system can discover them and send them
-to admin review before publishing.
+Builder names are used for informational/navigation purposes. This package
+does not copy builder logos or imply affiliation/endorsement.
+
+
+UPDATE — NO BUILDER LOGOS
+- No builder logos are included in this package.
+- Highland Homes remains listed as a builder by NAME only.
+- Any Highland Homes logo/image treatment contained in these Builder Guide files
+  has been removed.
+- Builder names and informational descriptions remain.
