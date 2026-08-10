@@ -1,18 +1,25 @@
-JACKSON GROUP — HUTTO CITY PAGE
+JACKSON GROUP — LEANDER CITY PAGE
 
-Upload the entire communities/hutto folder to the SAME GitHub repository.
+Upload:
+communities/leander
 
-SEO intent:
-- homes in Hutto TX
-- homes for sale in Hutto TX
-- Hutto TX homes
-- new homes in Hutto TX
-- new construction homes in Hutto TX
-- home builders in Hutto TX
+to the same GitHub repository.
 
-Current official-source content incorporated:
-- Highland Homes: Flora in Hutto
-- Brohn Homes: Heritage Mill in Hutto
+SEO:
+- homes in Leander TX
+- homes for sale in Leander TX
+- Leander TX homes
+- new homes in Leander TX
+- new construction homes in Leander TX
+- home builders in Leander TX
 
-The page deliberately avoids hard-coding fast-changing prices in its primary marketing copy.
-It follows the same luxury city-page framework as Georgetown/Round Rock.
+Verified official builder content used:
+Highland Homes currently lists Palmera Ridge in Leander with 60-foot and
+70-foot homesites, quick move-in opportunities, home plans and coming-soon homes.
+
+Design:
+Same premium framework as Round Rock, Hutto and Liberty Hill.
+
+Inventory/pricing changes frequently, so volatile numbers/prices are intentionally
+not relied on as permanent marketing copy. Future inventory automation can populate
+the available-homes section.
