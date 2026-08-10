@@ -1,25 +1,32 @@
-JACKSON GROUP — LEANDER CITY PAGE
+JACKSON GROUP — LIBERTY HILL CITY PAGE
 
-Upload:
-communities/leander
+Upload the entire:
+communities/liberty-hill
 
-to the same GitHub repository.
+folder to the SAME GitHub repository.
 
-SEO:
-- homes in Leander TX
-- homes for sale in Leander TX
-- Leander TX homes
-- new homes in Leander TX
-- new construction homes in Leander TX
-- home builders in Leander TX
+URL:
+your-domain.com/communities/liberty-hill/
 
-Verified official builder content used:
-Highland Homes currently lists Palmera Ridge in Leander with 60-foot and
-70-foot homesites, quick move-in opportunities, home plans and coming-soon homes.
+SEO intent:
+- homes in Liberty Hill TX
+- homes for sale in Liberty Hill TX
+- Liberty Hill TX homes
+- new homes in Liberty Hill TX
+- new construction homes in Liberty Hill TX
+- home builders in Liberty Hill TX
 
-Design:
-Same premium framework as Round Rock, Hutto and Liberty Hill.
+FEATURED COMMUNITY STRUCTURE:
+- Santa Rita Ranch
+- Lariat
 
-Inventory/pricing changes frequently, so volatile numbers/prices are intentionally
-not relied on as permanent marketing copy. Future inventory automation can populate
-the available-homes section.
+DESIGN:
+Uses the same premium city-page framework as Round Rock and Hutto:
+hero, trust strip, featured communities, builders, inventory area,
+rebate section, broader home-search content, nearby areas,
+Before You Tour, and 30+ years experience messaging.
+
+NOTE:
+Builder communities, pricing, incentives and inventory change frequently.
+The page intentionally avoids volatile pricing/counts and is ready for the
+future automated inventory system.
