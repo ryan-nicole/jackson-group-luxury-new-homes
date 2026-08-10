@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Jackson Group Admin — Prototype</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div class="prototype-banner">
+    ADMIN PROTOTYPE • NOT YET SECURE • DO NOT ENTER REAL CLIENT DATA
+  </div>
+
+  <div class="admin-shell">
+    <aside class="admin-sidebar">
+      <a class="admin-brand" href="../index.html">
+        <img src="../assets/jackson-group-logo.jpg" alt="Jackson Group logo">
+        <div>
+          <strong>Jackson Group</strong>
+          <span>Admin</span>
+        </div>
+      </a>
+
+      <nav class="admin-nav">
+        <button class="nav-item active" data-view="overview">Overview</button>
+        <button class="nav-item" data-view="homepage">Homepage</button>
+        <button class="nav-item" data-view="communities">Communities</button>
+        <button class="nav-item" data-view="builders">Builders</button>
+        <button class="nav-item" data-view="leads">Leads</button>
+        <button class="nav-item" data-view="inventory">Inventory</button>
+        <button class="nav-item" data-view="rebates">Rebates</button>
+        <button class="nav-item" data-view="settings">Settings</button>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <a href="../index.html">View Public Website ↗</a>
+        <small>Future secure path: /admin</small>
+      </div>
+    </aside>
+
+    <main class="admin-main">
+      <header class="admin-topbar">
+        <div>
+          <span class="kicker">Jackson Group Platform</span>
+          <h1 id="viewTitle">Overview</h1>
+        </div>
+        <div class="topbar-actions">
+          <span class="status-dot">Prototype Mode</span>
+          <button class="btn primary" id="publishButton">Publish Changes</button>
+        </div>
+      </header>
+
+      <section class="view active" id="view-overview">
+        <div class="metric-grid">
+          <article class="metric-card">
+            <span>Buyer Registrations</span>
+            <strong>8</strong>
+            <small>Demo data</small>
+          </article>
+          <article class="metric-card">
+            <span>Seller Inquiries</span>
+            <strong>3</strong>
+            <small>Demo data</small>
+          </article>
+          <article class="metric-card">
+            <span>Most Viewed City</span>
+            <strong>Georgetown</strong>
+            <small>Demo analytics</small>
+          </article>
+          <article class="metric-card">
+            <span>Top Builder</span>
+            <strong>Highland Homes</strong>
+            <small>Demo analytics</small>
+          </article>
+        </div>
+
+        <div class="dashboard-grid two-one">
+          <article class="panel">
+            <div class="panel-head">
+              <div><span class="kicker">Featured This Month</span><h2>Homepage Spotlight</h2></div>
+              <button class="text-button" data-jump="homepage">Edit</button>
+            </div>
+            <div class="spotlight-preview">
+              <div>
+                <span>Community Spotlight</span>
+                <strong id="overviewFeaturedCommunity">Georgetown</strong>
+              </div>
+              <div>
+                <span>Builder Spotlight</span>
+                <strong id="overviewFeaturedBuilder">Highland Homes</strong>
+              </div>
+              <div>
+                <span>Announcement</span>
+                <strong id="overviewAnnouncement">Register before your first builder tour.</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-head"><div><span class="kicker">System</span><h2>Connections</h2></div></div>
+            <div class="connection-row"><span>Vercel</span><b class="good">Connected</b></div>
+            <div class="connection-row"><span>GitHub</span><b class="good">Connected</b></div>
+            <div class="connection-row"><span>Wise Agent</span><b class="pending">Planned</b></div>
+            <div class="connection-row"><span>Email / PDF</span><b class="pending">Planned</b></div>
+            <div class="connection-row"><span>Inventory Feeds</span><b class="pending">Planned</b></div>
+          </article>
+        </div>
+
+        <div class="dashboard-grid equal">
+          <article class="panel">
+            <div class="panel-head"><div><span class="kicker">Recent Activity</span><h2>Lead Preview</h2></div></div>
+            <div class="mini-table">
+              <div><b>Demo Buyer</b><span>Georgetown • Highland Homes</span><em>New Construction</em></div>
+              <div><b>Demo Seller</b><span>Round Rock • Needs to Sell</span><em>Seller Lead</em></div>
+              <div><b>Demo Buyer</b><span>Liberty Hill • Rebate Interest</span><em>Rebate</em></div>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-head"><div><span class="kicker">Inventory</span><h2>Daily Sync Preview</h2></div></div>
+            <div class="sync-summary">
+              <strong>0 live feeds connected</strong>
+              <p>Once approved builder sources are connected, this panel will show new, changed, and removed inventory each day.</p>
+              <button class="btn secondary" data-jump="inventory">Open Inventory</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="view" id="view-homepage">
+        <div class="dashboard-grid two-one">
+          <article class="panel">
+            <div class="panel-head">
+              <div><span class="kicker">Homepage</span><h2>Featured This Month</h2></div>
+              <span class="saved-indicator" id="homepageSaved">Saved locally</span>
+            </div>
+
+            <div class="form-grid">
+              <label>Featured community
+                <select id="featuredCommunity">
+                  <option>Georgetown</option><option>Round Rock</option><option>Hutto</option>
+                  <option>Liberty Hill</option><option>Leander</option><option>Taylor</option>
+                </select>
+              </label>
+              <label>Featured builder
+                <select id="featuredBuilder">
+                  <option>Highland Homes</option><option>Perry Homes</option><option>Chesmar Homes</option>
+                  <option>Coventry Homes</option><option>David Weekley Homes</option><option>Toll Brothers</option>
+                </select>
+              </label>
+              <label class="wide">Homepage announcement
+                <input id="homepageAnnouncement" value="Register before your first builder tour.">
+              </label>
+              <label class="wide">Hero headline
+                <input id="heroHeadline" value="Luxury New Homes Across Texas">
+              </label>
+            </div>
+
+            <div class="action-row">
+              <button class="btn primary" id="saveHomepage">Save Homepage Settings</button>
+              <button class="btn secondary" id="resetHomepage">Reset Demo</button>
+            </div>
+          </article>
+
+          <article class="panel preview-panel">
+            <span class="kicker">Live Preview Concept</span>
+            <div class="mini-home-preview">
+              <small>Featured This Month</small>
+              <strong id="previewCommunity">Georgetown</strong>
+              <span id="previewBuilder">Highland Homes</span>
+              <p id="previewAnnouncement">Register before your first builder tour.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="view" id="view-communities">
+        <article class="panel">
+          <div class="panel-head">
+            <div><span class="kicker">Content</span><h2>Communities</h2></div>
+            <button class="btn primary" id="addCommunity">+ Add Community</button>
+          </div>
+          <div class="admin-table" id="communityTable">
+            <div class="table-head"><span>City</span><span>Status</span><span>Featured</span><span>Actions</span></div>
+            <div class="table-row"><b>Georgetown</b><span class="pill published">Published</span><span>Yes</span><span><button>Edit</button></span></div>
+            <div class="table-row"><b>Round Rock</b><span class="pill draft">Template</span><span>No</span><span><button>Edit</button></span></div>
+            <div class="table-row"><b>Hutto</b><span class="pill draft">Template</span><span>No</span><span><button>Edit</button></span></div>
+            <div class="table-row"><b>Liberty Hill</b><span class="pill draft">Template</span><span>No</span><span><button>Edit</button></span></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="view" id="view-builders">
+        <article class="panel">
+          <div class="panel-head">
+            <div><span class="kicker">Content</span><h2>Builders</h2></div>
+            <button class="btn primary" id="addBuilder">+ Add Builder</button>
+          </div>
+          <div class="admin-table">
+            <div class="table-head"><span>Builder</span><span>Status</span><span>Inventory</span><span>Actions</span></div>
+            <div class="table-row"><b>Highland Homes</b><span class="pill published">Published</span><span>Feed ready</span><span><button>Edit</button></span></div>
+            <div class="table-row"><b>Perry Homes</b><span class="pill draft">Template</span><span>Not connected</span><span><button>Edit</button></span></div>
+            <div class="table-row"><b>Chesmar Homes</b><span class="pill draft">Template</span><span>Not connected</span><span><button>Edit</button></span></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="view" id="view-leads">
+        <div class="warning-card">
+          <strong>Prototype only</strong>
+          <p>Do not enter or store real buyer/seller information here until authentication, database security, and Wise Agent integration are live.</p>
+        </div>
+        <article class="panel">
+          <div class="panel-head"><div><span class="kicker">Demo Data</span><h2>Lead Inbox</h2></div></div>
+          <div class="admin-table leads">
+            <div class="table-head"><span>Name</span><span>Intent</span><span>Interest</span><span>Status</span></div>
+            <div class="table-row"><b>Demo Buyer A</b><span>Buyer</span><span>Georgetown • Highland</span><span class="pill published">New</span></div>
+            <div class="table-row"><b>Demo Seller B</b><span>Buy + Sell</span><span>Round Rock</span><span class="pill draft">Follow up</span></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="view" id="view-inventory">
+        <div class="dashboard-grid equal">
+          <article class="panel">
+            <div class="panel-head"><div><span class="kicker">Automation</span><h2>Inventory Sources</h2></div></div>
+            <div class="source-card"><b>Highland Homes</b><span>Official-source connector planned</span><em>Not connected</em></div>
+            <div class="source-card"><b>Perry Homes</b><span>Source permissions to verify</span><em>Not connected</em></div>
+            <div class="source-card"><b>Additional Builders</b><span>API / feed / approved importer</span><em>Queued</em></div>
+          </article>
+          <article class="panel">
+            <div class="panel-head"><div><span class="kicker">Daily Job</span><h2>Sync Schedule</h2></div></div>
+            <label>Preferred daily update time
+              <select><option>6:00 AM</option><option>7:00 AM</option><option>8:00 AM</option></select>
+            </label>
+            <div class="sync-summary"><strong>Backend required</strong><p>The future server will import approved inventory, compare changes, update the database, and refresh public pages automatically.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="view" id="view-rebates">
+        <article class="panel">
+          <div class="panel-head"><div><span class="kicker">Calculator</span><h2>Rebate Settings</h2></div></div>
+          <div class="form-grid">
+            <label>Default estimated compensation (%)
+              <input id="adminCommission" type="number" step=".1" value="3">
+            </label>
+            <label>Default rebate share (%)
+              <input id="adminShare" type="number" value="50">
+            </label>
+            <label class="wide">Calculator disclaimer
+              <textarea id="adminDisclaimer">Actual rebate eligibility and amount depend on transaction terms, compensation, buyer agreements, lender requirements, builder policies, and applicable law.</textarea>
+            </label>
+          </div>
+          <button class="btn primary" id="saveRebates">Save Calculator Defaults</button>
+        </article>
+      </section>
+
+      <section class="view" id="view-settings">
+        <div class="dashboard-grid equal">
+          <article class="panel">
+            <div class="panel-head"><div><span class="kicker">Security</span><h2>Authentication</h2></div></div>
+            <p>This prototype intentionally does not pretend to be secure. Production admin will require real authentication, protected server routes, and user permissions.</p>
+            <div class="connection-row"><span>Admin Login</span><b class="pending">Next backend phase</b></div>
+            <div class="connection-row"><span>Database</span><b class="pending">Next backend phase</b></div>
+            <div class="connection-row"><span>Audit Log</span><b class="pending">Future</b></div>
+          </article>
+          <article class="panel">
+            <div class="panel-head"><div><span class="kicker">Brand</span><h2>Site Identity</h2></div></div>
+            <label>Brand name<input value="Jackson Group"></label>
+            <label>Experience statement<input value="Backed by more than 30 years of real estate experience."></label>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal-backdrop hidden" id="modal">
+    <div class="modal">
+      <button class="modal-close" id="closeModal">×</button>
+      <span class="kicker">Prototype Editor</span>
+      <h2 id="modalTitle">Add Community</h2>
+      <label>Name<input id="modalName" placeholder="Enter name"></label>
+      <label>SEO title<input placeholder="Homes in City, TX | Jackson Group"></label>
+      <label>Short description<textarea placeholder="Add a polished summary..."></textarea></label>
+      <button class="btn primary" id="saveModal">Save Draft</button>
+    </div>
+  </div>
+
+  <div class="toast hidden" id="toast">Saved.</div>
+  <script src="admin.js"></script>
+</body>
+</html>
