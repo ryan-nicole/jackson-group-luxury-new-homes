@@ -1,44 +1,27 @@
-JACKSON GROUP — SPRINT 7 ADMIN DASHBOARD PROTOTYPE
+JACKSON GROUP — SPRINT 8B: ROUND ROCK
 
-WHAT THIS IS
-A polished front-end prototype of the future private /admin side of the SAME Jackson Group website.
+Upload the entire communities/round-rock folder to the SAME GitHub repository.
 
-UPLOAD
-Upload the entire "admin" folder to your existing GitHub repository.
-It will be reachable at:
-your-vercel-url/admin/
+New page:
+communities/round-rock/index.html
 
-IMPORTANT SECURITY WARNING
-This prototype is NOT authenticated.
-Anyone who knows the /admin URL could load it if you deploy it publicly.
-DO NOT enter real client information, credentials, API keys, or private business data.
+URL after deployment:
+your-domain.com/communities/round-rock/
 
-The prototype uses localStorage only for harmless demo settings in your own browser.
+Built for:
+- "new homes in Round Rock, TX"
+- "new construction homes in Round Rock"
+- "home builders in Round Rock, TX"
+- natural supporting SEO without keyword stuffing
 
-WHAT YOU CAN PREVIEW
-- Overview dashboard
-- Homepage Featured This Month controls
-- Featured community / builder / announcement
-- Communities manager
-- Builders manager
-- Demo lead inbox
-- Inventory source planning
-- Rebate calculator default settings
-- Future connection status
-- Add Community / Add Builder modal
-- Publish workflow concept
+Verified current content used in this build:
+- Coventry Homes currently markets Sauls Ranch in Round Rock.
+- Coventry's official Round Rock page currently shows Sauls Ranch and quick move-in inventory.
+- Highland Homes maintains an official Round Rock search page, but its current page showed no quick move-in inventory at verification time.
 
-WHAT THE PRODUCTION ADMIN WILL ADD
-- Secure login/authentication
-- Database
-- Real content publishing
-- Image uploads
-- User permissions
-- Wise Agent CRM integration
-- Buyer + seller lead records
-- Daily builder inventory ingestion
-- PDF/email delivery status
-- Audit history
+IMPORTANT:
+Inventory/pricing changes frequently. The public page intentionally avoids hard-coding volatile prices and home counts.
+The future automated inventory system can populate live verified inventory.
 
-RECOMMENDED NEXT STEP
-Before using /admin with real data, move the platform to a backend-enabled architecture (such as Next.js on Vercel) and add secure authentication + a database.
+NEXT CITY TEMPLATE:
+Hutto, Liberty Hill, Leander, or Taylor can reuse this structure.
