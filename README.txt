@@ -1,39 +1,29 @@
-JACKSON GROUP — BUILDER GUIDE SPRINT
+JACKSON GROUP — SEARCH HOMES
 
-Upload the entire builders folder to the same GitHub repository.
+Upload the entire homes folder to the SAME GitHub repository.
 
-Includes:
-- Main /builders/ Builder Guide
-- Highland Homes
-- Perry Homes
-- Chesmar Homes
-- KB Home
-- D.R. Horton
-- Brohn Homes
-- Taylor Morrison
-- Toll Brothers
-- Meritage Homes
+URL:
+your-domain.com/homes/
 
-Each builder page:
-- Builder overview
-- Jackson Group city links
-- Future available-home feed area
-- Rebate Center CTA
-- Register Before You Tour CTA
-- 30+ years messaging
+CURRENT FUNCTION:
+- Search by city → routes to the relevant city guide
+- Search by builder → routes to the relevant builder guide
+- Search by goal → routes to Community Guide, Rebate Center, Seller or Registration
+- Popular city links
+- Builder links
+- Future live inventory search preview
 
-IMPORTANT:
-This is the public builder-page layer. The future backend/admin system will
-manage source URLs, freshness, discovered communities and inventory. Internal
-last-verified information is not displayed publicly.
+FUTURE BACKEND:
+This same page can become the live inventory search without redesigning it.
+Future filters can include:
+- city
+- builder
+- community
+- price
+- move-in status
+- home type
+- bedrooms/bathrooms
+- square footage
 
-Builder names are used for informational/navigation purposes. This package
-does not copy builder logos or imply affiliation/endorsement.
-
-
-UPDATE — NO BUILDER LOGOS
-- No builder logos are included in this package.
-- Highland Homes remains listed as a builder by NAME only.
-- Any Highland Homes logo/image treatment contained in these Builder Guide files
-  has been removed.
-- Builder names and informational descriptions remain.
+SEO:
+Targets broad home-search intent while preserving Jackson Group's new-construction specialty.
