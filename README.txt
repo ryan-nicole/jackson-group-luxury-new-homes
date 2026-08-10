@@ -1,37 +1,19 @@
-JACKSON GROUP — COMMUNITY GUIDE
+WEIR AREA BUILDER UPDATE
 
-This is the main /communities/ landing page.
+Replace the existing communities/weir files with this package.
 
-IMPORTANT:
-If you already have a communities/index.html file, this package is intended
-to REPLACE that landing page — it does NOT replace any individual city folders.
+Current research found Meritage Homes / Travena as the clearly verifiable
+production new-home presence in the immediate Weir search market. Some Travena
+inventory uses Weir/78674 in real-estate search results while Meritage markets
+the community as Georgetown, so the page now explains that boundary accurately.
 
-Upload:
-communities/index.html
-communities/community-guide.css
+PUBLIC PAGE:
+No Last Verified date.
 
-Keep all existing folders:
-communities/georgetown/
-communities/round-rock/
-communities/hutto/
-communities/liberty-hill/
-communities/leander/
-communities/taylor/
-communities/cedar-park/
-communities/weir/
+FUTURE ADMIN:
+Keep source URL, last checked date, status, detected changes and review queue
+there instead.
 
-The guide links directly to all eight city pages.
-
-SEO strategy:
-The page acts as a central hub for Texas community/city searches while each
-individual city page targets its own local search terms.
-
-Included:
-- Luxury Community Guide hero
-- 30+ years trust strip
-- 8 city cards
-- City → builder → home → rebate journey
-- Rebate Center CTA
-- Seller CTA
-- Before-you-tour style final CTA
-- Responsive design
+As additional builders become verifiably active in Weir or the immediate Weir
+new-home market, the future automated system can discover them and send them
+to admin review before publishing.
