@@ -1,25 +1,18 @@
-JACKSON GROUP — CEDAR PARK CITY PAGE
+JACKSON GROUP — HUTTO CITY PAGE
 
-Upload:
-communities/cedar-park
-
-to the same GitHub repository.
+Upload the entire communities/hutto folder to the SAME GitHub repository.
 
 SEO intent:
-- homes in Cedar Park TX
-- homes for sale in Cedar Park TX
-- Cedar Park TX homes
-- new homes in Cedar Park TX
-- new construction homes in Cedar Park TX
-- home builders in Cedar Park TX
+- homes in Hutto TX
+- homes for sale in Hutto TX
+- Hutto TX homes
+- new homes in Hutto TX
+- new construction homes in Hutto TX
+- home builders in Hutto TX
 
-CONTENT STRATEGY:
-Cedar Park is more established than several nearby growth cities, so this page
-does not invent a large list of new-home communities. It captures broad Cedar Park
-home-search traffic while emphasizing Jackson Group's new-construction specialty
-and nearby options in Leander, Georgetown, Round Rock and surrounding areas.
+Current official-source content incorporated:
+- Highland Homes: Flora in Hutto
+- Brohn Homes: Heritage Mill in Hutto
 
-DESIGN:
-Same premium city-page framework as Round Rock, Hutto, Liberty Hill, Leander and Taylor.
-
-Future inventory automation can populate verified current new-home opportunities.
+The page deliberately avoids hard-coding fast-changing prices in its primary marketing copy.
+It follows the same luxury city-page framework as Georgetown/Round Rock.
