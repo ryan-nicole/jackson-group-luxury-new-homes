@@ -1,27 +1,27 @@
-JACKSON GROUP — SPRINT 8B: ROUND ROCK
+JACKSON GROUP — TAYLOR CITY PAGE
 
-Upload the entire communities/round-rock folder to the SAME GitHub repository.
+Upload:
+communities/taylor
 
-New page:
-communities/round-rock/index.html
+to the same GitHub repository.
 
-URL after deployment:
-your-domain.com/communities/round-rock/
+SEO intent:
+- homes in Taylor TX
+- homes for sale in Taylor TX
+- Taylor TX homes
+- new homes in Taylor TX
+- new construction homes in Taylor TX
+- home builders in Taylor TX
 
-Built for:
-- "new homes in Round Rock, TX"
-- "new construction homes in Round Rock"
-- "home builders in Round Rock, TX"
-- natural supporting SEO without keyword stuffing
+DESIGN:
+Uses the same premium city-page framework as Round Rock, Hutto,
+Liberty Hill and Leander.
 
-Verified current content used in this build:
-- Coventry Homes currently markets Sauls Ranch in Round Rock.
-- Coventry's official Round Rock page currently shows Sauls Ranch and quick move-in inventory.
-- Highland Homes maintains an official Round Rock search page, but its current page showed no quick move-in inventory at verification time.
+CONTENT APPROACH:
+Taylor currently has a thinner easily verifiable new-construction footprint
+than the other cities in this batch. The page therefore keeps the full
+Georgetown-style experience without inventing builder inventory or communities.
+It emphasizes verified current options, future community additions, and nearby
+new-construction discovery.
 
-IMPORTANT:
-Inventory/pricing changes frequently. The public page intentionally avoids hard-coding volatile prices and home counts.
-The future automated inventory system can populate live verified inventory.
-
-NEXT CITY TEMPLATE:
-Hutto, Liberty Hill, Leander, or Taylor can reuse this structure.
+This page is ready for the future automated inventory system.
