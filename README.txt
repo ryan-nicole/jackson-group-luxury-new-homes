@@ -1,27 +1,40 @@
-JACKSON GROUP — SPRINT 8B: ROUND ROCK
+JACKSON GROUP — ROUND ROCK V2 (GEORGETOWN-STYLE)
 
-Upload the entire communities/round-rock folder to the SAME GitHub repository.
+This replaces the first Round Rock page.
 
-New page:
+UPLOAD:
+Replace your existing:
 communities/round-rock/index.html
+communities/round-rock/round-rock.css
 
-URL after deployment:
-your-domain.com/communities/round-rock/
+with the files in this package.
 
-Built for:
-- "new homes in Round Rock, TX"
-- "new construction homes in Round Rock"
-- "home builders in Round Rock, TX"
-- natural supporting SEO without keyword stuffing
+SEO:
+The page intentionally targets both broad and new-construction intent:
+- homes in Round Rock TX
+- homes for sale in Round Rock TX
+- Round Rock TX homes
+- new homes in Round Rock TX
+- new construction homes in Round Rock TX
+- home builders in Round Rock TX
 
-Verified current content used in this build:
-- Coventry Homes currently markets Sauls Ranch in Round Rock.
-- Coventry's official Round Rock page currently shows Sauls Ranch and quick move-in inventory.
-- Highland Homes maintains an official Round Rock search page, but its current page showed no quick move-in inventory at verification time.
+The wording is kept natural rather than repeating keywords unnaturally.
 
-IMPORTANT:
-Inventory/pricing changes frequently. The public page intentionally avoids hard-coding volatile prices and home counts.
-The future automated inventory system can populate live verified inventory.
+VERIFIED NEW-CONSTRUCTION CONTENT:
+- Coventry Homes: Sauls Ranch, Round Rock
+- KB Home: Salerno collections, Round Rock
+Builder/community availability changes, so the page avoids volatile hard-coded inventory counts in the main marketing copy.
 
-NEXT CITY TEMPLATE:
-Hutto, Liberty Hill, Leander, or Taylor can reuse this structure.
+DESIGN:
+This version is intentionally fuller and more Georgetown-like:
+- premium hero
+- trust strip
+- city introduction
+- featured communities
+- builder section
+- available homes section
+- rebate section
+- broad homes-for-sale section
+- nearby search section
+- Before You Tour
+- consistent luxury CTA/footer
