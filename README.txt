@@ -1,32 +1,27 @@
-JACKSON GROUP — LIBERTY HILL CITY PAGE
+JACKSON GROUP — SPRINT 8B: ROUND ROCK
 
-Upload the entire:
-communities/liberty-hill
+Upload the entire communities/round-rock folder to the SAME GitHub repository.
 
-folder to the SAME GitHub repository.
+New page:
+communities/round-rock/index.html
 
-URL:
-your-domain.com/communities/liberty-hill/
+URL after deployment:
+your-domain.com/communities/round-rock/
 
-SEO intent:
-- homes in Liberty Hill TX
-- homes for sale in Liberty Hill TX
-- Liberty Hill TX homes
-- new homes in Liberty Hill TX
-- new construction homes in Liberty Hill TX
-- home builders in Liberty Hill TX
+Built for:
+- "new homes in Round Rock, TX"
+- "new construction homes in Round Rock"
+- "home builders in Round Rock, TX"
+- natural supporting SEO without keyword stuffing
 
-FEATURED COMMUNITY STRUCTURE:
-- Santa Rita Ranch
-- Lariat
+Verified current content used in this build:
+- Coventry Homes currently markets Sauls Ranch in Round Rock.
+- Coventry's official Round Rock page currently shows Sauls Ranch and quick move-in inventory.
+- Highland Homes maintains an official Round Rock search page, but its current page showed no quick move-in inventory at verification time.
 
-DESIGN:
-Uses the same premium city-page framework as Round Rock and Hutto:
-hero, trust strip, featured communities, builders, inventory area,
-rebate section, broader home-search content, nearby areas,
-Before You Tour, and 30+ years experience messaging.
+IMPORTANT:
+Inventory/pricing changes frequently. The public page intentionally avoids hard-coding volatile prices and home counts.
+The future automated inventory system can populate live verified inventory.
 
-NOTE:
-Builder communities, pricing, incentives and inventory change frequently.
-The page intentionally avoids volatile pricing/counts and is ready for the
-future automated inventory system.
+NEXT CITY TEMPLATE:
+Hutto, Liberty Hill, Leander, or Taylor can reuse this structure.
