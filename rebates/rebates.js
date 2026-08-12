@@ -1,30 +1,40 @@
-function formatMoney(value){
+function money(v){
   return new Intl.NumberFormat('en-US',{
-    style:'currency',
-    currency:'USD',
-    maximumFractionDigits:0
-  }).format(value || 0);
+    style:'currency',currency:'USD',maximumFractionDigits:0
+  }).format(v||0);
 }
 
-document.querySelectorAll('[data-center-calculator]').forEach(calc=>{
-  const price = calc.querySelector('[data-center-price]');
-  const commission = calc.querySelector('[data-center-commission]');
-  const share = calc.querySelector('[data-center-share]');
-  const result = calc.querySelector('[data-center-result]');
-  const detail = calc.querySelector('[data-center-detail]');
+function getJacksonRebateSettings(){
+  const defaults={commission:3,share:50};
+  try{
+    const stored=JSON.parse(localStorage.getItem('jg-admin-rebates')||'{}');
+    return {
+      commission:Number(stored.commission ?? defaults.commission),
+      share:Number(stored.share ?? defaults.share)
+    };
+  }catch(e){
+    return defaults;
+  }
+}
+
+document.querySelectorAll('[data-calculator]').forEach(c=>{
+  const price=c.querySelector('[data-price]');
+  const result=c.querySelector('[data-rebate-result]');
+  const note=c.querySelector('[data-rebate-note]');
 
   function update(){
-    const homePrice = Number(price.value || 0);
-    const commissionPct = Number(commission.value || 0) / 100;
-    const rebatePct = Number(share.value || 0) / 100;
+    const settings=getJacksonRebateSettings();
+    const homePrice=Number(price.value||0);
+    const estimatedCompensation=homePrice*(settings.commission/100);
+    const estimatedRebate=estimatedCompensation*(settings.share/100);
 
-    const estimatedCompensation = homePrice * commissionPct;
-    const estimatedRebate = estimatedCompensation * rebatePct;
-
-    result.textContent = formatMoney(estimatedRebate);
-    detail.textContent = 'Based on estimated compensation of ' + formatMoney(estimatedCompensation) + '.';
+    result.textContent=money(estimatedRebate);
+    if(note){
+      note.textContent='Planning estimate based on current Jackson Group calculator settings.';
+    }
   }
 
-  [price,commission,share].forEach(input=>input.addEventListener('input',update));
+  price.addEventListener('input',update);
+  window.addEventListener('storage',update);
   update();
 });

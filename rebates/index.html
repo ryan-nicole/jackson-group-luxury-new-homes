@@ -9,27 +9,8 @@
   <link rel="stylesheet" href="rebates.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="../index.html" aria-label="Jackson Group home">
-        <img src="../assets/jackson-group-logo.jpg" alt="Jackson Group logo">
-        <span class="brand-copy">
-          <strong>Jackson Group</strong>
-          <small>Luxury New Construction • New Home Rebates</small>
-        </span>
-      </a>
-
-      <nav class="desktop-nav" aria-label="Main navigation">
-        <a href="../communities/index.html">Explore Communities</a>
-        <a href="../builders/index.html">Builders</a>
-        <a href="index.html">New Home Rebates</a>
-        <a href="../how-it-works/index.html">How It Works</a>
-        <a href="../faq/index.html">FAQ</a>
-      </nav>
-
-      <a class="button gold small" href="../register/index.html">Register Before You Tour</a>
-    </div>
-  </header>
+  <header class="site-header"><div class="container nav"><a class="brand" href="../index.html"><img src="../assets/jackson-group-logo.jpg" alt="Jackson Group logo"><span class="brand-copy"><strong>Jackson Group</strong><small>Luxury New Construction • New Home Rebates</small></span></a><nav class="desktop-nav">
+        <a href="index.html">Search Homes</a><a href="../communities/index.html">Explore Communities</a><a href="../builders/index.html">Builders</a><a href="index.html">New Home Rebates</a><a href="../how-it-works/index.html">How It Works</a><a href="../faq/index.html">FAQ</a></nav><a class="button gold small" href="../register/index.html">Register Before You Tour</a></div></header>
 
   <main>
     <section class="rebate-center-hero">
@@ -125,84 +106,79 @@
           </div>
         </div>
 
-        <aside class="rebate-estimator-premium" data-center-calculator>
-          <label>
-            New home price
-            <input data-center-price type="number" value="500000" min="0">
-          </label>
+        <aside class="estimator simplified-estimator rebate-center-home-calculator" id="rebate-estimator-center" data-calculator>
+  <div class="eyebrow">New Home Rebate Estimator</div>
+  <h2>See what your rebate could look like.</h2>
+  <p class="estimator-intro">
+    Enter the price of the new home you’re considering. Your estimate uses the current Jackson Group rebate settings managed from the admin dashboard.
+  </p>
 
-          <label>
-            Estimated buyer-agent compensation (%)
-            <input data-center-commission type="number" value="3" min="0" step="0.1">
-          </label>
+  <label>New home price
+    <input data-price type="number" value="500000" min="0" inputmode="numeric">
+  </label>
 
-          <label>
-            Estimated rebate share (%)
-            <input data-center-share type="number" value="50" min="0" max="100" step="1">
-          </label>
+  <div class="estimate-result premium-result">
+    <span>Estimated new home rebate</span>
+    <strong data-rebate-result>$7,500</strong>
+    <small data-rebate-note>Planning estimate based on current Jackson Group calculator settings.</small>
+  </div>
 
-          <div class="rebate-opportunity-card">
-            <span>Estimated Rebate Opportunity</span>
-            <strong data-center-result>$7,500</strong>
-            <p data-center-detail>Based on estimated compensation of $15,000.</p>
-          </div>
-
-          <p class="rebate-disclaimer">
-            Actual rebate eligibility and amount depend on the final transaction structure, buyer representation agreement,
-            builder policies, lender requirements, compensation, and applicable law.
-          </p>
-
-          <a class="button black full" href="../register/index.html">Register Before You Tour</a>
-          <a class="button light full secondary-center-button" href="../communities/index.html">Explore Communities</a>
-        </aside>
+  <a class="button black full" href="../register/index.html">Register Before You Tour</a>
+  <p class="fine-print">
+    Illustrative estimate only. Actual rebate availability and amount depend on the final transaction,
+    compensation, buyer agreement, lender requirements, builder policies, closing conditions, and applicable law.
+  </p>
+</aside>
       </div>
     </section>
 
-    <section class="rebate-center-part-a-end">
-      <div class="container rebate-center-part-a-grid">
-        <div>
-          <div class="eyebrow light">Sprint 6 • Part A</div>
-          <h2>Your rebate center foundation is live.</h2>
-          <p>
-            Part B will add the educational rebate guide, community links, builder links, FAQ, Our Approach,
-            Before You Tour, resources, and the final call to action.
-          </p>
-        </div>
-        <a class="button gold" href="../register/index.html">Register Before You Tour</a>
-      </div>
-    </section>
+    <section class="rebate-center-next-step">
+  <div class="container rebate-center-next-grid">
+    <div>
+      <div class="eyebrow light">Your Next Step</div>
+      <h2>Use your estimate as the beginning of the conversation.</h2>
+      <p>
+        Once you have a home price in mind, connect with Jackson Group before your first builder visit.
+        We can help you compare builders, communities, incentives, timing, and potential rebate opportunities
+        from the very beginning.
+      </p>
+    </div>
+    <div class="rebate-center-next-actions">
+      <a class="button gold" href="../register/index.html">Register Before You Tour</a>
+      <a class="button outline-light" href="../homes/index.html">Search Homes</a>
+    </div>
+  </div>
+</section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <img src="../assets/jackson-group-logo.jpg" alt="Jackson Group logo">
-        <div>
-          <strong>Jackson Group</strong>
-          <p>Luxury new construction guidance with new home rebates built into the experience.</p>
-        </div>
-      </div>
-
-      <div>
-        <h3>Explore</h3>
-        <a href="../communities/index.html">Communities</a>
-        <a href="../builders/index.html">Builders</a>
-        <a href="index.html">New Home Rebates</a>
-      </div>
-
-      <div>
-        <h3>Start Here</h3>
-        <a href="../register/index.html">Register Before You Tour</a>
-        <a href="../sell/index.html">Sell Your Home</a>
-        <a href="../faq/index.html">FAQ</a>
-      </div>
-    </div>
-
-    <div class="container legal">
-      Rebate availability, amount, eligibility, and timing vary by transaction and may be subject to builder policies,
-      brokerage agreements, lender requirements, closing conditions, and applicable law. Estimates are illustrative and are not guarantees.
-    </div>
-  </footer>
+  <footer class="site-footer friendly-footer">
+<div class="container footer-top">
+<div class="footer-brand friendly-brand">
+<img src="../assets/jackson-group-logo.jpg" alt="Jackson Group logo">
+<div>
+<strong>Jackson Group</strong>
+<p>Backed by more than 30 years of real estate experience. Explore Texas homes, new construction, builders, communities, and new home rebate opportunities.</p>
+</div>
+</div>
+<div class="footer-start">
+<h3>Ready to Start?</h3>
+<p>Search homes now, or register before your first builder visit.</p>
+<div class="footer-start-actions">
+<a class="button gold" href="index.html">Search Homes</a>
+<a class="footer-register-link" href="../register/index.html">Register Before You Tour →</a>
+</div>
+</div>
+</div>
+<div class="container footer-links-grid">
+<div><h3>Find a Home</h3><a href="index.html">Search Homes</a><a href="../communities/index.html">Community Guide</a><a href="../builders/index.html">Builder Guide</a></div>
+<div><h3>Buyer Resources</h3><a href="index.html">New Home Rebate Center</a><a href="../how-it-works/index.html">How It Works</a><a href="../faq/index.html">Frequently Asked Questions</a></div>
+<div><h3>Plan Your Move</h3><a href="../register/index.html">Builder Registration Form</a><a href="../sell/index.html">Sell Your Current Home</a><a href="../register/index.html">Connect With Jackson Group</a></div>
+</div>
+<div class="container footer-bottom">
+<span>Jackson Group • Texas Real Estate</span>
+<span>Rebate eligibility, builder offerings, inventory, pricing and incentives vary by transaction and may change.</span>
+</div>
+</footer>
 
   <script src="rebates.js"></script>
 </body>
