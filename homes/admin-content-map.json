@@ -1,0 +1,38 @@
+{
+  "searchHomes": {
+    "neighborhoods": {
+      "adminManaged": true,
+      "fields": [
+        "name",
+        "city",
+        "slug",
+        "description",
+        "publicPageUrl",
+        "seoTitle",
+        "seoDescription",
+        "seoKeywords",
+        "published",
+        "sortOrder"
+      ],
+      "capabilities": [
+        "add",
+        "edit",
+        "publish",
+        "unpublish",
+        "delete",
+        "reorder"
+      ]
+    },
+    "mlsIdx": {
+      "adminManaged": true,
+      "fields": [
+        "provider",
+        "embedCodeOrWidgetId",
+        "searchUrl",
+        "enabled",
+        "displayLocation"
+      ],
+      "displayLocation": "search-homes"
+    }
+  }
+}

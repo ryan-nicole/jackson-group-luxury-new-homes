@@ -18,12 +18,14 @@
 <div class="actions"><a class="btn gold" href="#search-tool">Start Searching</a><a class="btn outline" href="../communities/index.html">Browse Communities</a></div>
 </div></section>
 
-<section class="trust"><div class="wrap trust-grid">
-<div><strong>30+</strong><span>Years of Real Estate Experience</span></div>
-<div><strong>8</strong><span>Current City Guides</span></div>
-<div><strong>9</strong><span>Builder Guides</span></div>
-<div><strong>Rebate</strong><span>Planning Before You Tour</span></div>
-</div></section>
+<section class="trust search-benefits">
+<div class="wrap trust-grid">
+<div><strong>Search by City</strong><span>Explore the Texas areas you’re considering.</span></div>
+<div><strong>Search by Builder</strong><span>Find builders and the communities where they build.</span></div>
+<div><strong>Search by Neighborhood</strong><span>Go directly to a community or neighborhood you already know.</span></div>
+<div><strong>New Home Rebates</strong><span>Plan your options before your first builder tour.</span></div>
+</div>
+</section>
 
 <section class="section" id="search-tool"><div class="wrap">
 <div class="heading"><p class="eyebrow">Search Homes</p><h2>Choose how you want to explore.</h2><p>This front-end search routes you into the strongest page we already have. When live inventory is connected later, these same filters can show actual matching homes.</p></div>
@@ -94,7 +96,7 @@
 </section>
 
 
-<section class="section neighborhood-search-section">
+<section class="section neighborhood-search-section" data-admin-content="neighborhoods">
 <div class="wrap">
   <div class="heading">
     <p class="eyebrow">Search by Neighborhood</p>
@@ -124,7 +126,7 @@
     <button class="btn black full" id="neighborhoodGo">Explore Neighborhood</button>
   </div>
 
-  <div class="neighborhood-grid">
+  <div class="neighborhood-grid" id="neighborhoodGrid" data-admin-list="neighborhoods">
     <a href="../communities/georgetown/index.html"><span>Georgetown</span><h3>Wolf Ranch</h3><p>Explore homes, builders and new-construction opportunities in one of Georgetown’s best-known master-planned communities.</p><b>Explore →</b></a>
     <a href="../communities/liberty-hill/index.html"><span>Liberty Hill Area</span><h3>Santa Rita Ranch</h3><p>Explore builders, amenities and new-home opportunities across this major master-planned community.</p><b>Explore →</b></a>
     <a href="../communities/leander/index.html"><span>Leander</span><h3>Palmera Ridge</h3><p>Explore new homes and builder opportunities in this growing Leander community.</p><b>Explore →</b></a>
@@ -151,6 +153,25 @@
 </div>
 </div></section>
 
+
+
+<section class="section idx-ready-section" data-admin-content="mls-idx">
+<div class="wrap">
+<div class="idx-ready-card">
+<div>
+<p class="eyebrow">MLS Home Search</p>
+<h2>Search available homes.</h2>
+<p>When your MLS/IDX connection is added in the admin, this area can become the live home-search experience for visitors—without rebuilding the page.</p>
+</div>
+<div class="idx-placeholder" id="idxSearchMount" data-idx-mount>
+<span>MLS / IDX</span>
+<strong>Live Search Connection</strong>
+<small>Managed from Admin → MLS / IDX</small>
+</div>
+</div>
+</div>
+</section>
+
 <section class="inventory-preview"><div class="wrap split">
 <div><p class="eyebrow light">Coming With Live Inventory</p><h2>Search actual available homes.</h2><p>Once the backend inventory system is connected, this page can filter real homes by city, builder, community, price, move-in status and other criteria without changing the public design.</p></div>
 <div class="future-filter">
@@ -159,10 +180,7 @@
 </div>
 </div></section>
 
-<section class="section ivory"><div class="wrap split">
-<div><p class="eyebrow">Not Only New Construction</p><h2>Searching broadly for homes?</h2><p>The city pages are designed to capture broader home-search intent too. If you want to compare resale homes with new construction, Jackson Group can help you build the broader search strategy while keeping new-home options and rebates in view.</p></div>
-<div><a class="btn black" href="../communities/index.html">Explore Community Guide</a></div>
-</div></section>
+
 
 <section class="before"><div class="wrap split">
 <div><p class="eyebrow light">Before You Tour</p><h2>Found a home or builder you like?</h2><p>Connect with Jackson Group before your first builder visit so we can help you understand your options and discuss potential rebate opportunities from the beginning.</p></div>
