@@ -43,3 +43,18 @@ and other Jackson Group pages.
 
 UPLOAD
 Replace your current rebates folder with this latest rebates folder.
+
+
+LATEST PHOTO UPDATE
+
+- The uploaded Downtown Austin street/high-rise photo is now included inside
+  this package at:
+  assets/austin-rebate-center.jpg
+- It is used as the New Home Rebate Center hero photo.
+- This ZIP is the complete latest Rebate Center version and replaces the
+  previous jackson-group-rebates-updated.zip.
+
+UPLOAD:
+Replace the existing rebates folder with this ZIP's rebates folder.
+Also upload/merge the assets folder so assets/austin-rebate-center.jpg is present.
+Do not delete unrelated files from your site's existing assets folder.
