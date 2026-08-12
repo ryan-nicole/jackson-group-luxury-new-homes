@@ -26,3 +26,20 @@ Replaced with:
 
 UPLOAD
 Replace your current rebates folder with this rebates folder.
+
+
+LATEST REBATE CENTER REFINEMENTS
+
+1. CALCULATOR SIDE STEPS
+Removed the old numbered 1 / 2 / 3 instruction list.
+Replaced it with useful post-estimate actions:
+- Register Before You Tour
+- Complete Your Builder Form
+- Compare Homes & Builders
+
+2. HERO / HEADER SPACING
+Adjusted the top hero so its spacing aligns much more closely with the Search Homes
+and other Jackson Group pages.
+
+UPLOAD
+Replace your current rebates folder with this latest rebates folder.

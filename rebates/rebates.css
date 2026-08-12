@@ -375,3 +375,86 @@
 @media(max-width:440px){
   .footer-links-grid{grid-template-columns:1fr}
 }
+
+
+/* ===== Rebate Center alignment + next steps refresh ===== */
+
+/* Match hero spacing used on the other Jackson Group pages */
+.page-hero.rebate-center-hero{
+  min-height:660px !important;
+  padding-top:0 !important;
+  display:flex !important;
+  align-items:center !important;
+}
+.page-hero.rebate-center-hero .rebate-center-grid{
+  min-height:660px !important;
+  padding-top:0 !important;
+  padding-bottom:0 !important;
+  align-items:center !important;
+}
+
+/* Give the hero content breathing room consistent with Search Homes */
+.rebate-center-copy{
+  padding-top:72px !important;
+  padding-bottom:72px !important;
+}
+.rebate-center-card{
+  margin-top:72px !important;
+  margin-bottom:72px !important;
+}
+
+/* Replace old numbered calculator steps */
+.rebate-after-estimate{
+  display:grid;
+  gap:14px;
+  margin-top:28px;
+}
+.rebate-after-estimate article{
+  border:1px solid var(--line,#ddd2c0);
+  border-radius:18px;
+  padding:18px;
+  background:#fff;
+}
+.rebate-after-estimate span{
+  color:var(--gold-dark,#997332);
+  font-size:.7rem;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+}
+.rebate-after-estimate h3{
+  font:500 1.25rem Georgia,serif;
+  margin:7px 0 6px;
+}
+.rebate-after-estimate p{
+  color:var(--muted,#716b61);
+  line-height:1.6;
+  margin:0 0 9px;
+  font-size:.9rem;
+}
+.rebate-after-estimate a{
+  color:#806126;
+  text-decoration:none;
+  font-weight:800;
+  font-size:.84rem;
+}
+
+/* Mobile spacing */
+@media(max-width:980px){
+  .page-hero.rebate-center-hero{
+    min-height:auto !important;
+    padding-top:0 !important;
+    padding-bottom:0 !important;
+  }
+  .page-hero.rebate-center-hero .rebate-center-grid{
+    min-height:auto !important;
+    padding-top:70px !important;
+    padding-bottom:70px !important;
+  }
+  .rebate-center-copy,
+  .rebate-center-card{
+    margin:0 !important;
+    padding-top:0 !important;
+    padding-bottom:0 !important;
+  }
+}
