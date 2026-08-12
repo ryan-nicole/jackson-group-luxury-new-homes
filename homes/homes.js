@@ -20,3 +20,8 @@ document.getElementById('builderGo').addEventListener('click',()=>{
 document.querySelectorAll('[data-goal]').forEach(btn=>{
   btn.addEventListener('click',()=>window.location.href=btn.dataset.goal);
 });
+
+document.getElementById('neighborhoodGo')?.addEventListener('click',()=>{
+  const url=document.getElementById('neighborhoodSelect')?.value;
+  if(url) window.location.href=url;
+});
