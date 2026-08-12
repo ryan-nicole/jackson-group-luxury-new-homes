@@ -58,3 +58,9 @@ UPLOAD:
 Replace the existing rebates folder with this ZIP's rebates folder.
 Also upload/merge the assets folder so assets/austin-rebate-center.jpg is present.
 Do not delete unrelated files from your site's existing assets folder.
+
+
+PHOTO FIX
+The actual hero image layer is .rebate-center-media. This version targets that
+layer directly, so assets/austin-rebate-center.jpg displays as the Rebate Center
+hero image.

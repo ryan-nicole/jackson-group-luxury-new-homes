@@ -34,6 +34,31 @@
 }
 </style>
 
+
+<style>
+/* FIXED: Rebate Center uses .rebate-center-media as its actual hero image layer */
+.rebate-center-hero .rebate-center-media,
+.rebate-center-media {
+  position:absolute !important;
+  inset:0 !important;
+  background-image:url('../assets/austin-rebate-center.jpg') !important;
+  background-position:center center !important;
+  background-size:cover !important;
+  background-repeat:no-repeat !important;
+  z-index:0 !important;
+}
+.rebate-center-hero .rebate-center-overlay {
+  position:absolute !important;
+  inset:0 !important;
+  background:linear-gradient(90deg,rgba(12,12,11,.78),rgba(12,12,11,.42),rgba(12,12,11,.16)) !important;
+  z-index:1 !important;
+}
+.rebate-center-hero .rebate-center-grid {
+  position:relative !important;
+  z-index:2 !important;
+}
+</style>
+
 </head>
 <body>
   <header class="site-header"><div class="container nav"><a class="brand" href="../index.html"><img src="../assets/jackson-group-logo.jpg" alt="Jackson Group logo"><span class="brand-copy"><strong>Jackson Group</strong><small>Luxury New Construction • New Home Rebates</small></span></a><nav class="desktop-nav">
