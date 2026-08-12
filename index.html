@@ -32,13 +32,23 @@
 
 
 <style>
-/* User-provided Downtown Austin homepage hero */
-.hero, .home-hero, .hero-section, section.hero {
-  background-image: linear-gradient(90deg,rgba(15,18,20,.70),rgba(15,18,20,.28)),
-                    url('assets/austin-homepage-hero.jpg') !important;
-  background-position:center center !important;
-  background-size:cover !important;
-  background-repeat:no-repeat !important;
+/* FIXED: Homepage uses a separate .hero-media layer for its background image */
+.hero .hero-media,
+.hero-media {
+  background-image: url('assets/austin-homepage-hero.jpg') !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Keep the existing dark overlay readable over the Austin skyline */
+.hero .hero-overlay {
+  background: linear-gradient(
+    90deg,
+    rgba(12, 12, 11, 0.72) 0%,
+    rgba(12, 12, 11, 0.42) 52%,
+    rgba(12, 12, 11, 0.15) 100%
+  ) !important;
 }
 </style>
 
