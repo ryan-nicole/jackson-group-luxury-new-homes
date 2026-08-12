@@ -1,25 +1,15 @@
-JACKSON GROUP — FAQ PAGE
+JACKSON GROUP — HOMEPAGE NAV SPACING UPDATE
 
-Upload the entire faq folder to the SAME GitHub repository.
+This keeps Search Homes in the top navigation but makes the desktop navigation
+more refined and less crowded.
 
-URL:
-your-domain.com/faq/
+Changes:
+- Smaller nav text
+- Tighter, even spacing between navigation links
+- Slightly smaller Register Before You Tour button
+- Prevents nav labels from wrapping
+- Additional compact sizing for medium-width desktop/laptop screens
+- Mobile behavior remains controlled by the existing responsive site styles
 
-Includes FAQ sections for:
-- About Jackson Group
-- New Home Rebates
-- Builder Tours
-- Registration
-- Search Homes
-- Selling Your Current Home
-
-Also includes:
-- Search Homes CTA
-- Rebate Center CTA
-- Register Before You Tour CTA
-- 30+ years messaging
-- Responsive luxury design
-
-NOTE:
-This page is informational and avoids promising rebate eligibility,
-inventory or builder-specific outcomes.
+UPLOAD:
+Replace ONLY the root index.html with this version.
