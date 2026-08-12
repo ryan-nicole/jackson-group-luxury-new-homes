@@ -82,3 +82,14 @@ ADDITIONAL BUILDERS ADDED
 - DRB Homes
 - Tri Pointe Homes
 - Saratoga Homes
+
+
+BUILDER GUIDE VISUAL POLISH
+
+- Reworked the old Find Your Builder area into a cleaner editorial section:
+  Browse Builders / Start With a City / Search Homes / Plan Before You Tour
+- Added a curated spotlight row for a few builders so the page does not feel
+  like one giant list from the start.
+- Redesigned the full builder directory into smaller, cleaner name-forward cards.
+- The complete builder list is still present, but it is visually secondary and
+  easier to scan.
