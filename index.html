@@ -424,6 +424,171 @@
 }
 </style>
 
+<style>
+.search-way-grid-six{
+  grid-template-columns:repeat(3,1fr) !important;
+}
+.search-way-grid-six .search-way-card{
+  min-height:220px;
+}
+@media(max-width:900px){
+  .search-way-grid-six{grid-template-columns:repeat(2,1fr) !important;}
+}
+@media(max-width:560px){
+  .search-way-grid-six{grid-template-columns:1fr !important;}
+}
+</style>
+
+<style>
+/* ===== Homepage flow v2 ===== */
+
+/* 2. Before You Tour rebate hook */
+.before-tour .statement strong{
+  display:block;
+  font-family:Georgia,serif;
+  font-size:1.35rem;
+  line-height:1.3;
+  margin-bottom:10px;
+  color:#171612;
+}
+
+/* 3. Dedicated homepage rebate calculator */
+.homepage-rebate-grid{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:60px;
+  align-items:center;
+}
+.homepage-rebate-copy h2{
+  font:500 clamp(2.4rem,4vw,3.9rem)/1.04 Georgia,serif;
+  margin:9px 0 18px;
+}
+.homepage-rebate-copy p{
+  color:var(--muted,#716b61);
+  line-height:1.72;
+}
+.rebate-support-copy{font-size:.9rem}
+.homepage-rebate-card{
+  background:#fff;
+  border:1px solid var(--line,#ddd2c0);
+  border-radius:26px;
+  padding:28px;
+  box-shadow:0 18px 45px rgba(30,24,16,.07);
+}
+.homepage-rebate-card h3{
+  font:500 1.65rem Georgia,serif;
+  margin:8px 0 15px;
+}
+.homepage-rebate-card label{
+  display:grid;gap:7px;font-weight:800;
+}
+.homepage-rebate-card input{
+  min-height:48px;
+  border:1px solid #cfc5b7;
+  border-radius:12px;
+  padding:12px 13px;
+  font:inherit;
+}
+.homepage-rebate-card .premium-result{
+  margin:20px 0;
+  padding:22px;
+  border:1px solid #dcc9a8;
+  border-radius:19px;
+  background:linear-gradient(135deg,#efe3cf,#f7f2e9);
+}
+.homepage-rebate-card .premium-result span,
+.homepage-rebate-card .premium-result strong,
+.homepage-rebate-card .premium-result small{display:block}
+.homepage-rebate-card .premium-result strong{
+  font:500 2.3rem Georgia,serif;
+  margin:5px 0;
+}
+.homepage-rebate-card .premium-result span{
+  color:#8d6c32;font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em
+}
+.homepage-rebate-card .premium-result small{color:var(--muted,#716b61);line-height:1.45}
+
+/* 6. Featured places only */
+.featured-places-grid .subdivision-feature-card{
+  min-height:100%;
+  display:flex;
+  align-items:center;
+  background:#f6efe5;
+  border:1px solid var(--line,#ddd2c0);
+}
+.featured-places-grid .subdivision-feature-card .feature-content{padding:30px}
+.featured-places-grid .subdivision-feature-card .mini-label{color:#8d6c32}
+
+/* 7. Dedicated new-construction IDX */
+.dark-new-search{
+  background:#24211c;
+  color:#fff;
+}
+.new-construction-search-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+.new-construction-search h2{
+  font:500 clamp(2.4rem,4vw,3.9rem)/1.04 Georgia,serif;
+  margin:9px 0 18px;
+}
+.new-construction-search p{
+  color:#d0c7ba;
+  line-height:1.72;
+}
+.new-search-links{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:25px;
+}
+.new-construction-idx-shell{
+  min-height:300px;
+  border:1px solid #514b42;
+  border-radius:26px;
+  padding:28px;
+  background:#1b1916;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.new-construction-idx-shell>span{
+  color:var(--gold,#c8a05a);
+  text-transform:uppercase;
+  letter-spacing:.11em;
+  font-size:.7rem;
+  font-weight:800;
+}
+.new-construction-idx-shell>strong{
+  font:500 1.9rem Georgia,serif;
+  margin:9px 0 6px;
+}
+.new-construction-idx-shell>small{color:#aaa195}
+.new-construction-filter-preview{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:9px;
+  margin-top:22px;
+}
+.new-construction-filter-preview b{
+  padding:11px 0;
+  border-top:1px solid #3c3832;
+  color:#d5cdbf;
+  font-size:.82rem;
+}
+
+@media(max-width:900px){
+  .homepage-rebate-grid,
+  .new-construction-search-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .new-construction-filter-preview{grid-template-columns:1fr}
+  .before-tour .statement strong{font-size:1.2rem}
+}
+</style>
+
 </head><body>
 <header class="site-header"><div class="container nav"><a class="brand" href="index.html"><img src="assets/jackson-group-logo.jpg" alt="Jackson Group logo"><span class="brand-copy"><strong>Jackson Group</strong><small>Luxury New Construction • New Home Rebates</small></span></a><nav class="desktop-nav">
         <a href="homes/index.html">Search Homes</a><a href="communities/index.html">Explore Communities</a><a href="builders/index.html">Builders</a><a href="rebates/index.html">New Home Rebates</a><a href="how-it-works/index.html">How It Works</a><a href="faq/index.html">FAQ</a></nav><a class="button gold small" href="register/index.html">Register Before You Tour</a></div></header>
@@ -463,68 +628,84 @@
     </div>
   </div>
 </section>
-
 <section class="search-your-way section">
   <div class="container">
     <div class="search-way-heading">
       <div>
         <div class="eyebrow">Search Your Way</div>
-        <h2>There’s more than one way to find the right home.</h2>
+        <h2>Find a home the way you want to search.</h2>
       </div>
-      <p>Start with what you already know—or explore a different path. Jackson Group makes it easy to move between homes, places, communities and builders.</p>
+      <p>Start with a location, a builder, a subdivision, or the type of home you want. Each search path can connect into the live MLS/IDX experience as the search system is connected.</p>
     </div>
 
-    <div class="search-way-grid">
+    <div class="search-way-grid search-way-grid-six">
       <a class="search-way-card" href="communities/index.html">
-        <span>01</span><h3>Search by City</h3>
-        <p>Choose the area first, then explore homes, communities and builders.</p>
-        <b>Explore Cities →</b>
+        <span>Location</span><h3>Search by City</h3>
+        <p>Start with the city you want to call home.</p>
+        <b>Search Cities →</b>
       </a>
-      <a class="search-way-card" href="homes/index.html#neighborhoods">
-        <span>02</span><h3>Search by Neighborhood</h3>
-        <p>Already know a neighborhood or community name? Start your search there.</p>
-        <b>Explore Neighborhoods →</b>
+      <a class="search-way-card" href="homes/index.html">
+        <span>Location</span><h3>Search by County</h3>
+        <p>Explore homes across a broader area when you have flexibility on the exact city.</p>
+        <b>Search Counties →</b>
       </a>
       <a class="search-way-card" href="builders/index.html">
-        <span>03</span><h3>Search by Builder</h3>
-        <p>Compare builders and move directly into the communities and homes that interest you.</p>
-        <b>Explore Builders →</b>
+        <span>Builder</span><h3>Search by Builder</h3>
+        <p>Find homes and communities from the builders that interest you most.</p>
+        <b>Search Builders →</b>
+      </a>
+      <a class="search-way-card" href="homes/index.html">
+        <span>Community</span><h3>Search by Subdivision</h3>
+        <p>Go directly to a subdivision or master-planned community you already know.</p>
+        <b>Search Subdivisions →</b>
       </a>
       <a class="search-way-card dark-search-card" href="communities/index.html">
-        <span>04</span><h3>Explore New Construction</h3>
-        <p>Discover new-home communities, builder opportunities and the next steps before touring.</p>
-        <b>Explore New Homes →</b>
+        <span>Home Type</span><h3>New Construction</h3>
+        <p>Explore new homes, communities, builders and opportunities before your first tour.</p>
+        <b>Explore New Construction →</b>
+      </a>
+      <a class="search-way-card" href="homes/index.html">
+        <span>All Homes</span><h3>Search the MLS</h3>
+        <p>Browse the full home-search experience with additional filters and search options.</p>
+        <b>Open Home Search →</b>
       </a>
     </div>
 
     <div class="search-way-footer">
-      <a class="button black" href="homes/index.html">Open Full Home Search</a>
+      <a class="button black" href="homes/index.html">View All Home Search Options</a>
     </div>
   </div>
 </section>
-<section class="before-tour"><div class="container before-tour-grid"><div><div class="eyebrow">Before You Tour</div><h2>Before you step inside a model home, start with a strategy.</h2></div><div class="before-tour-copy"><p class="statement">Connect with Jackson Group before touring a model home so we can help protect your options, negotiate the strongest offer possible, and maximize your rebate from the very beginning.</p><div class="benefit-grid"><div class="benefit">Professional Buyer Representation</div><div class="benefit">Builder & Community Expertise</div><div class="benefit">Offer Strategy & Negotiation</div><div class="benefit">New Home Rebates</div></div><a class="button black" href="register/index.html">Register Before You Tour</a></div></div></section>
-<section class="journey section"><div class="container"><div class="section-heading centered"><div class="eyebrow">Start Your New Home Journey</div><h2>What can we help you with?</h2><p>Select as many as apply. We’ll use your choices to guide you toward the most relevant parts of the site.</p></div><div class="journey-grid" role="group" aria-label="Choose one or more goals"><label class="journey-choice"><input type="checkbox" value="first-home"><span><b>I’m Buying My First Home</b><small>Start with a clear, guided path.</small></span></label><label class="journey-choice"><input type="checkbox" value="new-construction"><span><b>I’m Buying New Construction</b><small>Explore builders and communities.</small></span></label><label class="journey-choice"><input type="checkbox" value="sell-current"><span><b>I Need to Sell My Current Home</b><small>Plan the transition from selling to buying.</small></span></label><label class="journey-choice"><input type="checkbox" value="rebates"><span><b>I Want to Learn About Rebates</b><small>Understand how the rebate process works.</small></span></label></div><div class="journey-actions"><button class="button gold" type="button" id="journeyContinue">Continue</button><p id="journeyMessage" aria-live="polite"></p></div></div></section>
-<section class="featured section"><div class="container"><div class="section-heading split-heading"><div><div class="eyebrow">Featured This Month</div><h2>Fresh places to explore.</h2></div><p>This section can change whenever a new community, builder, or opportunity deserves the spotlight.</p></div><div class="featured-grid"><article class="feature-card large"><div class="feature-image image-one"></div><div class="feature-content"><span class="mini-label">Community Spotlight</span><h3>Georgetown</h3><p>Explore elegant new-home communities, builders, and rebate opportunities in one of the region’s most desirable growth areas.</p><a href="communities/georgetown/index.html">Explore Georgetown →</a></div></article><article class="feature-card builder-spotlight-no-photo"><div class="feature-content"><span class="mini-label">Builder Spotlight</span><h3>Highland Homes</h3><p>Discover where they build and explore city-specific opportunities.</p><a href="builders/highland-homes/index.html">View Builder →</a></div></article><article class="feature-card"><div class="feature-image image-three"></div><div class="feature-content"><span class="mini-label">Rebate Highlight</span><h3>Know Your Rebate Before You Tour</h3><p>Use the estimator and connect early so your options stay open.</p><a href="rebates/index.html">Learn About Rebates →</a></div></article></div></div></section>
-<section class="communities section ivory"><div class="container"><div class="section-heading split-heading"><div><div class="eyebrow">Explore Communities</div><h2>Find a place that feels like home.</h2></div><p>Discover new homes, builders, local lifestyle, and rebates by city.</p></div><div class="community-grid"><a class="community-card georgetown" href="communities/georgetown/index.html"><span class="community-overlay"></span><span class="community-copy"><small>Texas New Construction</small><strong>Georgetown</strong><em>Homes • Builders • Rebates</em><b>Explore Georgetown →</b></span></a><a class="community-card round-rock" href="communities/round-rock/index.html"><span class="community-overlay"></span><span class="community-copy"><small>Texas New Construction</small><strong>Round Rock</strong><em>Homes • Builders • Rebates</em><b>Explore Round Rock →</b></span></a><a class="community-card hutto" href="communities/hutto/index.html"><span class="community-overlay"></span><span class="community-copy"><small>Texas New Construction</small><strong>Hutto</strong><em>Homes • Builders • Rebates</em><b>Explore Hutto →</b></span></a><a class="community-card liberty-hill" href="communities/liberty-hill/index.html"><span class="community-overlay"></span><span class="community-copy"><small>Texas New Construction</small><strong>Liberty Hill</strong><em>Homes • Builders • Rebates</em><b>Explore Liberty Hill →</b></span></a></div><div class="center-action"><a class="button black" href="communities/index.html">View All Communities</a></div></div></section>
-<section class="builders section"><div class="container"><div class="section-heading split-heading"><div><div class="eyebrow">Featured Builders</div><h2>Explore builders with confidence.</h2></div><p>Explore the builders Jackson Group works with across Texas, then see the cities and communities where each one is currently active.</p></div><div class="builder-grid expanded-builder-grid">
-<a class="builder-card" href="builders/highland-homes/index.html"><span>Highland Homes</span><small>View builder →</small></a>
-<a class="builder-card" href="builders/perry-homes/index.html"><span>Perry Homes</span><small>View builder →</small></a>
-<a class="builder-card" href="builders/chesmar-homes/index.html"><span>Chesmar Homes</span><small>View builder →</small></a>
-<a class="builder-card" href="builders/kb-home/index.html"><span>KB Home</span><small>View builder →</small></a>
-<a class="builder-card" href="builders/dr-horton/index.html"><span>D.R. Horton</span><small>View builder →</small></a>
-<a class="builder-card" href="builders/brohn-homes/index.html"><span>Brohn Homes</span><small>View builder →</small></a>
-<a class="builder-card" href="builders/taylor-morrison/index.html"><span>Taylor Morrison</span><small>View builder →</small></a>
-<a class="builder-card" href="builders/toll-brothers/index.html"><span>Toll Brothers</span><small>View builder →</small></a>
-<a class="builder-card" href="builders/meritage-homes/index.html"><span>Meritage Homes</span><small>View builder →</small></a>
-<a class="builder-card" href="builders/coventry-homes/index.html"><span>Coventry Homes</span><small>View builder →</small></a>
-<a class="builder-card" href="builders/david-weekley-homes/index.html"><span>David Weekley Homes</span><small>View builder →</small></a>
-<a class="builder-card" href="builders/pulte-homes/index.html"><span>Pulte Homes</span><small>View builder →</small></a>
-</div>
-<div class="center-action builder-all-action"><a class="button black" href="builders/index.html">Explore All Builders</a></div></div></section><section class="builder-form-home section ivory">
+<section class="before-tour"><div class="container before-tour-grid"><div><div class="eyebrow">Before You Tour</div><h2>Before you step inside a model home, start with a strategy.</h2></div><div class="before-tour-copy"><p class="statement"><strong>Buying new construction? You may qualify for a new home rebate.</strong> Connect with Jackson Group before touring a model home so we can help protect your options, compare builder opportunities, and plan your rebate from the very beginning.</p><div class="benefit-grid"><div class="benefit">Professional Buyer Representation</div><div class="benefit">Builder & Community Expertise</div><div class="benefit">Offer Strategy & Negotiation</div><div class="benefit">New Home Rebates</div></div><a class="button black" href="register/index.html">Register Before You Tour</a></div></div></section>
+<section class="homepage-rebate section ivory" id="homepage-rebate">
+  <div class="container homepage-rebate-grid">
+    <div class="homepage-rebate-copy">
+      <div class="eyebrow">Estimate Your New Home Rebate</div>
+      <h2>See what your rebate could look like before you tour.</h2>
+      <p>Enter the price of the new home you’re considering. Your estimate uses the current Jackson Group rebate settings managed from Admin.</p>
+      <p class="rebate-support-copy">The estimate is a planning tool. Actual rebate availability and amount depend on the final transaction, compensation, buyer agreement, lender requirements, builder policies, closing conditions, and applicable law.</p>
+    </div>
+
+    <aside class="estimator simplified-estimator homepage-rebate-card" data-calculator>
+      <div class="eyebrow">New Home Rebate Estimator</div>
+      <h3>Estimate your potential rebate.</h3>
+      <label>New home price
+        <input data-price type="number" value="500000" min="0" inputmode="numeric">
+      </label>
+      <div class="estimate-result premium-result">
+        <span>Estimated new home rebate</span>
+        <strong data-rebate-result>$7,500</strong>
+        <small data-rebate-note>Planning estimate based on current Jackson Group calculator settings.</small>
+      </div>
+      <a class="button black full" href="rebates/index.html">Open Rebate Center</a>
+    </aside>
+  </div>
+</section>
+<section class="builder-form-home section ivory">
 <div class="container builder-form-home-grid">
 <div class="builder-form-home-copy">
-<div class="eyebrow">Your Builder Visit Form</div>
-<h2>Register once. Bring your Jackson Group builder form with you.</h2>
+<div class="eyebrow">Your Builder PDF Form</div>
+<h2>Complete it once. Keep your Jackson Group builder form ready for your visit.</h2>
 <p>Before visiting a model home, complete your Jackson Group registration so your buyer information, builder interest, city, community, timeline, and preferences are organized in one place.</p>
 <p>Your completed form can be printed or downloaded immediately. When the secure backend is connected later, the same form can also be emailed to you automatically and synced with Jackson Group’s CRM.</p>
 <div class="builder-form-home-actions">
@@ -542,10 +723,70 @@
 </div>
 </div>
 </section>
-<section class="why section ivory"><div class="container"><div class="section-heading centered"><div class="eyebrow">Why Homebuyers Choose Jackson Group</div><h2>Luxury service with real-world value.</h2></div><div class="why-grid"><article><span>01</span><h3>Buyer Representation</h3><p>Professional guidance centered on your interests from the first conversation through closing.</p></article><article><span>02</span><h3>Builder Expertise</h3><p>Help comparing builders, communities, incentives, and the details that matter.</p></article><article><span>03</span><h3>Local Knowledge</h3><p>Community-focused guidance that helps you understand not only the home, but the lifestyle around it.</p></article><article><span>04</span><h3>New Home Rebates</h3><p>A clear explanation of how a rebate may fit into your transaction and how to preserve your options.</p></article></div></div></section>
-<section class="sell-section"><div class="container sell-grid"><div><div class="eyebrow light">Selling Your Current Home?</div><h2>Buying new doesn’t mean leaving your current home behind.</h2></div><div><p>If selling your existing home is part of your next chapter, Jackson Group can help coordinate the transition so your buying and selling plans work together.</p><a class="button gold" href="sell/index.html">Learn About Selling Your Home</a></div></div></section>
-<section class="faq-section section"><div class="container"><div class="section-heading split-heading"><div><div class="eyebrow">FAQ</div><h2>Questions buyers ask first.</h2></div></div><div class="faq-list"><details><summary>When should I contact Jackson Group?</summary><p>Ideally before your first builder or model-home tour so we can help you start with a clear strategy and protect your options.</p></details><details><summary>How much can my new home rebate be?</summary><p>The amount depends on the home price, builder compensation, your representation agreement, lender requirements, and the final structure of the transaction.</p></details><details><summary>Can Jackson Group help me sell my current home too?</summary><p>Yes. The website will include a seller pathway so buyers who need to sell first can coordinate both sides of the move.</p></details><details><summary>Can I search by city and builder?</summary><p>Yes. Community pages will show builders in that city, and builder pages will show the cities where each builder is active.</p></details></div></div></section>
-<section class="final-cta"><div class="container final-cta-inner"><div><div class="eyebrow">Ready to Begin?</div><h2>Start before you tour.</h2><p>Tell us where you’re looking, which builders you’re considering, and what your next move looks like.</p></div><a class="button black" href="register/index.html">Register with Jackson Group</a></div></section>
+<section class="journey section"><div class="container"><div class="section-heading centered"><div class="eyebrow">What Can We Help You With?</div><h2>Choose what you need help with.</h2><p>Select as many as apply. We’ll use your choices to guide you toward the most relevant parts of the site.</p></div><div class="journey-grid" role="group" aria-label="Choose one or more goals"><label class="journey-choice"><input type="checkbox" value="first-home"><span><b>I’m Buying My First Home</b><small>Start with a clear, guided path.</small></span></label><label class="journey-choice"><input type="checkbox" value="new-construction"><span><b>I’m Buying New Construction</b><small>Explore builders and communities.</small></span></label><label class="journey-choice"><input type="checkbox" value="sell-current"><span><b>I Need to Sell My Current Home</b><small>Plan the transition from selling to buying.</small></span></label><label class="journey-choice"><input type="checkbox" value="rebates"><span><b>I Want to Learn About Rebates</b><small>Understand how the rebate process works.</small></span></label></div><div class="journey-actions"><button class="button gold" type="button" id="journeyContinue">Continue</button><p id="journeyMessage" aria-live="polite"></p></div></div></section>
+<section class="featured section" id="featured" data-admin-content="featured">
+  <div class="container">
+    <div class="section-heading split-heading">
+      <div>
+        <div class="eyebrow">Featured</div>
+        <h2>Places worth exploring.</h2>
+      </div>
+      <p>Discover featured cities, subdivisions, and communities selected by Jackson Group. These can be changed from Admin as new places deserve the spotlight.</p>
+    </div>
+
+    <div class="featured-grid featured-places-grid" data-admin-list="featured-places">
+      <article class="feature-card large">
+        <div class="feature-image image-one"></div>
+        <div class="feature-content">
+          <span class="mini-label">Featured City</span>
+          <h3>Georgetown</h3>
+          <p>Explore homes, communities, builders, and new construction opportunities in one of the area’s most desirable growth markets.</p>
+          <a href="communities/georgetown/index.html">Explore Georgetown →</a>
+        </div>
+      </article>
+
+      <article class="feature-card subdivision-feature-card">
+        <div class="feature-content">
+          <span class="mini-label">Featured Subdivision</span>
+          <h3>Parkside on the River</h3>
+          <p>Explore new homes and community opportunities in this sought-after Georgetown-area subdivision.</p>
+          <a href="communities/georgetown/index.html">Explore Parkside on the River →</a>
+        </div>
+      </article>
+
+      <article class="feature-card subdivision-feature-card">
+        <div class="feature-content">
+          <span class="mini-label">Featured Community</span>
+          <h3>Santa Rita Ranch</h3>
+          <p>Discover builders, new homes, and community amenities in this major master-planned community.</p>
+          <a href="communities/liberty-hill/index.html">Explore Santa Rita Ranch →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="new-construction-search section dark-new-search" id="new-construction-search" data-admin-content="new-construction-idx">
+  <div class="container new-construction-search-grid">
+    <div>
+      <div class="eyebrow light">New Construction Home Search</div>
+      <h2>Search new homes across Texas.</h2>
+      <p>Use the dedicated new-construction search to focus on newly built homes, quick move-in opportunities, and builder inventory. When the approved MLS/IDX provider is connected, live new-construction results can appear here.</p>
+      <div class="new-search-links">
+        <a class="button gold" href="homes/index.html">Explore New Construction</a>
+        <a class="button outline-light" href="builders/index.html">Browse Builders</a>
+      </div>
+    </div>
+
+    <div class="new-construction-idx-shell" id="homepageNewConstructionIdxMount" data-idx-mount="new-construction">
+      <span>New Construction MLS / IDX</span>
+      <strong>Live New-Home Search</strong>
+      <small>Managed from Admin → MLS / IDX</small>
+      <div class="new-construction-filter-preview">
+        <b>Location</b><b>Builder</b><b>Subdivision</b><b>Price</b><b>Move-In Status</b><b>Home Type</b>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
 <footer class="site-footer friendly-footer">
 <div class="container footer-top">

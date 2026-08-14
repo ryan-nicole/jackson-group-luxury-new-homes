@@ -88,3 +88,39 @@ homepage flow can be decided after reviewing this new top portion.
 
 The MLS/IDX box is a design-ready placeholder until the approved IDX provider
 and secure backend/admin connection are added.
+
+
+LATEST HOMEPAGE FLOW
+
+The homepage is now intentionally limited to this order:
+
+1. Find Your Next Home + main MLS/IDX-ready search
+2. Search Your Way
+3. Before You Tour — includes a clear new-home rebate hook
+4. Estimate Your New Home Rebate
+5. Builder PDF Form
+6. What Can We Help You With?
+7. Featured — cities / subdivisions / communities only
+8. Dedicated New Construction MLS/IDX Search
+9. Footer
+
+FEATURED ADMIN CONTROL
+The Featured section is prepared to be managed from Admin.
+Allowed featured item types:
+- city
+- subdivision
+- community
+
+The admin data model supports:
+- title
+- subtitle
+- description
+- image
+- link
+- publish/unpublish
+- sort order
+
+No builder spotlight and no rebate highlight are included in Featured.
+
+The rest of the old homepage sections were intentionally removed for now so the
+lower homepage flow can be decided after reviewing this version.
