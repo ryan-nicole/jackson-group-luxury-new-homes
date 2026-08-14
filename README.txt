@@ -153,3 +153,18 @@ BUILDER DIRECTORY CONDENSING UPDATE
   into builder selection faster.
 - Individual builder MLS/IDX pages, property-detail templates, rebate CTAs,
   builder form CTAs, seller CTAs, and admin-ready IDX mapping remain intact.
+
+
+LATEST BUILDER LANDING PAGE CONDENSING
+
+- Removed the old 1 / 2 / 3 / 4 step section.
+- Added the same simplified new-home rebate calculator concept used elsewhere.
+- Public visitor only enters the new-home price.
+- The hidden calculation reads Admin rebate settings using:
+  jg-admin-rebates
+- Added a stronger Open Rebate Center CTA.
+- Open Rebate Center leads to the full Rebate Center experience, where the
+  builder form, rebate details, registration and other buyer next steps can live.
+
+This keeps the Builder landing page focused:
+Hero → Builder Directory → Rebate Calculator → Rebate Center CTA → final CTA/footer.

@@ -126,7 +126,36 @@
         <b>Explore Pulte Homes →</b>
       </div>
     </a></div></div></section>
-<section class="section"><div class="wrap journey"><div><span>01</span><h3>Choose a Builder</h3><p>Learn where the builder is active.</p></div><div><span>02</span><h3>Explore Cities</h3><p>Move directly into the relevant city guides.</p></div><div><span>03</span><h3>Find Homes</h3><p>Future inventory feeds can surface available homes.</p></div><div><span>04</span><h3>Plan Your Rebate</h3><p>Connect before touring to discuss your options.</p></div></div></section>
+<section class="section builder-rebate-section" id="builder-rebate-estimator">
+  <div class="wrap builder-rebate-grid">
+    <div class="builder-rebate-copy">
+      <p class="eyebrow dark-eye">New Home Rebate</p>
+      <h2>See what your rebate could look like.</h2>
+      <p>Enter the price of the new home you’re considering. Your estimate uses the current Jackson Group rebate settings managed from Admin.</p>
+      <p class="rebate-small-copy">This is a planning estimate only. Actual rebate availability and amount depend on the final transaction, compensation, buyer agreement, lender requirements, builder policies, closing conditions, and applicable law.</p>
+    </div>
+
+    <aside class="builder-rebate-card" data-calculator>
+      <span class="builder-rebate-label">Rebate Estimator</span>
+      <h3>Estimate your potential rebate.</h3>
+
+      <label>New home price
+        <input data-price type="number" value="500000" min="0" inputmode="numeric">
+      </label>
+
+      <div class="builder-rebate-result">
+        <span>Estimated new home rebate</span>
+        <strong data-rebate-result>$7,500</strong>
+        <small data-rebate-note>Planning estimate based on current Jackson Group calculator settings.</small>
+      </div>
+
+      <a class="btn black builder-rebate-open" href="../rebates/index.html">
+        <span>Open Rebate Center</span>
+        <small>Builder form, rebate details, next steps & more →</small>
+      </a>
+    </aside>
+  </div>
+</section>
 <section class="cta"><div class="wrap split"><div><p class="eyebrow">Before You Tour</p><h2>Found a builder you like?</h2><p>Connect with Jackson Group before visiting a model home so we can help you project your options and get you the best offer and savings from the very beginning.</p></div><div class="cta-buttons"><a class="btn gold" href="../register/index.html">Register Before You Tour</a><a class="btn outline" href="../rebates/index.html">Rebate Center</a></div></div></section></main>
 <footer class="site-footer friendly-footer">
 <div class="container footer-top">
@@ -155,4 +184,5 @@
 <span>Jackson Group • Texas Real Estate</span>
 <span>Rebate eligibility, builder offerings, inventory, pricing and incentives vary by transaction and may change.</span>
 </div>
-</footer></body></html>
+</footer><script src="builder-guide.js"></script>
+</body></html>

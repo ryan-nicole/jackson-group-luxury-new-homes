@@ -221,3 +221,93 @@
   .all-builders-label{display:block}
   .all-builders-label p{margin-top:6px}
 }
+
+
+/* Builder landing-page rebate estimator */
+.builder-rebate-section{background:#fff}
+.builder-rebate-grid{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:60px;
+  align-items:center;
+}
+.builder-rebate-copy h2{
+  font:500 clamp(2.4rem,4vw,3.8rem)/1.04 Georgia,serif;
+  margin:9px 0 18px;
+}
+.builder-rebate-copy p{
+  color:var(--muted);
+  line-height:1.72;
+}
+.rebate-small-copy{font-size:.9rem}
+.builder-rebate-card{
+  border:1px solid var(--line);
+  border-radius:26px;
+  padding:28px;
+  background:var(--ivory);
+  box-shadow:0 18px 45px rgba(30,24,16,.06);
+}
+.builder-rebate-label{
+  color:#8d6c32;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  font-size:.7rem;
+  font-weight:800;
+}
+.builder-rebate-card h3{
+  font:500 1.65rem Georgia,serif;
+  margin:8px 0 18px;
+}
+.builder-rebate-card label{
+  display:grid;
+  gap:7px;
+  font-weight:800;
+}
+.builder-rebate-card input{
+  min-height:48px;
+  border:1px solid #cfc5b7;
+  border-radius:12px;
+  padding:12px 13px;
+  background:#fff;
+  font:inherit;
+}
+.builder-rebate-result{
+  margin:20px 0;
+  padding:22px;
+  border:1px solid #dbc8a8;
+  border-radius:19px;
+  background:#fff;
+}
+.builder-rebate-result span,
+.builder-rebate-result strong,
+.builder-rebate-result small{display:block}
+.builder-rebate-result>span{
+  color:#8d6c32;
+  font-size:.72rem;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+}
+.builder-rebate-result strong{
+  font:500 2.3rem Georgia,serif;
+  margin:5px 0;
+}
+.builder-rebate-result small{
+  color:var(--muted);
+  line-height:1.45;
+}
+.builder-rebate-open{
+  display:flex !important;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:3px;
+  border-radius:18px !important;
+  padding:15px 18px !important;
+  text-decoration:none;
+}
+.builder-rebate-open>span{font-weight:800}
+.builder-rebate-open>small{font-size:.72rem;opacity:.78}
+
+@media(max-width:850px){
+  .builder-rebate-grid{grid-template-columns:1fr}
+}
