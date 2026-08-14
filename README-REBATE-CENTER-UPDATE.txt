@@ -64,3 +64,15 @@ PHOTO FIX
 The actual hero image layer is .rebate-center-media. This version targets that
 layer directly, so assets/austin-rebate-center.jpg displays as the Rebate Center
 hero image.
+
+
+BUILDER FORM SECTION UPDATE
+
+- Added the Builder Form directly on the New Home Rebate Center page.
+- Placement:
+  Rebate Estimator → Builder Form → Your Next Step
+- Any "Fill Out Builder Form" / "Complete Your Builder Form" CTA on this page
+  now scrolls to the Builder Form section.
+- The primary button inside the Builder Form section still opens the actual
+  registration form.
+- Added smooth scrolling and mobile-responsive layout.
