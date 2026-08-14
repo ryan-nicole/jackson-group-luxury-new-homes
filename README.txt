@@ -131,3 +131,15 @@ Do not present the demo cards as real inventory.
 
 UPLOAD
 Replace your existing builders folder with this builders folder.
+
+
+PROPERTY DETAIL HEADER / FOOTER UPDATE
+
+All builder property-detail templates now use the SAME header and footer as the
+individual builder page they were opened from.
+
+This means:
+- consistent Jackson Group navigation
+- same Register Before You Tour treatment
+- same builder-page footer links
+- property pages feel like part of the same website rather than a separate page
