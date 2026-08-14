@@ -143,3 +143,13 @@ This means:
 - same Register Before You Tour treatment
 - same builder-page footer links
 - property pages feel like part of the same website rather than a separate page
+
+
+BUILDER DIRECTORY CONDENSING UPDATE
+
+- The main Builders landing-page hero/stock-photo section remains.
+- All content between that hero and the Builder Directory has been removed.
+- The Builder Directory now begins immediately after the main hero to get visitors
+  into builder selection faster.
+- Individual builder MLS/IDX pages, property-detail templates, rebate CTAs,
+  builder form CTAs, seller CTAs, and admin-ready IDX mapping remain intact.
