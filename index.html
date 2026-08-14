@@ -256,26 +256,252 @@
 }
 </style>
 
+
+<style>
+/* ===== Search-first homepage ===== */
+.search-first-hero{
+  min-height:720px !important;
+  display:flex;
+  align-items:center;
+  position:relative;
+}
+.search-first-hero-content{
+  position:relative;
+  z-index:3;
+  padding-top:80px;
+  padding-bottom:80px;
+}
+.search-first-hero h1{
+  color:#fff;
+  font:500 clamp(3.7rem,7vw,7rem)/.93 Georgia,serif;
+  max-width:780px;
+  margin:10px 0 18px;
+}
+.search-first-hero .hero-lead{
+  color:#eee8df;
+  max-width:680px;
+  font-size:1.08rem;
+  line-height:1.7;
+}
+.homepage-idx-shell{
+  margin-top:34px;
+  max-width:1050px;
+  background:rgba(255,255,255,.97);
+  border-radius:24px;
+  padding:22px;
+  box-shadow:0 24px 65px rgba(0,0,0,.22);
+  color:#171612;
+}
+.idx-shell-top{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  align-items:end;
+  margin-bottom:15px;
+}
+.idx-shell-top div{display:grid;gap:3px}
+.idx-kicker{
+  color:#8b682d;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  font-size:.68rem;
+  font-weight:800;
+}
+.idx-shell-top strong{font:500 1.35rem Georgia,serif}
+.idx-shell-top small{color:#81796d}
+.idx-search-row{
+  display:grid;
+  grid-template-columns:2fr repeat(3,.72fr) auto;
+  gap:10px;
+  align-items:end;
+}
+.idx-search-row label{
+  display:grid;
+  gap:6px;
+  color:#655e54;
+  font-size:.72rem;
+  font-weight:800;
+}
+.idx-search-row input,.idx-search-row select{
+  width:100%;
+  min-height:48px;
+  border:1px solid #d5ccbe;
+  border-radius:12px;
+  padding:11px 12px;
+  background:#fff;
+  font:inherit;
+}
+.idx-search-button{
+  min-height:48px;
+  display:flex !important;
+  align-items:center;
+  justify-content:center;
+  white-space:nowrap;
+}
+.idx-helper{
+  margin:11px 0 0;
+  color:#827a6e;
+  font-size:.72rem;
+}
+
+.search-your-way{background:#fff}
+.search-way-heading{
+  display:grid;
+  grid-template-columns:1fr .9fr;
+  gap:60px;
+  align-items:end;
+  margin-bottom:30px;
+}
+.search-way-heading h2{
+  font:500 clamp(2.4rem,4vw,4rem)/1.03 Georgia,serif;
+  margin:8px 0 0;
+}
+.search-way-heading>p{
+  color:var(--muted,#716b61);
+  line-height:1.7;
+}
+.search-way-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+}
+.search-way-card{
+  min-height:245px;
+  padding:25px;
+  border:1px solid var(--line,#ddd2c0);
+  border-radius:23px;
+  text-decoration:none;
+  color:var(--ink,#171612);
+  display:flex;
+  flex-direction:column;
+  background:#fbf8f2;
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.search-way-card:hover{transform:translateY(-3px);box-shadow:0 17px 38px rgba(28,22,15,.07)}
+.search-way-card span{
+  color:#9a7332;
+  font-size:.72rem;
+  font-weight:800;
+}
+.search-way-card h3{
+  font:500 1.45rem Georgia,serif;
+  margin:15px 0 8px;
+}
+.search-way-card p{
+  color:var(--muted,#716b61);
+  font-size:.9rem;
+  line-height:1.6;
+  flex:1;
+}
+.search-way-card b{color:#806126;font-size:.82rem}
+.dark-search-card{background:#1d1b18;color:#fff;border-color:#1d1b18}
+.dark-search-card p{color:#cfc6b9}
+.dark-search-card b,.dark-search-card span{color:#e2bd78}
+.search-way-footer{text-align:center;margin-top:28px}
+
+@media(max-width:1000px){
+  .idx-search-row{grid-template-columns:2fr 1fr 1fr}
+  .idx-search-row label:nth-of-type(4){grid-column:auto}
+  .idx-search-button{grid-column:span 2}
+  .search-way-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:760px){
+  .search-first-hero{min-height:auto !important}
+  .search-first-hero-content{padding-top:65px;padding-bottom:65px}
+  .idx-shell-top{align-items:start}
+  .idx-search-row{grid-template-columns:1fr 1fr}
+  .idx-search-row label:first-child{grid-column:1/-1}
+  .idx-search-button{grid-column:1/-1}
+  .search-way-heading{grid-template-columns:1fr;gap:14px}
+}
+@media(max-width:560px){
+  .search-first-hero h1{font-size:3.45rem}
+  .homepage-idx-shell{padding:17px;border-radius:19px}
+  .idx-shell-top small{display:none}
+  .idx-search-row{grid-template-columns:1fr}
+  .idx-search-row label:first-child,.idx-search-button{grid-column:auto}
+  .search-way-grid{grid-template-columns:1fr}
+}
+</style>
+
 </head><body>
 <header class="site-header"><div class="container nav"><a class="brand" href="index.html"><img src="assets/jackson-group-logo.jpg" alt="Jackson Group logo"><span class="brand-copy"><strong>Jackson Group</strong><small>Luxury New Construction • New Home Rebates</small></span></a><nav class="desktop-nav">
         <a href="homes/index.html">Search Homes</a><a href="communities/index.html">Explore Communities</a><a href="builders/index.html">Builders</a><a href="rebates/index.html">New Home Rebates</a><a href="how-it-works/index.html">How It Works</a><a href="faq/index.html">FAQ</a></nav><a class="button gold small" href="register/index.html">Register Before You Tour</a></div></header>
 <main>
-<section class="hero"><div class="hero-media"></div><div class="hero-overlay"></div><div class="container hero-grid"><div class="hero-copy"><div class="eyebrow light">Luxury New Construction • Texas</div><h1>Luxury New Homes Across Texas</h1><p class="hero-kicker">Professional Buyer Representation <span>•</span> Beautiful Communities <span>•</span> New Home Rebates</p><p class="hero-text">Discover exceptional new construction homes and communities while working with a buyer representative focused on strategy, service, and helping you maximize your rebate.</p><div class="hero-actions"><a class="button gold" href="communities/index.html">Explore Communities</a><a class="button outline-light" href="#rebate-estimator">Estimate My Rebate</a></div><p class="hero-note">Connect before your first builder tour so we can help protect your options from the very beginning.</p></div>
-<aside class="estimator simplified-estimator" id="rebate-estimator" data-calculator>
-<div class="eyebrow">New Home Rebate Estimator</div>
-<h2>See what your rebate could look like.</h2>
-<p class="estimator-intro">Enter the price of the new home you’re considering. Your estimate uses the current Jackson Group rebate settings managed from the admin dashboard.</p>
-<label>New home price
-<input data-price type="number" value="500000" min="0" inputmode="numeric">
-</label>
-<div class="estimate-result premium-result">
-<span>Estimated new home rebate</span>
-<strong data-rebate-result>$7,500</strong>
-<small data-rebate-note>Planning estimate based on current Jackson Group calculator settings.</small>
-</div>
-<a class="button black full" href="register/index.html">Register Before You Tour</a>
-<p class="fine-print">Illustrative estimate only. Actual rebate availability and amount depend on the final transaction, compensation, buyer agreement, lender requirements, builder policies, closing conditions, and applicable law.</p>
-</aside></div></section>
+<section class="hero search-first-hero">
+  <div class="hero-media"></div>
+  <div class="hero-overlay"></div>
+  <div class="container search-first-hero-content">
+    <div class="eyebrow light">Jackson Group • Texas Real Estate</div>
+    <h1>Find Your Next Home.</h1>
+    <p class="hero-lead">Search homes, explore neighborhoods, compare builders, and discover new construction—all from one place.</p>
+
+    <div class="homepage-idx-shell" data-admin-content="mls-idx">
+      <div class="idx-shell-top">
+        <div>
+          <span class="idx-kicker">Home Search</span>
+          <strong>Search available homes</strong>
+        </div>
+        <small>MLS / IDX ready</small>
+      </div>
+      <div class="idx-search-row" id="homepageIdxMount" data-idx-mount>
+        <label>Location
+          <input type="text" placeholder="City, ZIP, neighborhood or community">
+        </label>
+        <label>Price
+          <select><option>Any Price</option><option>$300k+</option><option>$400k+</option><option>$500k+</option><option>$750k+</option><option>$1M+</option></select>
+        </label>
+        <label>Beds
+          <select><option>Any</option><option>2+</option><option>3+</option><option>4+</option><option>5+</option></select>
+        </label>
+        <label>Baths
+          <select><option>Any</option><option>2+</option><option>3+</option><option>4+</option></select>
+        </label>
+        <a class="button gold idx-search-button" href="homes/index.html">Search Homes</a>
+      </div>
+      <p class="idx-helper">Your live MLS/IDX search will connect here when the approved IDX provider is added in Admin.</p>
+    </div>
+  </div>
+</section>
+
+<section class="search-your-way section">
+  <div class="container">
+    <div class="search-way-heading">
+      <div>
+        <div class="eyebrow">Search Your Way</div>
+        <h2>There’s more than one way to find the right home.</h2>
+      </div>
+      <p>Start with what you already know—or explore a different path. Jackson Group makes it easy to move between homes, places, communities and builders.</p>
+    </div>
+
+    <div class="search-way-grid">
+      <a class="search-way-card" href="communities/index.html">
+        <span>01</span><h3>Search by City</h3>
+        <p>Choose the area first, then explore homes, communities and builders.</p>
+        <b>Explore Cities →</b>
+      </a>
+      <a class="search-way-card" href="homes/index.html#neighborhoods">
+        <span>02</span><h3>Search by Neighborhood</h3>
+        <p>Already know a neighborhood or community name? Start your search there.</p>
+        <b>Explore Neighborhoods →</b>
+      </a>
+      <a class="search-way-card" href="builders/index.html">
+        <span>03</span><h3>Search by Builder</h3>
+        <p>Compare builders and move directly into the communities and homes that interest you.</p>
+        <b>Explore Builders →</b>
+      </a>
+      <a class="search-way-card dark-search-card" href="communities/index.html">
+        <span>04</span><h3>Explore New Construction</h3>
+        <p>Discover new-home communities, builder opportunities and the next steps before touring.</p>
+        <b>Explore New Homes →</b>
+      </a>
+    </div>
+
+    <div class="search-way-footer">
+      <a class="button black" href="homes/index.html">Open Full Home Search</a>
+    </div>
+  </div>
+</section>
 <section class="before-tour"><div class="container before-tour-grid"><div><div class="eyebrow">Before You Tour</div><h2>Before you step inside a model home, start with a strategy.</h2></div><div class="before-tour-copy"><p class="statement">Connect with Jackson Group before touring a model home so we can help protect your options, negotiate the strongest offer possible, and maximize your rebate from the very beginning.</p><div class="benefit-grid"><div class="benefit">Professional Buyer Representation</div><div class="benefit">Builder & Community Expertise</div><div class="benefit">Offer Strategy & Negotiation</div><div class="benefit">New Home Rebates</div></div><a class="button black" href="register/index.html">Register Before You Tour</a></div></div></section>
 <section class="journey section"><div class="container"><div class="section-heading centered"><div class="eyebrow">Start Your New Home Journey</div><h2>What can we help you with?</h2><p>Select as many as apply. We’ll use your choices to guide you toward the most relevant parts of the site.</p></div><div class="journey-grid" role="group" aria-label="Choose one or more goals"><label class="journey-choice"><input type="checkbox" value="first-home"><span><b>I’m Buying My First Home</b><small>Start with a clear, guided path.</small></span></label><label class="journey-choice"><input type="checkbox" value="new-construction"><span><b>I’m Buying New Construction</b><small>Explore builders and communities.</small></span></label><label class="journey-choice"><input type="checkbox" value="sell-current"><span><b>I Need to Sell My Current Home</b><small>Plan the transition from selling to buying.</small></span></label><label class="journey-choice"><input type="checkbox" value="rebates"><span><b>I Want to Learn About Rebates</b><small>Understand how the rebate process works.</small></span></label></div><div class="journey-actions"><button class="button gold" type="button" id="journeyContinue">Continue</button><p id="journeyMessage" aria-live="polite"></p></div></div></section>
 <section class="featured section"><div class="container"><div class="section-heading split-heading"><div><div class="eyebrow">Featured This Month</div><h2>Fresh places to explore.</h2></div><p>This section can change whenever a new community, builder, or opportunity deserves the spotlight.</p></div><div class="featured-grid"><article class="feature-card large"><div class="feature-image image-one"></div><div class="feature-content"><span class="mini-label">Community Spotlight</span><h3>Georgetown</h3><p>Explore elegant new-home communities, builders, and rebate opportunities in one of the region’s most desirable growth areas.</p><a href="communities/georgetown/index.html">Explore Georgetown →</a></div></article><article class="feature-card builder-spotlight-no-photo"><div class="feature-content"><span class="mini-label">Builder Spotlight</span><h3>Highland Homes</h3><p>Discover where they build and explore city-specific opportunities.</p><a href="builders/highland-homes/index.html">View Builder →</a></div></article><article class="feature-card"><div class="feature-image image-three"></div><div class="feature-content"><span class="mini-label">Rebate Highlight</span><h3>Know Your Rebate Before You Tour</h3><p>Use the estimator and connect early so your options stay open.</p><a href="rebates/index.html">Learn About Rebates →</a></div></article></div></div></section>

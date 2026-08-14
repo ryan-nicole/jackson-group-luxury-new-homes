@@ -1,0 +1,10 @@
+{
+  "homepageHomeSearch": {
+    "mlsIdx": {
+      "adminManaged": true,
+      "futureAdminSection": "MLS / IDX",
+      "mountId": "homepageIdxMount",
+      "fields": ["provider", "widgetIdOrEmbed", "enabled", "searchUrl"]
+    }
+  }
+}

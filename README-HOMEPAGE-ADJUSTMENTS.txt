@@ -67,3 +67,24 @@ Also keep/upload:
 - assets/austin-homepage-hero.jpg
 
 Do not delete your other website files/folders.
+
+
+LATEST HOMEPAGE DIRECTION — SEARCH FIRST
+
+The homepage now begins with:
+1. FIND YOUR NEXT HOME
+2. MLS / IDX-ready home search
+3. SEARCH YOUR WAY:
+   - Search by City
+   - Search by Neighborhood
+   - Search by Builder
+   - Explore New Construction
+
+Per request, the hero does NOT say "in Central Texas" and does NOT immediately
+list cities.
+
+The existing lower homepage sections remain in place for now so the rest of the
+homepage flow can be decided after reviewing this new top portion.
+
+The MLS/IDX box is a design-ready placeholder until the approved IDX provider
+and secure backend/admin connection are added.
