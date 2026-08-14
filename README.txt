@@ -1,170 +1,62 @@
-JACKSON GROUP — BUILDER GUIDE SPRINT
+JACKSON GROUP — COMMUNITY GUIDE
 
-Upload the entire builders folder to the same GitHub repository.
-
-Includes:
-- Main /builders/ Builder Guide
-- Highland Homes
-- Perry Homes
-- Chesmar Homes
-- KB Home
-- D.R. Horton
-- Brohn Homes
-- Taylor Morrison
-- Toll Brothers
-- Meritage Homes
-
-Each builder page:
-- Builder overview
-- Jackson Group city links
-- Future available-home feed area
-- Rebate Center CTA
-- Register Before You Tour CTA
-- 30+ years messaging
+This is the main /communities/ landing page.
 
 IMPORTANT:
-This is the public builder-page layer. The future backend/admin system will
-manage source URLs, freshness, discovered communities and inventory. Internal
-last-verified information is not displayed publicly.
+If you already have a communities/index.html file, this package is intended
+to REPLACE that landing page — it does NOT replace any individual city folders.
 
-Builder names are used for informational/navigation purposes. This package
-does not copy builder logos or imply affiliation/endorsement.
+Upload:
+communities/index.html
+communities/community-guide.css
 
+Keep all existing folders:
+communities/georgetown/
+communities/round-rock/
+communities/hutto/
+communities/liberty-hill/
+communities/leander/
+communities/taylor/
+communities/cedar-park/
+communities/weir/
 
-UPDATE — NO BUILDER LOGOS
-- No builder logos are included in this package.
-- Highland Homes remains listed as a builder by NAME only.
-- Any Highland Homes logo/image treatment contained in these Builder Guide files
-  has been removed.
-- Builder names and informational descriptions remain.
+The guide links directly to all eight city pages.
 
+SEO strategy:
+The page acts as a central hub for Texas community/city searches while each
+individual city page targets its own local search terms.
 
-LATEST BUILDER GUIDE CHANGES
-
-- Header now matches Search Homes / Homepage style.
-- Footer now matches Search Homes / Homepage style.
-- Removed numeric "9 Builder Guides" and "8 City Guides" messaging.
-- Replaced with evergreen benefits:
-  Explore Builders / Find Communities / Compare New Homes / Plan Before You Tour.
-- Removed city/area text from under builder cards.
-- Featured New Home Builders now lists ALL current Jackson Group builders directly.
-- No View All Builders button.
-- Added pages for:
-  Coventry Homes
-  David Weekley Homes
-  Pulte Homes
-
-Current builder list:
-Highland Homes
-Perry Homes
-Chesmar Homes
-KB Home
-D.R. Horton
-Brohn Homes
-Taylor Morrison
-Toll Brothers
-Meritage Homes
-Coventry Homes
-David Weekley Homes
-Pulte Homes
+Included:
+- Luxury Community Guide hero
+- 30+ years trust strip
+- 8 city cards
+- City → builder → home → rebate journey
+- Rebate Center CTA
+- Seller CTA
+- Before-you-tour style final CTA
+- Responsive design
 
 
-ADDED BUILDERS
-- Ashton Woods
-- CastleRock Communities
-- Pacesetter Homes
-- Starlight Homes
+COMMUNITY GUIDE CONDENSING UPDATE
 
-Each has also been given an individual builder-page starter so the links work.
-
-
-ADDITIONAL BUILDERS ADDED
-- DRB Homes
-- Tri Pointe Homes
-- Saratoga Homes
-
-
-BUILDER GUIDE VISUAL POLISH
-
-- Reworked the old Find Your Builder area into a cleaner editorial section:
-  Browse Builders / Start With a City / Search Homes / Plan Before You Tour
-- Added a curated spotlight row for a few builders so the page does not feel
-  like one giant list from the start.
-- Redesigned the full builder directory into smaller, cleaner name-forward cards.
-- The complete builder list is still present, but it is visually secondary and
-  easier to scan.
-
-
-BUILDER PAGE IDX REDESIGN
-
-Every individual builder page has been redesigned around:
-
-1. Builder-specific MLS/IDX search
-2. Homes shown directly on the builder page
-3. Listing cards with:
-   - photo
-   - price
-   - beds / baths
-   - square footage
-   - community
-   - status
-4. Pagination / multiple listing pages
-5. Click-through property detail template
-6. Bottom conversion sections:
-   - New Home Rebate
-   - Builder Form / Register Before You Tour
-   - Need to Sell First?
-
-ADMIN READY
-builders/builder-idx-admin-map.json prepares:
-- builder-to-MLS alias mapping
-- enabled/disabled builder filters
-- page size
-- default sort
-- property detail fields
-
-IMPORTANT
-The listing cards currently use DEMO data to show the intended design.
-Real live listings, pagination, photos, addresses, MLS attribution, maps and
-property details require the approved MLS/IDX provider and backend connection.
-Do not present the demo cards as real inventory.
+- Header now matches Search Homes / latest shared site header.
+- Footer now matches Search Homes / latest friendly footer.
+- Removed the extra section between the stock-photo hero and the city directory.
+- Community Guide now starts:
+  Hero → Explore Cities
+- Removed photos from every city card.
+- The Community Guide now lists all current city pages directly:
+  Georgetown
+  Round Rock
+  Hutto
+  Liberty Hill
+  Leander
+  Taylor
+  Cedar Park
+  Weir
+- Removed the lower extra Community Guide sections for now to keep this landing page
+  concise and focused, similar to the condensed Builders page.
 
 UPLOAD
-Replace your existing builders folder with this builders folder.
-
-
-PROPERTY DETAIL HEADER / FOOTER UPDATE
-
-All builder property-detail templates now use the SAME header and footer as the
-individual builder page they were opened from.
-
-This means:
-- consistent Jackson Group navigation
-- same Register Before You Tour treatment
-- same builder-page footer links
-- property pages feel like part of the same website rather than a separate page
-
-
-BUILDER DIRECTORY CONDENSING UPDATE
-
-- The main Builders landing-page hero/stock-photo section remains.
-- All content between that hero and the Builder Directory has been removed.
-- The Builder Directory now begins immediately after the main hero to get visitors
-  into builder selection faster.
-- Individual builder MLS/IDX pages, property-detail templates, rebate CTAs,
-  builder form CTAs, seller CTAs, and admin-ready IDX mapping remain intact.
-
-
-LATEST BUILDER LANDING PAGE CONDENSING
-
-- Removed the old 1 / 2 / 3 / 4 step section.
-- Added the same simplified new-home rebate calculator concept used elsewhere.
-- Public visitor only enters the new-home price.
-- The hidden calculation reads Admin rebate settings using:
-  jg-admin-rebates
-- Added a stronger Open Rebate Center CTA.
-- Open Rebate Center leads to the full Rebate Center experience, where the
-  builder form, rebate details, registration and other buyer next steps can live.
-
-This keeps the Builder landing page focused:
-Hero → Builder Directory → Rebate Calculator → Rebate Center CTA → final CTA/footer.
+Replace your current communities/index.html and communities/community-guide.css
+with these files. Keep all individual city folders.
