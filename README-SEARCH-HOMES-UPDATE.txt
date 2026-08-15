@@ -94,3 +94,8 @@ section.
 
 UPLOAD
 Replace your current homes folder with this homes folder.
+
+LATEST FILTER UPDATE
+- Top three search choices are now: By City | By Builder | By County.
+- Subdivision remains its own dedicated section farther down the same page.
+- County is prepared for MLS/IDX filtering and Admin management.

@@ -15,6 +15,11 @@
         "adminManaged": true,
         "automaticFromIdx": true,
         "manualOverride": true
+      },
+      "counties": {
+        "adminManaged": true,
+        "automaticFromIdx": true,
+        "manualOverride": true
       }
     },
     "results": {
@@ -23,6 +28,7 @@
     "modes": [
       "city",
       "builder",
+      "county",
       "subdivision",
       "resale"
     ]
