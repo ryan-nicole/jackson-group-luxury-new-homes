@@ -1,27 +1,4 @@
-document.querySelectorAll('.tab').forEach(tab=>{
-  tab.addEventListener('click',()=>{
-    document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
-    document.querySelectorAll('.search-panel').forEach(p=>p.classList.remove('active'));
-    tab.classList.add('active');
-    document.getElementById('tab-'+tab.dataset.tab).classList.add('active');
-  });
-});
-
-document.getElementById('cityGo').addEventListener('click',()=>{
-  const city=document.getElementById('citySelect').value;
-  if(city) window.location.href='../communities/'+city+'/index.html';
-});
-
-document.getElementById('builderGo').addEventListener('click',()=>{
-  const builder=document.getElementById('builderSelect').value;
-  if(builder) window.location.href='../builders/'+builder+'/index.html';
-});
-
-document.querySelectorAll('[data-goal]').forEach(btn=>{
-  btn.addEventListener('click',()=>window.location.href=btn.dataset.goal);
-});
-
-document.getElementById('neighborhoodGo')?.addEventListener('click',()=>{
-  const url=document.getElementById('neighborhoodSelect')?.value;
-  if(url) window.location.href=url;
-});
+document.querySelectorAll('.tab').forEach(tab=>{tab.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));document.querySelectorAll('.search-panel').forEach(p=>p.classList.remove('active'));tab.classList.add('active');document.getElementById('tab-'+tab.dataset.tab)?.classList.add('active')})});
+function updateResults(target,type,value){if(!target||!value)return;target.innerHTML=`<span>MLS / IDX Results</span><strong>${type}: ${value}</strong><small>Real matching homes will load here on this same page when IDX is connected.</small>`;target.scrollIntoView({behavior:'smooth',block:'start'})}
+document.querySelectorAll('.idx-filter-button').forEach(btn=>btn.addEventListener('click',()=>{const type=btn.dataset.filterType;const id=type==='city'?'citySelect':type==='builder'?'builderSelect':'subdivisionSelect';updateResults(document.getElementById('primarySearchResults'),type,document.getElementById(id)?.value)}));
+document.getElementById('subdivisionGo')?.addEventListener('click',()=>updateResults(document.getElementById('subdivisionResults'),'subdivision',document.getElementById('subdivisionBrowseSelect')?.value));

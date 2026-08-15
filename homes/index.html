@@ -22,7 +22,7 @@
 <div class="wrap trust-grid">
 <div><strong>Search by City</strong><span>Explore the Texas areas you’re considering.</span></div>
 <div><strong>Search by Builder</strong><span>Find builders and the communities where they build.</span></div>
-<div><strong>Search by Neighborhood</strong><span>Go directly to a community or neighborhood you already know.</span></div>
+<div><strong>Search by Subdivision</strong><span>Go directly to a community or subdivision you already know.</span></div>
 <div><strong>New Home Rebates</strong><span>Plan your options before your first builder tour.</span></div>
 </div>
 </section>
@@ -30,163 +30,44 @@
 <section class="section" id="search-tool"><div class="wrap">
 <div class="heading"><p class="eyebrow">Search Homes</p><h2>Choose how you want to explore.</h2><p>This front-end search routes you into the strongest page we already have. When live inventory is connected later, these same filters can show actual matching homes.</p></div>
 
-<div class="search-shell">
+<div class="search-shell idx-filter-shell">
 <div class="search-tabs">
 <button class="tab active" data-tab="city">By City</button>
 <button class="tab" data-tab="builder">By Builder</button>
-<button class="tab" data-tab="goal">By Goal</button>
+<button class="tab" data-tab="subdivision">By Subdivision</button>
 </div>
-
-<div class="search-panel active" id="tab-city">
-<label>Choose a city
-<select id="citySelect">
-<option value="">Select a city</option>
-<option value="georgetown">Georgetown</option>
-<option value="round-rock">Round Rock</option>
-<option value="hutto">Hutto</option>
-<option value="liberty-hill">Liberty Hill</option>
-<option value="leander">Leander</option>
-<option value="taylor">Taylor</option>
-<option value="cedar-park">Cedar Park</option>
-<option value="weir">Weir</option>
-</select></label>
-<button class="btn black full" id="cityGo">Explore City</button>
-</div>
-
-<div class="search-panel" id="tab-builder">
-<label>Choose a builder
-<select id="builderSelect">
-<option value="">Select a builder</option>
-<option value="highland-homes">Highland Homes</option>
-<option value="perry-homes">Perry Homes</option>
-<option value="chesmar-homes">Chesmar Homes</option>
-<option value="kb-home">KB Home</option>
-<option value="dr-horton">D.R. Horton</option>
-<option value="brohn-homes">Brohn Homes</option>
-<option value="taylor-morrison">Taylor Morrison</option>
-<option value="toll-brothers">Toll Brothers</option>
-<option value="meritage-homes">Meritage Homes</option>
-</select></label>
-<button class="btn black full" id="builderGo">Explore Builder</button>
-</div>
-
-<div class="search-panel" id="tab-goal">
-<div class="goal-grid">
-<button data-goal="../communities/index.html"><b>I’m not sure where yet</b><span>Start with the Community Guide</span></button>
-<button data-goal="../rebates/index.html"><b>I want a new home rebate</b><span>Open the Rebate Center</span></button>
-<button data-goal="../sell/index.html"><b>I need to sell first</b><span>Plan the buy + sell move</span></button>
-<button data-goal="../register/index.html"><b>I already know my builder</b><span>Register before you tour</span></button>
-</div>
-</div>
-</div>
-</div></section>
-
-<section class="section ivory"><div class="wrap">
-<div class="heading"><p class="eyebrow">Popular Starting Points</p><h2>Explore by city.</h2></div>
-<div class="city-grid">
-<a href="../communities/georgetown/index.html"><span>01</span><h3>Georgetown</h3><p>Master-planned communities and extensive new-home choices.</p><b>Explore →</b></a>
-<a href="../communities/round-rock/index.html"><span>02</span><h3>Round Rock</h3><p>Broad home search plus established and new-construction opportunities.</p><b>Explore →</b></a>
-<a href="../communities/hutto/index.html"><span>03</span><h3>Hutto</h3><p>Growing communities and expanding new-home inventory.</p><b>Explore →</b></a>
-<a href="../communities/liberty-hill/index.html"><span>04</span><h3>Liberty Hill</h3><p>Strong master-planned and new-construction market.</p><b>Explore →</b></a>
-</div>
-</div>
-<div class="center-action more-cities-action">
-<a class="btn black" href="../communities/index.html">View More Cities</a>
-</div>
-</section>
-
-
-<section class="section neighborhood-search-section" data-admin-content="neighborhoods">
-<div class="wrap">
-  <div class="heading">
-    <p class="eyebrow">Search by Neighborhood</p>
-    <h2>Know the neighborhood or community you want?</h2>
-    <p>
-      Search popular new-home communities and neighborhood names directly. As Jackson Group adds more neighborhood guides,
-      each one can become its own search-friendly page for people looking for homes in a specific community.
-    </p>
-  </div>
-
-  <div class="neighborhood-search-box">
-    <label for="neighborhoodSelect">Choose a neighborhood or community
-      <select id="neighborhoodSelect">
-        <option value="">Select a neighborhood</option>
-        <option value="../communities/georgetown/index.html">Wolf Ranch — Georgetown</option>
-        <option value="../communities/liberty-hill/index.html">Santa Rita Ranch — Liberty Hill / Georgetown area</option>
-        <option value="../communities/leander/index.html">Palmera Ridge — Leander</option>
-        <option value="../communities/round-rock/index.html">Salerno — Round Rock</option>
-        <option value="../communities/round-rock/index.html">Sauls Ranch — Round Rock</option>
-        <option value="../communities/hutto/index.html">Flora — Hutto</option>
-        <option value="../communities/weir/index.html">Travena — Weir / Georgetown area</option>
-        <option value="../communities/georgetown/index.html">East View Farms — Georgetown</option>
-        <option value="../communities/georgetown/index.html">Parkside on the River — Georgetown</option>
-        <option value="../communities/georgetown/index.html">Rancho Sienna / Rancho by the San Gabriel — Georgetown area</option>
-      </select>
-    </label>
-    <button class="btn black full" id="neighborhoodGo">Explore Neighborhood</button>
-  </div>
-
-  <div class="neighborhood-grid" id="neighborhoodGrid" data-admin-list="neighborhoods">
-    <a href="../communities/georgetown/index.html"><span>Georgetown</span><h3>Wolf Ranch</h3><p>Explore homes, builders and new-construction opportunities in one of Georgetown’s best-known master-planned communities.</p><b>Explore →</b></a>
-    <a href="../communities/liberty-hill/index.html"><span>Liberty Hill Area</span><h3>Santa Rita Ranch</h3><p>Explore builders, amenities and new-home opportunities across this major master-planned community.</p><b>Explore →</b></a>
-    <a href="../communities/leander/index.html"><span>Leander</span><h3>Palmera Ridge</h3><p>Explore new homes and builder opportunities in this growing Leander community.</p><b>Explore →</b></a>
-    <a href="../communities/hutto/index.html"><span>Hutto</span><h3>Flora</h3><p>Explore new construction and builder opportunities in one of Hutto’s growing communities.</p><b>Explore →</b></a>
-    <a href="../communities/georgetown/index.html"><span>Georgetown Area</span><h3>East View Farms</h3><p>Explore homes, builders and new-construction opportunities around East View Farms and the greater Georgetown area.</p><b>Explore →</b></a>
-    <a href="../communities/georgetown/index.html"><span>Georgetown</span><h3>Parkside on the River</h3><p>Explore new homes, builders and community opportunities in Parkside on the River near Georgetown.</p><b>Explore →</b></a>
-    <a href="../communities/georgetown/index.html"><span>Georgetown Area</span><h3>Rancho by the San Gabriel</h3><p>Explore homes, builders and new-construction opportunities near the San Gabriel River and greater Georgetown area.</p><b>Explore →</b></a>
-  </div>
-
-  <div class="center-action neighborhood-more">
-    <a class="btn border-dark" href="../communities/index.html">Browse All Communities</a>
-  </div>
-</div>
-</section>
-
-<section class="section"><div class="wrap">
-<div class="heading"><p class="eyebrow">Search by Builder</p><h2>Already have a builder in mind?</h2><p>Move directly into the Builder Guide, then jump into the city pages where that builder is active.</p></div>
-<div class="builder-grid">
-<a href="../builders/highland-homes/index.html"><h3>Highland Homes</h3><span>Explore Builder →</span></a>
-<a href="../builders/perry-homes/index.html"><h3>Perry Homes</h3><span>Explore Builder →</span></a>
-<a href="../builders/dr-horton/index.html"><h3>D.R. Horton</h3><span>Explore Builder →</span></a>
-<a href="../builders/meritage-homes/index.html"><h3>Meritage Homes</h3><span>Explore Builder →</span></a>
-<a href="../builders/index.html" class="view-all"><h3>View All Builders</h3><span>Open Builder Guide →</span></a>
+<div class="search-panel active" id="tab-city"><label>Choose a city<select id="citySelect" data-admin-filter="cities"><option value="">Select a city</option><option>Georgetown</option><option>Round Rock</option><option>Hutto</option><option>Liberty Hill</option><option>Leander</option><option>Taylor</option><option>Cedar Park</option><option>Weir</option></select></label><button class="btn black full idx-filter-button" data-filter-type="city">Show Homes</button></div>
+<div class="search-panel" id="tab-builder"><label>Choose a builder<select id="builderSelect" data-admin-filter="builders"><option value="">Select a builder</option><option>Highland Homes</option><option>Perry Homes</option><option>Chesmar Homes</option><option>KB Home</option><option>D.R. Horton</option><option>Brohn Homes</option><option>Taylor Morrison</option><option>Toll Brothers</option><option>Meritage Homes</option><option>Coventry Homes</option><option>David Weekley Homes</option><option>Pulte Homes</option><option>Ashton Woods</option><option>CastleRock Communities</option><option>Pacesetter Homes</option><option>Starlight Homes</option><option>DRB Homes</option><option>Tri Pointe Homes</option><option>Saratoga Homes</option></select></label><button class="btn black full idx-filter-button" data-filter-type="builder">Show Homes</button></div>
+<div class="search-panel" id="tab-subdivision"><label>Choose a subdivision<select id="subdivisionSelect" data-admin-filter="subdivisions"><option value="">Select a subdivision</option><option>Wolf Ranch</option><option>Santa Rita Ranch</option><option>Parkside on the River</option><option>East View Farms</option><option>Rancho by the San Gabriel</option><option>Palmera Ridge</option><option>Salerno</option><option>Sauls Ranch</option><option>Flora</option><option>Travena</option></select></label><button class="btn black full idx-filter-button" data-filter-type="subdivision">Show Homes</button></div>
+<div class="inline-results" id="primarySearchResults"><span>MLS / IDX Results</span><strong>Matching homes will appear here.</strong><small>Choose a city, builder, or subdivision above.</small></div>
 </div>
 </div></section>
 
 
 
-<section class="section idx-ready-section" data-admin-content="mls-idx">
-<div class="wrap">
-<div class="idx-ready-card">
-<div>
-<p class="eyebrow">MLS Home Search</p>
-<h2>Search available homes.</h2>
-<p>When your MLS/IDX connection is added in the admin, this area can become the live home-search experience for visitors—without rebuilding the page.</p>
-</div>
-<div class="idx-placeholder" id="idxSearchMount" data-idx-mount>
-<span>MLS / IDX</span>
-<strong>Live Search Connection</strong>
-<small>Managed from Admin → MLS / IDX</small>
-</div>
-</div>
-</div>
-</section>
 
-<section class="inventory-preview"><div class="wrap split">
-<div><p class="eyebrow light">Coming With Live Inventory</p><h2>Search actual available homes.</h2><p>Once the backend inventory system is connected, this page can filter real homes by city, builder, community, price, move-in status and other criteria without changing the public design.</p></div>
-<div class="future-filter">
-<span>Future Filters</span>
-<b>City</b><b>Builder</b><b>Community</b><b>Price</b><b>Move-In Status</b><b>Home Type</b>
-</div>
+<section class="section subdivision-search-section" id="subdivisions" data-admin-content="subdivisions">
+<div class="wrap"><div class="heading"><p class="eyebrow">Search by Subdivision</p><h2>Know the subdivision you want?</h2><p>Select a subdivision to filter homes below. Subdivisions can be added, edited, reordered, or published from Admin later.</p></div>
+<div class="subdivision-search-box"><label>Choose a subdivision<select id="subdivisionBrowseSelect"><option value="">Select a subdivision</option><option>Wolf Ranch</option><option>Santa Rita Ranch</option><option>Parkside on the River</option><option>East View Farms</option><option>Rancho by the San Gabriel</option><option>Palmera Ridge</option><option>Salerno</option><option>Sauls Ranch</option><option>Flora</option><option>Travena</option></select></label><button class="btn black full" id="subdivisionGo">Explore Subdivision</button></div>
+<div class="subdivision-grid"><article><span>Georgetown</span><h3>Wolf Ranch</h3></article><article><span>Liberty Hill Area</span><h3>Santa Rita Ranch</h3></article><article><span>Georgetown Area</span><h3>Parkside on the River</h3></article><article><span>Georgetown Area</span><h3>East View Farms</h3></article><article><span>Georgetown Area</span><h3>Rancho by the San Gabriel</h3></article><article><span>Leander</span><h3>Palmera Ridge</h3></article><article><span>Round Rock</span><h3>Salerno</h3></article><article><span>Round Rock</span><h3>Sauls Ranch</h3></article><article><span>Hutto</span><h3>Flora</h3></article><article><span>Weir / Georgetown</span><h3>Travena</h3></article></div>
+<div class="inline-results" id="subdivisionResults"><span>MLS / IDX Results</span><strong>Subdivision homes will appear here.</strong><small>Select a subdivision above.</small></div>
 </div></section>
+
+
+
+
+
+
+
+
+
 
 
 
 <section class="before"><div class="wrap split">
 <div><p class="eyebrow light">Before You Tour</p><h2>Found a home or builder you like?</h2><p>Connect with Jackson Group before your first builder visit so we can help you understand your options and discuss potential rebate opportunities from the beginning.</p></div>
 <div class="cta-actions"><a class="btn gold" href="../register/index.html">Register Before You Tour</a><a class="btn outline" href="../rebates/index.html">Estimate My Rebate</a></div>
-</div></section>
-</main>
+</div></section><section class="section ivory resale-search-section"><div class="wrap split"><div><p class="eyebrow">Pre-Existing Homes</p><h2>Search resale homes too.</h2><p>Use MLS/IDX to browse pre-existing homes while keeping new construction and rebate opportunities available elsewhere on the site.</p></div><div class="resale-idx-box"><span>MLS / IDX</span><strong>Pre-Existing Home Search</strong><small>Live resale listings will appear here when IDX is connected.</small><a class="btn black" href="#search-tool">Search Resale Homes</a></div></div></section></main>
 
 <footer class="site-footer friendly-footer">
 <div class="container footer-top">
