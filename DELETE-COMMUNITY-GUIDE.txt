@@ -1,0 +1,34 @@
+JACKSON GROUP — REMOVE EXPLORE COMMUNITIES / COMMUNITY GUIDE
+
+WHAT THIS PACKAGE DOES
+- Removes the generic "Explore Communities" / "Communities" / "Community Guide"
+  navigation item from the public pages included in this cleanup package.
+- General home-search links now point to Search Homes instead.
+- Individual city pages remain intact for SEO and future city-specific MLS/IDX searches.
+
+AFTER UPLOADING THIS PACKAGE TO YOUR REPOSITORY, DELETE THESE TWO OLD FILES:
+1. communities/index.html
+2. communities/community-guide.css
+
+DO NOT DELETE THE communities FOLDER.
+KEEP ALL INDIVIDUAL CITY FOLDERS, INCLUDING:
+- communities/georgetown/
+- communities/round-rock/
+- communities/hutto/
+- communities/liberty-hill/
+- communities/leander/
+- communities/taylor/
+- communities/cedar-park/
+- communities/weir/
+
+NEW MAIN NAVIGATION DIRECTION
+Search Homes | Builders | New Home Rebates | How It Works | FAQ
+Register Before You Tour remains the main CTA where used.
+
+LAPTOP CLEANUP
+You can delete your old jackson-group-community-guide.zip because the standalone
+Community Guide landing page is no longer part of the site.
+
+Keep your other current master ZIP files. This package is a site-wide navigation
+cleanup/patch; it does not replace the purpose of the individual Search Homes,
+Builders, Rebates, How It Works, or other master files.
