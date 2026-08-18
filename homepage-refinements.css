@@ -18,122 +18,97 @@ header nav a,.site-header nav a,.main-nav a{font-size:1.02rem!important;letter-s
 @media(max-width:760px){.rebate-highlight-inner{grid-template-columns:1fr}.rebate-highlight-actions{flex-direction:row;flex-wrap:wrap}header nav a,.site-header nav a,.main-nav a{font-size:.98rem!important}}
 
 
-/* ===== Rebate calculator visual emphasis ===== */
+/* ===== Homepage rebate visual polish — scoped only to homepage calculator ===== */
 
-/* Make the input/price prompt card more prominent */
-[data-calculator] .estimator-intro,
-[data-calculator] .price-prompt,
-[data-calculator] .rebate-input-card,
-.simplified-estimator .estimator-intro,
-.builder-rebate-card .rebate-input-card {
-  background:#f3ece2 !important;
-  border:1px solid #ddcfbb !important;
-  border-radius:22px !important;
-  padding:18px 20px !important;
-}
-
-/* If the prompt itself is already inside a rounded container, emphasize it */
-[data-calculator] label,
-.simplified-estimator label,
-.builder-rebate-card label {
+/* Make the home-price entry area more prominent without changing page layout */
+#homepage-rebate .homepage-rebate-card label{
   background:#f3ece2;
   border:1px solid #ddcfbb;
   border-radius:20px;
   padding:16px 18px;
 }
 
-/* Keep number input clean but make native arrows easier to tap */
-[data-calculator] input[type="number"],
-.simplified-estimator input[type="number"],
-.builder-rebate-card input[type="number"]{
-  min-height:56px !important;
-  font-size:1.15rem !important;
-  padding:12px 18px !important;
-  border-radius:14px !important;
+#homepage-rebate .homepage-rebate-card input[type="number"]{
+  min-height:56px;
+  font-size:1.15rem;
+  padding:12px 18px;
+  border-radius:14px;
 }
 
-/* Increase practical click/tap area around browser number spinner region */
-[data-calculator] input[type="number"]::-webkit-inner-spin-button,
-[data-calculator] input[type="number"]::-webkit-outer-spin-button,
-.simplified-estimator input[type="number"]::-webkit-inner-spin-button,
-.simplified-estimator input[type="number"]::-webkit-outer-spin-button,
-.builder-rebate-card input[type="number"]::-webkit-inner-spin-button,
-.builder-rebate-card input[type="number"]::-webkit-outer-spin-button{
+/* Keep original native arrows but make them easier to press in browsers that support it */
+#homepage-rebate .homepage-rebate-card input[type="number"]::-webkit-inner-spin-button,
+#homepage-rebate .homepage-rebate-card input[type="number"]::-webkit-outer-spin-button{
   opacity:1;
-  transform:scale(1.35);
+  transform:scale(1.28);
   transform-origin:center;
   cursor:pointer;
 }
 
-/* Estimated rebate output gets a stronger champagne/gold interior */
-[data-calculator] .premium-result,
-[data-calculator] .estimate-result,
-[data-calculator] .builder-rebate-result,
-.homepage-rebate-result,
-.simplified-estimator .premium-result,
-.builder-rebate-result{
-  background:#ead7b6 !important;
-  border:1px solid #cfaf75 !important;
-  border-radius:24px !important;
-  box-shadow:0 12px 30px rgba(78,58,24,.10) !important;
-  padding:24px !important;
+/* Make the main estimated-rebate box stand out */
+#homepage-rebate .homepage-rebate-card .premium-result{
+  background:#ead7b6;
+  border:1px solid #cfaf75;
+  border-radius:24px;
+  box-shadow:0 12px 30px rgba(78,58,24,.10);
+  padding:24px;
 }
 
-/* Make estimated rebate amount the visual focus */
-[data-rebate-result],
-.builder-rebate-result strong,
-.homepage-rebate-result strong,
-.premium-result strong{
-  font-size:2.45rem !important;
-  line-height:1 !important;
-  color:#2a2114 !important;
-  font-weight:700 !important;
+#homepage-rebate .homepage-rebate-card [data-rebate-result]{
+  font-size:2.45rem;
+  line-height:1;
+  color:#2a2114;
+  font-weight:700;
 }
 
-/* Action buttons beside/under calculator become pill-like and prominent */
-.homepage-rebate-actions,
-.rebate-calculator-actions,
-.builder-rebate-actions{
-  display:flex !important;
-  gap:12px !important;
-  flex-wrap:wrap !important;
-  margin-top:16px !important;
+/* Make the secondary result/prompt bubble more noticeable */
+#homepage-rebate #homepageRebateResult{
+  background:#efe5d6;
+  border:1px solid #d7c3a4;
+  border-radius:24px;
+  padding:22px;
+  box-shadow:0 10px 24px rgba(60,48,29,.07);
 }
-.homepage-rebate-actions a,
-.rebate-calculator-actions a,
-.builder-rebate-actions a,
-[data-calculator] .button,
-[data-calculator] .btn{
-  border-radius:999px !important;
-  padding:14px 22px !important;
-  font-weight:800 !important;
+
+#homepage-rebate #homepageRebateResult strong{
+  color:#2b241b;
+  font-size:1.55rem;
+}
+
+/* Prominent rounded action bubbles */
+#homepage-rebate .homepage-rebate-actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:16px;
+}
+
+#homepage-rebate .homepage-rebate-actions a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:999px;
+  padding:14px 22px;
+  font-weight:800;
+  text-decoration:none;
   box-shadow:0 8px 20px rgba(31,25,16,.08);
 }
 
-/* Ensure the two key actions read as distinct choices */
-.homepage-rebate-actions a:first-child,
-.rebate-calculator-actions a:first-child,
-.builder-rebate-actions a:first-child{
-  background:#171612 !important;
-  color:#fff !important;
+#homepage-rebate .homepage-rebate-actions a:first-child{
+  background:#171612;
+  color:#fff;
 }
-.homepage-rebate-actions a:last-child,
-.rebate-calculator-actions a:last-child,
-.builder-rebate-actions a:last-child{
-  background:#c8a05a !important;
-  color:#17130d !important;
-  border-color:#c8a05a !important;
+
+#homepage-rebate .homepage-rebate-actions a:last-child{
+  background:#c8a05a;
+  color:#17130d;
+  border-color:#c8a05a;
 }
 
 @media(max-width:650px){
-  .homepage-rebate-actions,
-  .rebate-calculator-actions,
-  .builder-rebate-actions{
-    display:grid !important;
+  #homepage-rebate .homepage-rebate-actions{
+    display:grid;
   }
-  .homepage-rebate-actions a,
-  .rebate-calculator-actions a,
-  .builder-rebate-actions a{
+  #homepage-rebate .homepage-rebate-actions a{
     width:100%;
     text-align:center;
   }
