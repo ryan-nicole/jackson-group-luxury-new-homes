@@ -591,7 +591,7 @@
 
 <link rel="stylesheet" href="homepage-refinements.css"></head><body>
 <header class="site-header"><div class="container nav"><a class="brand" href="index.html"><img src="assets/jackson-group-logo.jpg" alt="Jackson Group logo"><span class="brand-copy"><strong>Jackson Group</strong><small>Luxury New Construction • New Home Rebates</small></span></a><nav class="desktop-nav">
-        <a href="homes/index.html">Search Homes</a><a href="builders/index.html">Builders</a><a href="rebates/index.html">New Home Rebates</a><a href="how-it-works/index.html">How It Works</a><a href="faq/index.html">FAQ</a></nav><a class="button gold small" href="register/index.html">Register Before You Tour</a></div></header>
+        <a href="homes/index.html">Search Homes</a><a href="builders/index.html">Builders</a><div class="rebate-calculator-actions"><a href="rebates/index.html">New Home Rebates</a><a href="how-it-works/index.html">How It Works</a><a href="faq/index.html">FAQ</a></nav><a class="button gold small" href="register/index.html">Register Before You Tour</a></div></header>
 <main>
 <section class="hero search-first-hero">
   <div class="hero-media"></div>
@@ -690,7 +690,7 @@
       <div class="eyebrow">New Home Rebate Estimator</div>
       <h3>Estimate your potential rebate.</h3>
       <label>New home price
-        <input data-price type="number" value="500000" min="0" inputmode="numeric">
+        <input data-price type="number" inputmode="numeric" min="200000" step="50000" value="200000">
       </label>
       <div class="estimate-result premium-result">
         <span>Estimated new home rebate</span>
@@ -700,7 +700,7 @@
       
     </aside>
   <div class="homepage-rebate-result" id="homepageRebateResult"><span>Estimated New Home Rebate</span><strong>Enter a home price to estimate your rebate.</strong><small>Your final rebate amount and eligibility are confirmed for your transaction.</small></div>
-<div class="homepage-rebate-actions"><a class="btn black" href="rebates/index.html">Visit Rebate Center</a><a class="btn outline" href="register/index.html?interest=new-home-rebate">Register Before You Tour</a></div></div>
+<div class="homepage-rebate-actions"><a class="btn black" href="rebates/index.html">Visit Rebate Center</a><a class="btn outline" href="register/index.html?interest=new-home-rebate">Register Before You Tour</a></div></div></div>
 </section>
 <section class="builder-form-home section ivory">
 <div class="container builder-form-home-grid">
@@ -796,4 +796,5 @@
 <span>Rebate eligibility, builder offerings, inventory, pricing and incentives vary by transaction and may change.</span>
 </div>
 </footer>
-<script src="script.js"></script></body></html>
+<script src="script.js"></script><script src="rebate-calculator-shared.js"></script>
+</body></html>

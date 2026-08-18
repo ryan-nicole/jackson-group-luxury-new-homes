@@ -65,21 +65,46 @@ if(b){
 
 // Homepage rebate calculator: the public result calculates in place.
 // Admin/backend can replace rebateRate after the final rebate structure is chosen.
-window.JG_REBATE_CONFIG=window.JG_REBATE_CONFIG||{rebateRate:null};
+window.JG_REBATE_CONFIG=window.JG_REBATE_CONFIG||{threshold:450000,lowerRate:0.0075,upperRate:0.01,priceStep:50000,startPrice:200000};
 (function(){
   const section=document.getElementById("homepage-rebate-calculator");
   if(!section)return;
   const inputs=[...section.querySelectorAll('input[type="number"],input[inputmode="numeric"],input[type="text"]')];
   const price=inputs.find(i=>/price|home|purchase/i.test((i.name||"")+" "+(i.id||"")+" "+(i.placeholder||"")))||inputs[0];
   const result=document.getElementById("homepageRebateResult");
-  if(price){ price.setAttribute("step","10000"); price.setAttribute("inputmode","numeric"); }
+  if(price){ price.setAttribute("step","50000"); price.setAttribute("inputmode","numeric"); }
   function calc(){
     if(!price||!result)return;
     const value=Number(String(price.value).replace(/[^0-9.]/g,""));
-    const rate=window.JG_REBATE_CONFIG.rebateRate;
+    const rate=value < window.JG_REBATE_CONFIG.threshold ? window.JG_REBATE_CONFIG.lowerRate : window.JG_REBATE_CONFIG.upperRate;
     if(!value){result.querySelector("strong").textContent="Enter a home price to estimate your rebate.";return}
-    if(rate==null){result.querySelector("strong").textContent="Rebate program rate will be set in Admin.";return}
+    
     result.querySelector("strong").textContent=(value*rate).toLocaleString("en-US",{style:"currency",currency:"USD"});
   }
   price?.addEventListener("input",calc);
 })();
+
+window.JG_REBATE_CONFIG=window.JG_REBATE_CONFIG||{threshold:450000,lowerRate:0.0075,upperRate:0.01,priceStep:50000,startPrice:200000};
+window.JGCalculateRebate=function(homePrice){
+  const p=Number(homePrice)||0;
+  const rate=p < 450000 ? 0.0075 : 0.01;
+  return {homePrice:p,rate:rate,rebate:p*rate};
+};
+document.querySelectorAll('input[type="number"]').forEach(function(input){
+  const context=((input.name||"")+" "+(input.id||"")+" "+(input.placeholder||"")+" "+(input.closest("section")?.textContent||"")).toLowerCase();
+  if(context.includes("rebate")||context.includes("home price")||context.includes("purchase price")){
+    input.step="50000";
+    input.inputMode="numeric";
+  }
+});
+
+window.JG_REBATE_START_PRICE=200000;
+document.querySelectorAll('input[type="number"]').forEach(function(input){
+  const context=((input.name||"")+" "+(input.id||"")+" "+(input.placeholder||"")+" "+(input.closest("section")?.textContent||"")).toLowerCase();
+  if((context.includes("rebate")||context.includes("home price")||context.includes("purchase price")) && !input.value){
+    input.min="200000";
+    input.step="50000";
+    input.value="200000";
+    input.dispatchEvent(new Event("input",{bubbles:true}));
+  }
+});

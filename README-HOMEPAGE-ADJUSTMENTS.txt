@@ -124,3 +124,11 @@ No builder spotlight and no rebate highlight are included in Featured.
 
 The rest of the old homepage sections were intentionally removed for now so the
 lower homepage flow can be decided after reviewing this version.
+
+
+FINAL REBATE STRUCTURE
+- Home price below $450,000: 0.75% estimated rebate.
+- Home price $450,000 and above: 1.00% estimated rebate.
+- Calculator increment: $50,000.
+- Visitors can still manually type any purchase price.
+- Values are preserved in rebate-program-config.json for future Admin/backend wiring.
