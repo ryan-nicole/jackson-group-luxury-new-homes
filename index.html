@@ -589,7 +589,7 @@
 }
 </style>
 
-</head><body>
+<link rel="stylesheet" href="homepage-refinements.css"></head><body>
 <header class="site-header"><div class="container nav"><a class="brand" href="index.html"><img src="assets/jackson-group-logo.jpg" alt="Jackson Group logo"><span class="brand-copy"><strong>Jackson Group</strong><small>Luxury New Construction • New Home Rebates</small></span></a><nav class="desktop-nav">
         <a href="homes/index.html">Search Homes</a><a href="builders/index.html">Builders</a><a href="rebates/index.html">New Home Rebates</a><a href="how-it-works/index.html">How It Works</a><a href="faq/index.html">FAQ</a></nav><a class="button gold small" href="register/index.html">Register Before You Tour</a></div></header>
 <main>
@@ -639,7 +639,7 @@
     </div>
 
     <div class="search-way-grid search-way-grid-six">
-      <a class="search-way-card" href="homes/index.html">
+      <a class="search-way-card" href="communities/index.html">
         <span>Location</span><h3>Search by City</h3>
         <p>Start with the city you want to call home.</p>
         <b>Search Cities →</b>
@@ -659,7 +659,7 @@
         <p>Go directly to a subdivision or master-planned community you already know.</p>
         <b>Search Subdivisions →</b>
       </a>
-      <a class="search-way-card dark-search-card" href="homes/index.html">
+      <a class="search-way-card dark-search-card" href="communities/index.html">
         <span>Home Type</span><h3>New Construction</h3>
         <p>Explore new homes, communities, builders and opportunities before your first tour.</p>
         <b>Explore New Construction →</b>
@@ -697,9 +697,10 @@
         <strong data-rebate-result>$7,500</strong>
         <small data-rebate-note>Planning estimate based on current Jackson Group calculator settings.</small>
       </div>
-      <a class="button black full" href="rebates/index.html">Open Rebate Center</a>
+      
     </aside>
-  </div>
+  <div class="homepage-rebate-result" id="homepageRebateResult"><span>Estimated New Home Rebate</span><strong>Enter a home price to estimate your rebate.</strong><small>Your final rebate amount and eligibility are confirmed for your transaction.</small></div>
+<div class="homepage-rebate-actions"><a class="btn black" href="rebates/index.html">Visit Rebate Center</a><a class="btn outline" href="register/index.html?interest=new-home-rebate">Register Before You Tour</a></div></div>
 </section>
 <section class="builder-form-home section ivory">
 <div class="container builder-form-home-grid">
@@ -723,8 +724,8 @@
 </div>
 </div>
 </section>
-<section class="journey section"><div class="container"><div class="section-heading centered"><div class="eyebrow">What Can We Help You With?</div><h2>Choose what you need help with.</h2><p>Select as many as apply. We’ll use your choices to guide you toward the most relevant parts of the site.</p></div><div class="journey-grid" role="group" aria-label="Choose one or more goals"><label class="journey-choice"><input type="checkbox" value="first-home"><span><b>I’m Buying My First Home</b><small>Start with a clear, guided path.</small></span></label><label class="journey-choice"><input type="checkbox" value="new-construction"><span><b>I’m Buying New Construction</b><small>Explore builders and communities.</small></span></label><label class="journey-choice"><input type="checkbox" value="sell-current"><span><b>I Need to Sell My Current Home</b><small>Plan the transition from selling to buying.</small></span></label><label class="journey-choice"><input type="checkbox" value="rebates"><span><b>I Want to Learn About Rebates</b><small>Understand how the rebate process works.</small></span></label></div><div class="journey-actions"><button class="button gold" type="button" id="journeyContinue">Continue</button><p id="journeyMessage" aria-live="polite"></p></div></div></section>
-<section class="featured section" id="featured" data-admin-content="featured">
+<section class="journey section"><div class="container"><div class="section-heading centered"><div class="eyebrow">What Can We Help You With?</div><h2>Choose what you need help with.</h2><p>Tell us what you need help with and we’ll carry your selections into your registration so Jackson Group can better prepare for your home search.</p></div><div class="journey-grid" role="group" aria-label="Choose one or more goals"><label class="journey-choice"><input type="checkbox" value="first-home"><span><b>I’m Buying My First Home</b><small>Start with a clear, guided path.</small></span></label><label class="journey-choice"><input type="checkbox" value="new-construction"><span><b>I’m Buying New Construction</b><small>Explore builders and communities.</small></span></label><label class="journey-choice"><input type="checkbox" value="sell-current"><span><b>I Need to Sell My Current Home</b><small>Plan the transition from selling to buying.</small></span></label><label class="journey-choice"><input type="checkbox" value="rebates"><span><b>I Want to Learn About Rebates</b><small>Understand how the rebate process works.</small></span></label></div><div class="journey-actions"><button class="button gold" type="button" id="journeyContinue">Continue</button><p id="journeyMessage" aria-live="polite"></p></div></div></section>
+<section class="featured section" id="featured" data-admin-content="featured" data-soft-featured="true">
   <div class="container">
     <div class="section-heading split-heading">
       <div>
@@ -765,28 +766,7 @@
     </div>
   </div>
 </section>
-<section class="new-construction-search section dark-new-search" id="new-construction-search" data-admin-content="new-construction-idx">
-  <div class="container new-construction-search-grid">
-    <div>
-      <div class="eyebrow light">New Construction Home Search</div>
-      <h2>Search new homes across Texas.</h2>
-      <p>Use the dedicated new-construction search to focus on newly built homes, quick move-in opportunities, and builder inventory. When the approved MLS/IDX provider is connected, live new-construction results can appear here.</p>
-      <div class="new-search-links">
-        <a class="button gold" href="homes/index.html">Explore New Construction</a>
-        <a class="button outline-light" href="builders/index.html">Browse Builders</a>
-      </div>
-    </div>
 
-    <div class="new-construction-idx-shell" id="homepageNewConstructionIdxMount" data-idx-mount="new-construction">
-      <span>New Construction MLS / IDX</span>
-      <strong>Live New-Home Search</strong>
-      <small>Managed from Admin → MLS / IDX</small>
-      <div class="new-construction-filter-preview">
-        <b>Location</b><b>Builder</b><b>Subdivision</b><b>Price</b><b>Move-In Status</b><b>Home Type</b>
-      </div>
-    </div>
-  </div>
-</section>
 </main>
 <footer class="site-footer friendly-footer">
 <div class="container footer-top">
@@ -807,9 +787,9 @@
 </div>
 </div>
 <div class="container footer-links-grid">
-<div><h3>Find a Home</h3><a href="homes/index.html">Search Homes</a><a href="builders/index.html">Builder Guide</a></div>
+<div><h3>Find a Home</h3><a href="register/index.html">Connect With Jackson Group</a><a href="homes/index.html">Search Homes</a><a href="builders/index.html">Builder Guide</a></div>
 <div><h3>Buyer Resources</h3><a href="rebates/index.html">New Home Rebate Center</a><a href="how-it-works/index.html">How It Works</a><a href="faq/index.html">Frequently Asked Questions</a></div>
-<div><h3>Plan Your Move</h3><a href="register/index.html">Builder Registration Form</a><a href="sell/index.html">Sell Your Current Home</a><a href="register/index.html">Connect With Jackson Group</a></div>
+<div><h3>Plan Your Move</h3><a href="register/index.html">Builder Registration Form</a><a href="sell/index.html">Sell Your Current Home</a></div>
 </div>
 <div class="container footer-bottom">
 <span>Jackson Group • Texas Real Estate</span>

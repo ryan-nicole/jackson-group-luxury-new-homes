@@ -62,3 +62,24 @@ if(b){
     location.href='homes/index.html';
   });
 }
+
+// Homepage rebate calculator: the public result calculates in place.
+// Admin/backend can replace rebateRate after the final rebate structure is chosen.
+window.JG_REBATE_CONFIG=window.JG_REBATE_CONFIG||{rebateRate:null};
+(function(){
+  const section=document.getElementById("homepage-rebate-calculator");
+  if(!section)return;
+  const inputs=[...section.querySelectorAll('input[type="number"],input[inputmode="numeric"],input[type="text"]')];
+  const price=inputs.find(i=>/price|home|purchase/i.test((i.name||"")+" "+(i.id||"")+" "+(i.placeholder||"")))||inputs[0];
+  const result=document.getElementById("homepageRebateResult");
+  if(price){ price.setAttribute("step","10000"); price.setAttribute("inputmode","numeric"); }
+  function calc(){
+    if(!price||!result)return;
+    const value=Number(String(price.value).replace(/[^0-9.]/g,""));
+    const rate=window.JG_REBATE_CONFIG.rebateRate;
+    if(!value){result.querySelector("strong").textContent="Enter a home price to estimate your rebate.";return}
+    if(rate==null){result.querySelector("strong").textContent="Rebate program rate will be set in Admin.";return}
+    result.querySelector("strong").textContent=(value*rate).toLocaleString("en-US",{style:"currency",currency:"USD"});
+  }
+  price?.addEventListener("input",calc);
+})();

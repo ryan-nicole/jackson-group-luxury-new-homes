@@ -1,0 +1,18 @@
+
+/* ===== Homepage refinement batch — Aug 2026 ===== */
+header nav a,.site-header nav a,.main-nav a{font-size:1.02rem!important;letter-spacing:.01em}
+.homepage-rebate-highlight{background:#f2eadf;border-top:1px solid #e3d7c7;border-bottom:1px solid #e3d7c7}
+.rebate-highlight-inner{display:grid;grid-template-columns:1.6fr .8fr;gap:32px;align-items:center;padding-top:34px;padding-bottom:34px}
+.rebate-highlight-inner h2{font:500 clamp(1.65rem,3vw,2.5rem)/1.08 Georgia,serif;margin:6px 0 9px}
+.rebate-highlight-inner p{margin:0;max-width:760px}
+.rebate-highlight-actions{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.text-link{font-weight:800;text-decoration:none;color:#725522}
+.before-tour-info-card{background:#f7f3ed!important;border:1px solid #ddd1c1!important;box-shadow:0 10px 30px rgba(55,45,30,.06)!important;border-radius:20px!important;cursor:default!important;transform:none!important}
+[data-soft-featured="true"] .card,[data-soft-featured="true"] article,[data-soft-featured="true"] .feature-card{background:#eee7dd!important;color:#29251f!important;border-color:#d9ccbb!important}
+[data-soft-featured="true"] p,[data-soft-featured="true"] small{color:#645d54!important}
+.homepage-rebate-result{margin-top:20px;padding:20px;border-radius:18px;background:#f5efe5;border:1px solid #ddcfba;display:grid;gap:6px}
+.homepage-rebate-result span{font-size:.72rem;text-transform:uppercase;letter-spacing:.09em;font-weight:800;color:#8a672b}
+.homepage-rebate-result strong{font:500 1.45rem Georgia,serif}
+.homepage-rebate-result small{color:#6c655c}
+.homepage-rebate-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+@media(max-width:760px){.rebate-highlight-inner{grid-template-columns:1fr}.rebate-highlight-actions{flex-direction:row;flex-wrap:wrap}header nav a,.site-header nav a,.main-nav a{font-size:.98rem!important}}
