@@ -76,3 +76,11 @@ BUILDER FORM SECTION UPDATE
 - The primary button inside the Builder Form section still opens the actual
   registration form.
 - Added smooth scrolling and mobile-responsive layout.
+
+
+FINAL REBATE STRUCTURE
+- Home price below $450,000: 0.75% estimated rebate.
+- Home price $450,000 and above: 1.00% estimated rebate.
+- Calculator increment: $50,000.
+- Visitors can still manually type any purchase price.
+- Values are preserved in rebate-program-config.json for future Admin/backend wiring.
