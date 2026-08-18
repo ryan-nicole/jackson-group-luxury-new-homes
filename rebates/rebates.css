@@ -529,3 +529,125 @@ html{scroll-behavior:smooth}
 @media(max-width:850px){
   .rebate-builder-form-grid{grid-template-columns:1fr}
 }
+
+
+/* ===== Rebate calculator visual emphasis ===== */
+
+/* Make the input/price prompt card more prominent */
+[data-calculator] .estimator-intro,
+[data-calculator] .price-prompt,
+[data-calculator] .rebate-input-card,
+.simplified-estimator .estimator-intro,
+.builder-rebate-card .rebate-input-card {
+  background:#f3ece2 !important;
+  border:1px solid #ddcfbb !important;
+  border-radius:22px !important;
+  padding:18px 20px !important;
+}
+
+/* If the prompt itself is already inside a rounded container, emphasize it */
+[data-calculator] label,
+.simplified-estimator label,
+.builder-rebate-card label {
+  background:#f3ece2;
+  border:1px solid #ddcfbb;
+  border-radius:20px;
+  padding:16px 18px;
+}
+
+/* Keep number input clean but make native arrows easier to tap */
+[data-calculator] input[type="number"],
+.simplified-estimator input[type="number"],
+.builder-rebate-card input[type="number"]{
+  min-height:56px !important;
+  font-size:1.15rem !important;
+  padding:12px 18px !important;
+  border-radius:14px !important;
+}
+
+/* Increase practical click/tap area around browser number spinner region */
+[data-calculator] input[type="number"]::-webkit-inner-spin-button,
+[data-calculator] input[type="number"]::-webkit-outer-spin-button,
+.simplified-estimator input[type="number"]::-webkit-inner-spin-button,
+.simplified-estimator input[type="number"]::-webkit-outer-spin-button,
+.builder-rebate-card input[type="number"]::-webkit-inner-spin-button,
+.builder-rebate-card input[type="number"]::-webkit-outer-spin-button{
+  opacity:1;
+  transform:scale(1.35);
+  transform-origin:center;
+  cursor:pointer;
+}
+
+/* Estimated rebate output gets a stronger champagne/gold interior */
+[data-calculator] .premium-result,
+[data-calculator] .estimate-result,
+[data-calculator] .builder-rebate-result,
+.homepage-rebate-result,
+.simplified-estimator .premium-result,
+.builder-rebate-result{
+  background:#ead7b6 !important;
+  border:1px solid #cfaf75 !important;
+  border-radius:24px !important;
+  box-shadow:0 12px 30px rgba(78,58,24,.10) !important;
+  padding:24px !important;
+}
+
+/* Make estimated rebate amount the visual focus */
+[data-rebate-result],
+.builder-rebate-result strong,
+.homepage-rebate-result strong,
+.premium-result strong{
+  font-size:2.45rem !important;
+  line-height:1 !important;
+  color:#2a2114 !important;
+  font-weight:700 !important;
+}
+
+/* Action buttons beside/under calculator become pill-like and prominent */
+.homepage-rebate-actions,
+.rebate-calculator-actions,
+.builder-rebate-actions{
+  display:flex !important;
+  gap:12px !important;
+  flex-wrap:wrap !important;
+  margin-top:16px !important;
+}
+.homepage-rebate-actions a,
+.rebate-calculator-actions a,
+.builder-rebate-actions a,
+[data-calculator] .button,
+[data-calculator] .btn{
+  border-radius:999px !important;
+  padding:14px 22px !important;
+  font-weight:800 !important;
+  box-shadow:0 8px 20px rgba(31,25,16,.08);
+}
+
+/* Ensure the two key actions read as distinct choices */
+.homepage-rebate-actions a:first-child,
+.rebate-calculator-actions a:first-child,
+.builder-rebate-actions a:first-child{
+  background:#171612 !important;
+  color:#fff !important;
+}
+.homepage-rebate-actions a:last-child,
+.rebate-calculator-actions a:last-child,
+.builder-rebate-actions a:last-child{
+  background:#c8a05a !important;
+  color:#17130d !important;
+  border-color:#c8a05a !important;
+}
+
+@media(max-width:650px){
+  .homepage-rebate-actions,
+  .rebate-calculator-actions,
+  .builder-rebate-actions{
+    display:grid !important;
+  }
+  .homepage-rebate-actions a,
+  .rebate-calculator-actions a,
+  .builder-rebate-actions a{
+    width:100%;
+    text-align:center;
+  }
+}

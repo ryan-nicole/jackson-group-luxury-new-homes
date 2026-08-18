@@ -2,9 +2,8 @@
   "threshold": 450000,
   "below_threshold_rate": 0.0075,
   "threshold_and_above_rate": 0.01,
+  "starting_price": 200000,
   "price_input_increment": 50000,
   "manual_price_entry": true,
-  "public_label": "Estimated New Home Rebate",
-  "admin_managed": true,
-  "starting_price": 200000
+  "display_currency_commas": true
 }
