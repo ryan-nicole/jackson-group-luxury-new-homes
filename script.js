@@ -28,9 +28,7 @@ document.querySelectorAll('[data-calculator]').forEach(c=>{
     const estimatedCompensation=homePrice*(settings.commission/100);
     const estimatedRebate=estimatedCompensation*(settings.share/100);
     result.textContent=money(estimatedRebate);
-    if(note){
-      note.textContent='Planning estimate based on current Jackson Group calculator settings.';
-    }
+    
   }
 
   price.addEventListener('input',update);
@@ -65,7 +63,7 @@ if(b){
 
 // Homepage rebate calculator: the public result calculates in place.
 // Admin/backend can replace rebateRate after the final rebate structure is chosen.
-window.JG_REBATE_CONFIG=window.JG_REBATE_CONFIG||{threshold:450000,lowerRate:0.0075,upperRate:0.01,priceStep:50000,startPrice:200000};
+window.JG_REBATE_CONFIG=window.JG_REBATE_CONFIG||{threshold:450000,lowerRate:0.0075,upperRate:0.01,priceStep:50000,startPrice:350000};
 (function(){
   const section=document.getElementById("homepage-rebate-calculator");
   if(!section)return;
@@ -84,7 +82,7 @@ window.JG_REBATE_CONFIG=window.JG_REBATE_CONFIG||{threshold:450000,lowerRate:0.0
   price?.addEventListener("input",calc);
 })();
 
-window.JG_REBATE_CONFIG=window.JG_REBATE_CONFIG||{threshold:450000,lowerRate:0.0075,upperRate:0.01,priceStep:50000,startPrice:200000};
+window.JG_REBATE_CONFIG=window.JG_REBATE_CONFIG||{threshold:450000,lowerRate:0.0075,upperRate:0.01,priceStep:50000,startPrice:350000};
 window.JGCalculateRebate=function(homePrice){
   const p=Number(homePrice)||0;
   const rate=p < 450000 ? 0.0075 : 0.01;
@@ -98,13 +96,13 @@ document.querySelectorAll('input[type="number"]').forEach(function(input){
   }
 });
 
-window.JG_REBATE_START_PRICE=200000;
+window.JG_REBATE_START_PRICE=350000;
 document.querySelectorAll('input[type="number"]').forEach(function(input){
   const context=((input.name||"")+" "+(input.id||"")+" "+(input.placeholder||"")+" "+(input.closest("section")?.textContent||"")).toLowerCase();
   if((context.includes("rebate")||context.includes("home price")||context.includes("purchase price")) && !input.value){
-    input.min="200000";
+    input.min="350000";
     input.step="50000";
-    input.value="200000";
+    input.value="350000";
     input.dispatchEvent(new Event("input",{bubbles:true}));
   }
 });
