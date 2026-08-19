@@ -30,9 +30,7 @@ document.querySelectorAll('[data-calculator]').forEach(c=>{
     const gross=homePrice*(settings.commission/100);
     const rebate=gross*(settings.share/100);
     result.textContent=builderMoney(rebate);
-    if(note){
-      note.textContent='Planning estimate based on current Jackson Group calculator settings.';
-    }
+    
   }
 
   price.addEventListener('input',update);
