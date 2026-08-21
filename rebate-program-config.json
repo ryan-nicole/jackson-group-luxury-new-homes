@@ -1,10 +1,10 @@
 {
   "threshold": 450000,
-  "below_threshold_rate": 0.0075,
-  "threshold_and_above_rate": 0.01,
+  "below_threshold_formula": "purchase_price * 0.0075",
+  "threshold_and_above_formula": "(purchase_price * 0.01) - 350",
   "starting_price": 350000,
   "price_input_increment": 50000,
   "manual_price_entry": true,
-  "display_currency_commas": true,
-  "manual_entry_comma_formatting": true
+  "manual_entry_comma_formatting": true,
+  "show_rate_explanation_below_result": false
 }
