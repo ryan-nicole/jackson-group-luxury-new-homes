@@ -144,3 +144,182 @@ header nav a,.site-header nav a,.main-nav a{font-size:1.02rem!important;letter-s
 .mockup-quick-row small{color:#716b63;margin-top:3px}
 @media(max-width:900px){.mockup-filter-row{grid-template-columns:repeat(3,1fr)}.mockup-search-submit{min-height:54px}.mockup-path-grid{grid-template-columns:repeat(2,1fr)}.mockup-quick-row{grid-template-columns:1fr 1fr}.mockup-quick-row>strong{grid-column:1/-1}}
 @media(max-width:620px){.mockup-search-hero .search-first-hero-content{padding-top:52px}.mockup-main-search{height:64px}.mockup-filter-row{grid-template-columns:1fr 1fr}.mockup-filter-row button:nth-of-type(5){grid-column:1/-1}.mockup-search-submit{grid-column:1/-1}.mockup-path-grid,.mockup-quick-row{grid-template-columns:1fr}.mockup-quick-row>strong{grid-column:auto}.mockup-quick-row a{border-left:0;border-top:1px solid #ddd3c6}}
+
+/* ===== Homepage top search polish ===== */
+
+/* Keep Find Your Next Home on one line on desktop */
+.mockup-search-hero h1{
+  white-space:nowrap;
+  max-width:none !important;
+  font-size:clamp(3.8rem,6vw,6.2rem) !important;
+  line-height:.95 !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+
+/* Make hero/search widths and spacing visually even */
+.mockup-search-hero .search-first-hero-content{
+  width:min(1120px,calc(100% - 48px)) !important;
+  max-width:1120px !important;
+  margin:0 auto !important;
+}
+.mockup-search-shell{
+  width:100% !important;
+  max-width:1040px !important;
+}
+.mockup-main-search,
+.mockup-filter-row{
+  width:100% !important;
+}
+.mockup-filter-row{
+  grid-template-columns:1fr 1fr 1fr 1fr 1.15fr 1.65fr !important;
+}
+
+/* Website-consistent heading typography */
+.mockup-section-title h2{
+  font-family:Georgia,serif !important;
+  font-weight:500 !important;
+  text-transform:none !important;
+  letter-spacing:0 !important;
+  font-size:clamp(1.75rem,3vw,2.45rem) !important;
+  line-height:1.1 !important;
+}
+
+/* Main cards without icons */
+.mockup-path-card{
+  min-height:205px !important;
+  justify-content:center !important;
+  padding:28px 24px !important;
+}
+.mockup-path-card h3{
+  font-family:Georgia,serif !important;
+  text-transform:none !important;
+  letter-spacing:0 !important;
+  font-size:1.35rem !important;
+  margin-top:0 !important;
+}
+.mockup-path-card p{
+  margin-bottom:18px !important;
+}
+.mockup-path-card b{
+  margin-top:6px !important;
+}
+
+/* Quick Search icons closer to mockup look */
+.quick-icon{
+  position:relative;
+  flex:0 0 34px;
+  width:34px;
+  height:34px;
+  display:inline-block;
+  color:#b88c42;
+}
+.quick-icon::before,
+.quick-icon::after{
+  content:"";
+  position:absolute;
+  box-sizing:border-box;
+}
+
+/* price tag */
+.quick-icon.price-cut::before{
+  width:25px;height:18px;
+  border:1.8px solid #b88c42;
+  border-radius:3px;
+  transform:rotate(-45deg);
+  left:4px;top:8px;
+}
+.quick-icon.price-cut::after{
+  width:5px;height:5px;
+  border:1.5px solid #b88c42;
+  border-radius:50%;
+  left:18px;top:6px;
+}
+
+/* simple home */
+.quick-icon.home-key::before,
+.quick-icon.home-view::before{
+  width:22px;height:18px;
+  border:1.8px solid #b88c42;
+  left:6px;top:12px;
+  border-top:none;
+}
+.quick-icon.home-key::after,
+.quick-icon.home-view::after{
+  width:17px;height:17px;
+  border-left:1.8px solid #b88c42;
+  border-top:1.8px solid #b88c42;
+  transform:rotate(45deg);
+  left:8px;top:4px;
+}
+
+/* NEW badge */
+.quick-icon.new-badge::before{
+  width:30px;height:24px;
+  border:1.8px solid #b88c42;
+  border-radius:50%;
+  left:2px;top:5px;
+}
+.quick-icon.new-badge::after{
+  content:"NEW";
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:.5rem;
+  font-weight:800;
+  color:#b88c42;
+}
+
+/* Blend Quick Searches into Before You Tour */
+.mockup-quick-searches{
+  background:linear-gradient(180deg,#f6f1e9 0%,#efe7db 100%) !important;
+  border-top:1px solid #e2d7c7 !important;
+  border-bottom:0 !important;
+  margin-bottom:0 !important;
+}
+.mockup-quick-row{
+  padding-top:4px;
+  padding-bottom:4px;
+}
+.mockup-quick-row a{
+  min-height:82px;
+}
+.before-tour,
+.before,
+.before-contrast{
+  margin-top:0 !important;
+  border-top:0 !important;
+}
+
+/* Even card widths and alignment */
+.mockup-path-grid{
+  grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+  align-items:stretch !important;
+}
+.mockup-path-card{
+  height:100% !important;
+}
+
+/* Mobile/tablet handling */
+@media(max-width:900px){
+  .mockup-search-hero h1{
+    white-space:normal;
+    font-size:clamp(3rem,8vw,4.6rem) !important;
+  }
+  .mockup-filter-row{
+    grid-template-columns:repeat(3,1fr) !important;
+  }
+  .mockup-path-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  }
+}
+@media(max-width:620px){
+  .mockup-filter-row{
+    grid-template-columns:1fr 1fr !important;
+  }
+  .mockup-path-grid{
+    grid-template-columns:1fr !important;
+  }
+}
