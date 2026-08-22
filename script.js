@@ -1,108 +1,24 @@
-function money(v){
-  return new Intl.NumberFormat('en-US',{
-    style:'currency',currency:'USD',maximumFractionDigits:0
-  }).format(v||0)
-}
 
-function getJacksonRebateSettings(){
-  const defaults={commission:3,share:50};
-  try{
-    const stored=JSON.parse(localStorage.getItem('jg-admin-rebates')||'{}');
-    return {
-      commission:Number(stored.commission ?? defaults.commission),
-      share:Number(stored.share ?? defaults.share)
-    };
-  }catch(e){
-    return defaults;
-  }
-}
-
-document.querySelectorAll('[data-calculator]').forEach(c=>{
-  const price=c.querySelector('[data-price]');
-  const result=c.querySelector('[data-rebate-result]');
-  const note=c.querySelector('[data-rebate-note]');
-
+function money(n){return new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n||0)}
+document.querySelectorAll('[data-calculator]').forEach(calc=>{
+  const price=calc.querySelector('[data-price]');
+  const commission=calc.querySelector('[data-commission]');
+  const share=calc.querySelector('[data-share]');
+  const rebate=calc.querySelector('[data-rebate-result]');
+  const gross=calc.querySelector('[data-gross-result]');
   function update(){
-    const settings=getJacksonRebateSettings();
-    const homePrice=Number(price.value||0);
-    const estimatedCompensation=homePrice*(settings.commission/100);
-    const estimatedRebate=estimatedCompensation*(settings.share/100);
-    result.textContent=money(estimatedRebate);
-    
+    const g=Number(price.value||0)*(Number(commission.value||0)/100);
+    const r=g*(Number(share.value||0)/100);
+    rebate.textContent=money(r);
+    gross.textContent='Based on estimated compensation of '+money(g);
   }
-
-  price.addEventListener('input',update);
-  window.addEventListener('storage',update);
+  [price,commission,share].forEach(el=>el.addEventListener('input',update));
   update();
 });
-
-const b=document.getElementById('journeyContinue');
-const msg=document.getElementById('journeyMessage');
-if(b){
-  b.addEventListener('click',()=>{
-    const x=[...document.querySelectorAll('.journey-choice input:checked')].map(i=>i.value);
-    if(!x.length){
-      msg.textContent='Choose at least one option so we can guide you.';
-      return;
-    }
-    if(x.includes('new-construction')&&x.includes('rebates')){
-      location.href='register/index.html';return;
-    }
-    if(x.includes('sell-current')){
-      location.href='sell/index.html';return;
-    }
-    if(x.includes('rebates')){
-      location.href='rebates/index.html';return;
-    }
-    if(x.includes('new-construction')){
-      location.href='communities/index.html';return;
-    }
-    location.href='homes/index.html';
+const demo=document.querySelector('[data-demo-form]');
+if(demo){
+  demo.addEventListener('submit',e=>{
+    e.preventDefault();
+    demo.innerHTML='<div class="panel"><h2>Form preview complete.</h2><p>This demo does not send your information anywhere yet. We will connect the final form to Wise Agent CRM.</p></div>';
   });
 }
-
-// Homepage rebate calculator: the public result calculates in place.
-// Admin/backend can replace rebateRate after the final rebate structure is chosen.
-window.JG_REBATE_CONFIG=window.JG_REBATE_CONFIG||{threshold:450000,lowerRate:0.0075,upperRate:0.01,priceStep:50000,startPrice:350000};
-(function(){
-  const section=document.getElementById("homepage-rebate-calculator");
-  if(!section)return;
-  const inputs=[...section.querySelectorAll('input[type="number"],input[inputmode="numeric"],input[type="text"]')];
-  const price=inputs.find(i=>/price|home|purchase/i.test((i.name||"")+" "+(i.id||"")+" "+(i.placeholder||"")))||inputs[0];
-  const result=document.getElementById("homepageRebateResult");
-  if(price){ price.setAttribute("step","50000"); price.setAttribute("inputmode","numeric"); }
-  function calc(){
-    if(!price||!result)return;
-    const value=Number(String(price.value).replace(/[^0-9.]/g,""));
-    const rate=value < window.JG_REBATE_CONFIG.threshold ? window.JG_REBATE_CONFIG.lowerRate : window.JG_REBATE_CONFIG.upperRate;
-    if(!value){result.querySelector("strong").textContent="Enter a home price to estimate your rebate.";return}
-    
-    result.querySelector("strong").textContent=(value*rate).toLocaleString("en-US",{style:"currency",currency:"USD"});
-  }
-  price?.addEventListener("input",calc);
-})();
-
-window.JG_REBATE_CONFIG=window.JG_REBATE_CONFIG||{threshold:450000,lowerRate:0.0075,upperRate:0.01,priceStep:50000,startPrice:350000};
-window.JGCalculateRebate=function(homePrice){
-  const p=Number(homePrice)||0;
-  const rate=p < 450000 ? 0.0075 : 0.01;
-  return {homePrice:p,rate:rate,rebate:p*rate};
-};
-document.querySelectorAll('input[type="number"]').forEach(function(input){
-  const context=((input.name||"")+" "+(input.id||"")+" "+(input.placeholder||"")+" "+(input.closest("section")?.textContent||"")).toLowerCase();
-  if(context.includes("rebate")||context.includes("home price")||context.includes("purchase price")){
-    input.step="50000";
-    input.inputMode="numeric";
-  }
-});
-
-window.JG_REBATE_START_PRICE=350000;
-document.querySelectorAll('input[type="number"]').forEach(function(input){
-  const context=((input.name||"")+" "+(input.id||"")+" "+(input.placeholder||"")+" "+(input.closest("section")?.textContent||"")).toLowerCase();
-  if((context.includes("rebate")||context.includes("home price")||context.includes("purchase price")) && !input.value){
-    input.min="350000";
-    input.step="50000";
-    input.value="350000";
-    input.dispatchEvent(new Event("input",{bubbles:true}));
-  }
-});

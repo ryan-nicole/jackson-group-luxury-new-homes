@@ -1,0 +1,1 @@
+How It Works header matches the current Homepage, Builders, and New Home Rebates headers. How It Works is active with the gold underline; Register to Tour remains filled gold.

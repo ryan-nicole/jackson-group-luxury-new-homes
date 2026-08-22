@@ -1,0 +1,1 @@
+FAQ header now matches the current Homepage, Builders, New Home Rebates, and How It Works headers. FAQ is active with the gold underline; Register to Tour remains filled gold.
