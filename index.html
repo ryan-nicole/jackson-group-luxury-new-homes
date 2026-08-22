@@ -734,63 +734,120 @@
 </header>
 
 <main>
-<section class="hero search-first-hero mockup-search-hero">
+
+<section class="hero search-first-hero design-a-hero">
   <div class="hero-media"></div>
   <div class="hero-overlay"></div>
-  <div class="container search-first-hero-content">
+  <div class="container design-a-content">
     <div class="eyebrow light">Jackson Group • Texas Real Estate</div>
     <h1>Find Your Next Home</h1>
-    <p class="hero-lead">Search available new construction by location, builder, subdivision, or the features that matter most to you.</p>
+    <p class="design-a-lead">Search available new construction by location, builder, subdivision, or the features that matter most to you.</p>
 
-    <div class="mockup-search-shell" data-admin-content="mls-idx">
-      <div class="mockup-main-search">
-        <span class="mockup-search-icon">⌕</span>
-        <input type="text" aria-label="Search location, builder, subdivision, or ZIP" placeholder="Search city, county, subdivision, builder or ZIP code...">
+    <form class="design-a-search-console" action="homes/index.html#new-construction-search" method="get" data-home-search-form>
+      <div class="design-a-location">
+        <label for="homeSearchLocation">Where are you looking?</label>
+        <div class="design-a-location-input">
+          <span aria-hidden="true">⌕</span>
+          <input id="homeSearchLocation" name="location" type="text" placeholder="City, county, subdivision, builder or ZIP">
+        </div>
       </div>
-      <div class="mockup-filter-row">
-        <button type="button">Price <span>⌄</span></button>
-        <button type="button">Beds <span>⌄</span></button>
-        <button type="button">Baths <span>⌄</span></button>
-        <button type="button">Builder <span>⌄</span></button>
-        <button type="button">More Filters <span>⌄</span></button>
-        <a class="mockup-search-submit" href="homes/index.html#new-construction-search">Search New Homes</a>
+
+      <div class="design-a-filter-row">
+        <label>Price
+          <select name="price">
+            <option value="">Any Price</option>
+            <option value="300000-400000">$300K–$400K</option>
+            <option value="400000-500000">$400K–$500K</option>
+            <option value="500000-650000">$500K–$650K</option>
+            <option value="650000-800000">$650K–$800K</option>
+            <option value="800000+">$800K+</option>
+          </select>
+        </label>
+
+        <label>Beds
+          <select name="beds">
+            <option value="">Any Beds</option>
+            <option value="2">2+</option>
+            <option value="3">3+</option>
+            <option value="4">4+</option>
+            <option value="5">5+</option>
+          </select>
+        </label>
+
+        <label>Baths
+          <select name="baths">
+            <option value="">Any Baths</option>
+            <option value="2">2+</option>
+            <option value="3">3+</option>
+            <option value="4">4+</option>
+          </select>
+        </label>
+
+        <label>Builder
+          <select name="builder">
+            <option value="">Any Builder</option>
+            <option>Highland Homes</option>
+            <option>Perry Homes</option>
+            <option>Meritage Homes</option>
+            <option>Ashton Woods</option>
+            <option>Tri Pointe Homes</option>
+            <option>Sitterle Homes</option>
+            <option>Century Communities</option>
+            <option>Giddens Homes</option>
+            <option>GFO Home</option>
+            <option>Blackburn Homes</option>
+          </select>
+        </label>
+
+        <label>More
+          <select name="more">
+            <option value="">More Filters</option>
+            <option value="quick-move-in">Quick Move-In</option>
+            <option value="reduced">Recently Reduced</option>
+            <option value="newly-listed">Newly Listed</option>
+            <option value="single-story">Single Story</option>
+          </select>
+        </label>
+
+        <button type="submit">Search Homes →</button>
       </div>
-      <small class="mockup-idx-note">Live MLS/IDX search connects here when your approved IDX provider is added.</small>
-    </div>
+    </form>
   </div>
 </section>
 
-<section class="mockup-search-paths section">
+<section class="design-a-curated">
   <div class="container">
-    <div class="mockup-section-title"><span></span><h2>Search New Construction Your Way</h2><span></span></div>
-    <div class="mockup-path-grid">
-      <a class="mockup-path-card" href="homes/index.html#by-location">
-        <h3>By Location</h3>
-        <p>Search by city or county across Texas.</p><b>→</b>
+    <div class="design-a-curated-heading">
+      <p class="eyebrow">Curated Searches</p>
+      <h2>Start with what interests you most.</h2>
+    </div>
+
+    <div class="design-a-curated-grid">
+      <a class="design-a-curated-card" href="homes/index.html#recently-reduced">
+        <span>Price Improvements</span>
+        <h3>Recently Reduced New Homes</h3>
+        <p>See new construction with recent price reductions.</p>
+        <b>Explore Homes →</b>
       </a>
-      <a class="mockup-path-card" href="homes/index.html#by-builder">
-        <h3>By Builder</h3>
-        <p>Find new construction from your preferred builder.</p><b>→</b>
+
+      <a class="design-a-curated-card" href="homes/index.html#quick-move-in">
+        <span>Move-In Ready</span>
+        <h3>Quick Move-In Homes</h3>
+        <p>Find new homes available sooner.</p>
+        <b>Explore Homes →</b>
       </a>
-      <a class="mockup-path-card" href="homes/index.html#by-subdivision">
-        <h3>By Subdivision</h3>
-        <p>Explore homes in the community you have in mind.</p><b>→</b>
-      </a>
-      <a class="mockup-path-card" href="homes/index.html#new-construction-search">
-        <h3>All New Homes</h3>
-        <p>Browse all available new construction.</p><b>→</b>
+
+      <a class="design-a-curated-card" href="homes/index.html#newly-listed">
+        <span>Just Added</span>
+        <h3>Newly Listed New Construction</h3>
+        <p>See the latest new-construction inventory.</p>
+        <b>Explore Homes →</b>
       </a>
     </div>
-  </div>
-</section>
 
-<section class="mockup-quick-searches">
-  <div class="container mockup-quick-row">
-    <strong>Quick Searches</strong>
-    <a href="homes/index.html#recently-reduced"><span class="quick-icon price-cut" aria-hidden="true"></span><div><b>Recently Reduced</b><small>See price improvements</small></div></a>
-    <a href="homes/index.html#quick-move-in"><span class="quick-icon home-key" aria-hidden="true"></span><div><b>Quick Move-In</b><small>Homes ready soon</small></div></a>
-    <a href="homes/index.html#newly-listed"><span class="quick-icon new-badge" aria-hidden="true"></span><div><b>Newly Listed</b><small>The newest opportunities</small></div></a>
-    <a href="homes/index.html#new-construction-search"><span class="quick-icon home-view" aria-hidden="true"></span><div><b>View All Homes</b><small>See every available home</small></div></a>
+    <div class="design-a-view-all">
+      <a href="homes/index.html#new-construction-search">View All New Construction →</a>
+    </div>
   </div>
 </section>
 <section class="before-tour"><div class="container before-tour-grid"><div><div class="eyebrow">Before You Tour</div><h2>Before you step inside a model home, start with a strategy.</h2></div><div class="before-tour-copy"><p class="statement"><strong>Buying new construction? You may qualify for a new home rebate.</strong> Connect with Jackson Group before touring a model home so we can help protect your options, compare builder opportunities, and plan your rebate from the very beginning.</p><div class="benefit-grid"><div class="benefit">Professional Buyer Representation</div><div class="benefit">Builder & Community Expertise</div><div class="benefit">Offer Strategy & Negotiation</div><div class="benefit">New Home Rebates</div></div><a class="button black" href="register/index.html">Register Before You Tour</a></div></div></section>
