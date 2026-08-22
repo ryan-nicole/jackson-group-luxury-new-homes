@@ -711,6 +711,79 @@
 }
 </style>
 
+
+<style id="design-a-hero-visible-fix">
+.design-a-hero{
+  position:relative !important;
+  min-height:760px !important;
+  display:flex !important;
+  align-items:center !important;
+  overflow:hidden !important;
+}
+.design-a-hero .hero-media{
+  position:absolute !important;
+  inset:0 !important;
+  z-index:0 !important;
+  display:block !important;
+}
+.design-a-hero .hero-overlay{
+  position:absolute !important;
+  inset:0 !important;
+  z-index:1 !important;
+  display:block !important;
+  background:linear-gradient(90deg,rgba(0,0,0,.62),rgba(0,0,0,.30),rgba(0,0,0,.16)) !important;
+  pointer-events:none !important;
+}
+.design-a-hero .design-a-content{
+  position:relative !important;
+  z-index:5 !important;
+  display:block !important;
+  visibility:visible !important;
+  opacity:1 !important;
+  width:min(1120px,calc(100% - 48px)) !important;
+  max-width:1120px !important;
+  margin:0 auto !important;
+  padding:72px 0 82px !important;
+  text-align:center !important;
+}
+.design-a-hero .eyebrow,
+.design-a-hero h1,
+.design-a-hero .design-a-lead,
+.design-a-hero .design-a-search-console{
+  display:block !important;
+  visibility:visible !important;
+  opacity:1 !important;
+}
+.design-a-hero h1{
+  color:#fff !important;
+  white-space:nowrap !important;
+  margin:10px auto 16px !important;
+}
+.design-a-hero .design-a-lead{
+  color:#f3ece2 !important;
+  max-width:790px !important;
+  margin:0 auto 30px !important;
+}
+.design-a-search-console{
+  position:relative !important;
+  z-index:6 !important;
+  max-width:1040px !important;
+  margin:0 auto !important;
+  background:#f8f3ea !important;
+  color:#211e19 !important;
+  border:1px solid rgba(211,189,152,.8) !important;
+  box-shadow:0 22px 60px rgba(0,0,0,.30) !important;
+}
+@media(max-width:900px){
+  .design-a-hero{min-height:820px !important;}
+  .design-a-hero h1{white-space:normal !important;}
+}
+@media(max-width:620px){
+  .design-a-hero{min-height:920px !important;}
+  .design-a-hero .design-a-content{width:min(100% - 28px,1120px) !important;}
+}
+</style>
+
 </head><body>
 
 <header class="jg-luxury-header">
