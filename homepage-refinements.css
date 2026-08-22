@@ -654,3 +654,109 @@ header nav a,.site-header nav a,.main-nav a{font-size:1.02rem!important;letter-s
 .design-a-hero .design-a-content{width:min(1450px,calc(100% - 48px))!important;max-width:1450px!important}
 @media(max-width:960px){.jg-option1-brand-copy,.jg-option1-nav{display:none}.jg-option1-header-inner{grid-template-columns:auto 1fr auto}.option1-horizontal-search{width:min(92vw,900px);grid-template-columns:1fr 1fr 1fr}.option1-location-field{grid-column:1/-1}}
 @media(max-width:620px){.jg-option1-logo{height:52px}.jg-option1-register{min-height:46px;padding:0 14px;font-size:.74rem}.option1-horizontal-search{grid-template-columns:1fr 1fr}.option1-horizontal-search button{grid-column:1/-1}}
+
+
+/* ===== Option 1 refinement: 2026-08-22 ===== */
+
+/* Slightly smaller header typography so the full navigation breathes */
+.jg-option1-brand-copy strong{
+  font-size:1.48rem !important;
+}
+.jg-option1-brand-copy small{
+  font-size:.68rem !important;
+}
+.jg-option1-nav{
+  gap:clamp(16px,1.65vw,31px) !important;
+}
+.jg-option1-nav a{
+  font-size:.75rem !important;
+  letter-spacing:.015em !important;
+}
+.jg-option1-register{
+  font-size:.76rem !important;
+  padding-left:21px !important;
+  padding-right:21px !important;
+}
+
+/* Restore stronger gold treatment to Register to Tour */
+.jg-option1-register{
+  background:#c99a42 !important;
+  border-color:#d7ad5c !important;
+  color:#090704 !important;
+  box-shadow:0 0 0 1px rgba(255,220,150,.10) inset !important;
+}
+.jg-option1-register:hover{
+  background:#d8ad56 !important;
+  border-color:#e0bb70 !important;
+  color:#050403 !important;
+}
+
+/* Keep horizontal search comfortably inside the page */
+.option1-horizontal-search{
+  width:calc(100% - 64px) !important;
+  max-width:1280px !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  grid-template-columns:minmax(250px,2.15fr) minmax(105px,.9fr) minmax(90px,.72fr) minmax(90px,.72fr) minmax(125px,1fr) minmax(125px,1fr) minmax(165px,1.3fr) !important;
+}
+.option1-horizontal-search label{
+  min-width:0 !important;
+  padding-left:13px !important;
+  padding-right:13px !important;
+}
+.option1-horizontal-search button{
+  min-width:0 !important;
+  padding:0 12px !important;
+}
+
+/* Make hero supporting sentence more legible over the photograph */
+.design-a-hero .design-a-lead{
+  max-width:850px !important;
+  color:#fff8ed !important;
+  font-size:1.18rem !important;
+  line-height:1.65 !important;
+  font-weight:600 !important;
+  text-shadow:0 2px 10px rgba(0,0,0,.78) !important;
+}
+
+/* Ensure desktop title remains elegant after adding punctuation */
+.design-a-hero h1{
+  letter-spacing:-.02em !important;
+}
+
+@media(max-width:1250px){
+  .jg-option1-header-inner{
+    gap:20px !important;
+  }
+  .jg-option1-brand-copy{
+    min-width:235px !important;
+  }
+  .jg-option1-nav{
+    gap:15px !important;
+  }
+  .jg-option1-nav a{
+    font-size:.7rem !important;
+  }
+  .option1-horizontal-search{
+    width:calc(100% - 48px) !important;
+    grid-template-columns:1.8fr .8fr .7fr .7fr .9fr .9fr 1.15fr !important;
+  }
+}
+@media(max-width:1050px){
+  .option1-horizontal-search{
+    width:min(94%,920px) !important;
+    grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+  }
+  .option1-horizontal-search .option1-location-field{
+    grid-column:1/-1 !important;
+  }
+  .option1-horizontal-search button{
+    min-height:54px !important;
+  }
+}
+@media(max-width:620px){
+  .option1-horizontal-search{
+    width:calc(100% - 28px) !important;
+    grid-template-columns:1fr 1fr !important;
+  }
+}
