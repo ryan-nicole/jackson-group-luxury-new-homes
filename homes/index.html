@@ -64,6 +64,60 @@
 
 
 
+
+<section class="section full-new-construction-search" id="new-construction-search" data-idx-mode="new-construction">
+  <div class="wrap">
+    <div class="heading">
+      <p class="eyebrow">New Construction Home Search</p>
+      <h2>Search all available new homes.</h2>
+      <p>Use the filters below to narrow your new-construction search. Once your MLS/IDX provider is connected, the matching homes will load directly underneath on this page.</p>
+    </div>
+
+    <div class="full-idx-filter-bar">
+      <label>Location
+        <input id="fullLocation" type="text" placeholder="City, county, subdivision, builder or ZIP">
+      </label>
+      <label>Price
+        <select id="fullPrice"><option value="">Any Price</option><option>$300K–$400K</option><option>$400K–$500K</option><option>$500K–$650K</option><option>$650K–$800K</option><option>$800K+</option></select>
+      </label>
+      <label>Beds
+        <select id="fullBeds"><option value="">Any</option><option>2+</option><option>3+</option><option>4+</option><option>5+</option></select>
+      </label>
+      <label>Baths
+        <select id="fullBaths"><option value="">Any</option><option>2+</option><option>3+</option><option>4+</option></select>
+      </label>
+      <label>Builder
+        <select id="fullBuilder"><option value="">Any Builder</option><option>Highland Homes</option><option>Perry Homes</option><option>Meritage Homes</option><option>Ashton Woods</option><option>Tri Pointe Homes</option><option>Sitterle Homes</option><option>Century Communities</option><option>Giddens Homes</option><option>GFO Home</option><option>Blackburn Homes</option></select>
+      </label>
+      <label>More
+        <select id="fullMore"><option value="">More Filters</option><option value="quick-move-in">Quick Move-In</option><option value="reduced">Recently Reduced</option><option value="newly-listed">Newly Listed</option><option>Single Story</option></select>
+      </label>
+      <button class="btn black" id="fullNewSearch">Search New Homes</button>
+    </div>
+
+    <div class="curated-result-anchor" id="recently-reduced" data-saved-search="new-construction+price-reduced">
+      <span>Saved Search</span><strong>Recently Reduced New Homes</strong>
+    </div>
+    <div class="curated-result-anchor" id="quick-move-in" data-saved-search="new-construction+quick-move-in">
+      <span>Saved Search</span><strong>Quick Move-In Homes</strong>
+    </div>
+    <div class="curated-result-anchor" id="newly-listed" data-saved-search="new-construction+newly-listed">
+      <span>Saved Search</span><strong>Newly Listed New Construction</strong>
+    </div>
+
+    <div class="full-idx-results" id="newConstructionResults" data-idx-results="new-construction">
+      <div>
+        <span>MLS / IDX Results</span>
+        <strong>New construction listings will appear here.</strong>
+        <small>The page, filters, results area, pagination structure, and saved-search anchors are ready for your IDX connection.</small>
+      </div>
+    </div>
+
+    <nav class="full-results-pagination" aria-label="New construction result pages">
+      <button disabled>Previous</button><button class="active">1</button><button>2</button><button>3</button><button>Next</button>
+    </nav>
+  </div>
+</section>
 <section class="before before-contrast"><div class="wrap split">
 <div><p class="eyebrow light">Before You Tour</p><h2>Found a home or builder you like?</h2><p>Connect with Jackson Group before your first builder visit so we can help you understand your options and discuss potential rebate opportunities from the beginning.</p></div>
 <div class="cta-actions"><a class="btn gold" href="../register/index.html">Register Before You Tour</a><a class="btn outline" href="../rebates/index.html">Estimate My Rebate</a></div>

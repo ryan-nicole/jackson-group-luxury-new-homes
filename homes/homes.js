@@ -9,3 +9,34 @@ function closeListingGate(){const g=document.getElementById("listingGate");if(!g
 document.querySelectorAll("[data-close-gate]").forEach(e=>e.addEventListener("click",closeListingGate));
 window.JGRequireAccountForSave=()=>openListingGate();
 window.JGRecordPropertyView=function(){const k="jg-property-detail-views";const n=Number(sessionStorage.getItem(k)||0)+1;sessionStorage.setItem(k,String(n));if(n>Number(window.JG_HOME_GATE.freePropertyViews||3))openListingGate();return n};
+
+(function(){
+  function params(){
+    return new URLSearchParams(window.location.search);
+  }
+  function hydrateFromHomepage(){
+    const p=params();
+    const map={location:'fullLocation',price:'fullPrice',beds:'fullBeds',baths:'fullBaths',builder:'fullBuilder',more:'fullMore'};
+    Object.keys(map).forEach(k=>{
+      const el=document.getElementById(map[k]);
+      if(el && p.get(k)) el.value=p.get(k);
+    });
+  }
+  function showFullResults(label){
+    const box=document.getElementById('newConstructionResults');
+    if(!box)return;
+    box.innerHTML=`<div><span>MLS / IDX Results</span><strong>${label||'New Construction Homes'}</strong><small>Real matching listings will populate here when IDX is connected.</small></div>`;
+    box.scrollIntoView({behavior:'smooth',block:'start'});
+  }
+  document.getElementById('fullNewSearch')?.addEventListener('click',()=>{
+    const loc=document.getElementById('fullLocation')?.value||'';
+    showFullResults(loc ? `New construction near ${loc}` : 'All New Construction');
+  });
+  hydrateFromHomepage();
+
+  // Curated homepage links preselect their saved-search concept.
+  const hash=window.location.hash;
+  if(hash==='#recently-reduced') showFullResults('Recently Reduced New Homes');
+  if(hash==='#quick-move-in') showFullResults('Quick Move-In Homes');
+  if(hash==='#newly-listed') showFullResults('Newly Listed New Construction');
+})();
