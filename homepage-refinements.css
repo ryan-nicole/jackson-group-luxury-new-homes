@@ -789,3 +789,23 @@ header nav a,.site-header nav a,.main-nav a{font-size:1.02rem!important;letter-s
 .jg-option1-brand-copy small{
   font-size:.78rem !important;
 }
+
+/* Homepage header navigation behavior */
+.jg-option1-brand-home-link{
+  text-decoration:none !important;
+  color:inherit !important;
+}
+.jg-option1-brand-home-link:hover strong{
+  color:#f7f1e7 !important;
+}
+.jg-option1-brand-home-link:hover small{
+  color:#d5aa57 !important;
+}
+
+/* Homepage has no active nav underline; individual links still highlight on hover */
+.jg-option1-header .jg-option1-nav a.active{
+  color:#f4eee5 !important;
+}
+.jg-option1-header .jg-option1-nav a.active::after{
+  content:none !important;
+}
