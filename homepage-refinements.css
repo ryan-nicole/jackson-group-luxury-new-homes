@@ -760,3 +760,24 @@ header nav a,.site-header nav a,.main-nav a{font-size:1.02rem!important;letter-s
     grid-template-columns:1fr 1fr !important;
   }
 }
+
+/* Match header brand copy to the New Home Rebates page */
+.jg-option1-brand-copy strong{
+  font-family:Georgia,serif !important;
+  font-size:1rem !important;
+  font-weight:700 !important;
+  line-height:1.2 !important;
+  letter-spacing:0 !important;
+  text-transform:none !important;
+}
+.jg-option1-brand-copy small{
+  display:block !important;
+  margin-top:3px !important;
+  font-family:inherit !important;
+  font-size:.72rem !important;
+  font-weight:400 !important;
+  line-height:1.2 !important;
+  letter-spacing:0 !important;
+  text-transform:none !important;
+  color:#c99a42 !important;
+}
