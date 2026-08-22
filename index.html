@@ -589,15 +589,127 @@
 }
 </style>
 
-<link rel="stylesheet" href="homepage-refinements.css"></head><body>
+<link rel="stylesheet" href="homepage-refinements.css">
+<style id="jg-luxury-header-force">
+.jg-luxury-header{
+  background:#050505 !important;
+  border-bottom:1px solid #b98a35 !important;
+  position:relative !important;
+  z-index:9999 !important;
+  width:100% !important;
+}
+.jg-luxury-header-inner{
+  width:min(1480px,calc(100% - 52px)) !important;
+  min-height:102px !important;
+  margin:0 auto !important;
+  display:grid !important;
+  grid-template-columns:auto 1fr auto !important;
+  align-items:center !important;
+  gap:42px !important;
+}
+.jg-luxury-logo-wrap{
+  display:flex !important;
+  align-items:center !important;
+  padding-right:38px !important;
+  border-right:1px solid rgba(204,156,69,.68) !important;
+}
+.jg-luxury-logo{
+  display:block !important;
+  width:auto !important;
+  height:68px !important;
+  max-width:250px !important;
+  object-fit:contain !important;
+}
+.jg-luxury-nav{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:clamp(28px,2.7vw,50px) !important;
+}
+.jg-luxury-nav a{
+  position:relative !important;
+  color:#f6f1e8 !important;
+  text-decoration:none !important;
+  text-transform:uppercase !important;
+  letter-spacing:.055em !important;
+  font-size:.88rem !important;
+  font-weight:700 !important;
+  padding:39px 0 33px !important;
+  white-space:nowrap !important;
+}
+.jg-luxury-nav a:hover,
+.jg-luxury-nav a.active{
+  color:#d4a64d !important;
+}
+.jg-luxury-nav a:hover::after,
+.jg-luxury-nav a.active::after{
+  content:"" !important;
+  position:absolute !important;
+  left:0 !important;
+  right:0 !important;
+  bottom:25px !important;
+  height:2px !important;
+  background:#c99a42 !important;
+}
+.jg-luxury-tour{
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:18px !important;
+  min-height:56px !important;
+  padding:0 28px !important;
+  border:1px solid #c99a42 !important;
+  border-radius:3px !important;
+  background:transparent !important;
+  color:#d8ab52 !important;
+  text-decoration:none !important;
+  text-transform:uppercase !important;
+  letter-spacing:.05em !important;
+  font-size:.86rem !important;
+  font-weight:700 !important;
+  white-space:nowrap !important;
+}
+.jg-luxury-tour:hover{
+  background:#c99a42 !important;
+  color:#090806 !important;
+}
+@media(max-width:1050px){
+  .jg-luxury-header-inner{gap:22px !important;}
+  .jg-luxury-logo-wrap{padding-right:22px !important;}
+  .jg-luxury-nav{gap:20px !important;}
+  .jg-luxury-nav a{font-size:.78rem !important;}
+}
+@media(max-width:860px){
+  .jg-luxury-header-inner{
+    min-height:82px !important;
+    grid-template-columns:1fr auto !important;
+  }
+  .jg-luxury-logo-wrap{
+    border-right:0 !important;
+    padding-right:0 !important;
+  }
+  .jg-luxury-logo{
+    height:54px !important;
+    max-width:205px !important;
+  }
+  .jg-luxury-nav{display:none !important;}
+  .jg-luxury-tour{
+    min-height:46px !important;
+    padding:0 17px !important;
+    font-size:.76rem !important;
+  }
+}
+</style>
 
-<header class="luxury-site-header">
-  <div class="luxury-header-inner">
-    <a class="luxury-logo" href="index.html" aria-label="Jackson Group Home">
-      <img src="assets/jackson-group-logo.jpg" alt="Jackson Group logo">
+</head><body>
+
+<header class="jg-luxury-header">
+  <div class="jg-luxury-header-inner">
+    <a class="jg-luxury-logo-wrap" href="index.html" aria-label="Jackson Group Home">
+      <img src="assets/jackson-group-logo.jpg" alt="Jackson Group logo" class="jg-luxury-logo">
     </a>
 
-    <nav class="luxury-nav" aria-label="Primary">
+    <nav class="jg-luxury-nav" aria-label="Primary navigation">
       <a class="active" href="homes/index.html">Search Homes</a>
       <a href="builders/index.html">Builders</a>
       <a href="rebates/index.html">New Home Rebates</a>
@@ -605,7 +717,9 @@
       <a href="faq/index.html">FAQ</a>
     </nav>
 
-    <a class="luxury-register" href="register/index.html">Register to Tour <span aria-hidden="true">→</span></a>
+    <a class="jg-luxury-tour" href="register/index.html">
+      Register to Tour <span>→</span>
+    </a>
   </div>
 </header>
 
