@@ -1,0 +1,18 @@
+
+/* Jackson Group unified site shell */
+.jg-unified-header{background:#050505;border-bottom:1px solid #bd8d38;position:relative;z-index:1000}
+.jg-unified-inner{width:min(1500px,calc(100% - 48px));min-height:98px;margin:auto;display:grid;grid-template-columns:auto auto 1fr auto;align-items:center;gap:28px}
+.jg-unified-logo-wrap{display:flex;align-items:center;padding-right:28px;border-right:1px solid rgba(201,154,66,.75)}
+.jg-unified-logo{height:66px;width:auto;max-width:190px;object-fit:contain}
+.jg-unified-brand{min-width:285px;display:flex;flex-direction:column;text-decoration:none}
+.jg-unified-brand strong{color:#f7f1e7;font-family:Georgia,serif;font-size:1.12rem;font-weight:700;line-height:1.2}
+.jg-unified-brand small{margin-top:3px;color:#c99a42;font-size:.78rem;line-height:1.2}
+.jg-unified-nav{display:flex;justify-content:center;gap:clamp(16px,1.65vw,31px)}
+.jg-unified-nav a{position:relative;color:#f4eee5;font-family:Georgia,serif;font-size:.75rem;text-transform:uppercase;text-decoration:none;padding:38px 0 32px;white-space:nowrap}
+.jg-unified-nav a.active,.jg-unified-nav a:hover{color:#d4a74c}
+.jg-unified-nav a.active:after,.jg-unified-nav a:hover:after{content:"";position:absolute;left:0;right:0;bottom:24px;height:2px;background:#c99a42}
+.jg-unified-register{min-height:56px;display:inline-flex;align-items:center;justify-content:center;gap:16px;padding:0 21px;border:1px solid #d7ad5c;border-radius:3px;background:#c99a42;color:#090704;font-family:Georgia,serif;font-size:.76rem;text-transform:uppercase;text-decoration:none;white-space:nowrap}
+.jg-unified-register:hover,.jg-unified-register.active-register{background:#d8ad56;border-color:#e0bb70;color:#050403}
+@media(max-width:1250px){.jg-unified-inner{gap:20px}.jg-unified-brand{min-width:235px}.jg-unified-nav{gap:15px}.jg-unified-nav a{font-size:.7rem}}
+@media(max-width:960px){.jg-unified-brand,.jg-unified-nav{display:none}.jg-unified-inner{grid-template-columns:auto 1fr auto}}
+@media(max-width:620px){.jg-unified-logo{height:52px}.jg-unified-register{min-height:46px;padding:0 14px;font-size:.74rem}}

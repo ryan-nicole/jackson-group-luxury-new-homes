@@ -1,5 +1,14 @@
-# Jackson Group — Clean Master
+JACKSON GROUP MASTER WEBSITE
 
-This branch contains the consolidated Jackson Group website master. The deploy build expands the validated site source into `dist/` and copies the required image assets. Obsolete incremental README/update files and the retired standalone Community Guide landing page are intentionally excluded.
+This package consolidates the current website into one deployable master.
+Use this package for future updates instead of uploading separate page ZIPs.
 
-Backup branch: `backup-before-master-clean-2026-09-04`.
+Key normalization:
+- approved current homepage/search design
+- current Search Homes new-construction destination
+- unified header on all public pages
+- active gold underline follows the current section
+- logo and Jackson Group brand text both link home
+- Explore Communities landing page removed; individual city pages retained
+- unified footer on public pages
+- current rebate formula retained
