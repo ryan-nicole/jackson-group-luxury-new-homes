@@ -1,0 +1,58 @@
+name: Materialize clean master
+
+on:
+  push:
+    branches:
+      - master-clean-staging
+
+permissions:
+  contents: write
+
+jobs:
+  materialize:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out staging branch
+        uses: actions/checkout@v4
+        with:
+          ref: master-clean-staging
+          fetch-depth: 0
+      - name: Build clean master from staged source
+        run: node build.js
+      - name: Replace temporary staging wrapper with normal site files
+        shell: bash
+        run: |
+          set -euo pipefail
+          shopt -s dotglob nullglob
+          mkdir -p /tmp/jg-materialized
+          cp -a dist/. /tmp/jg-materialized/
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -a /tmp/jg-materialized/. .
+          rm -rf /tmp/jg-materialized
+          if [ -f README-MASTER.txt ]; then mv README-MASTER.txt README.md; fi
+          test -f index.html
+          test -f homes/index.html
+          test -f builders/index.html
+          test -f rebates/index.html
+          test -f faq/index.html
+          test -f register/index.html
+          test -f site-shell.css
+          if [ -f communities/index.html ]; then
+            echo 'Retired communities/index.html is still present.' >&2
+            exit 1
+          fi
+          if find . -maxdepth 1 -type f \( -name 'README-*.txt' -o -name 'DELETE-*.txt' \) | grep -q .; then
+            echo 'Obsolete update/readme files remain at repository root.' >&2
+            exit 1
+          fi
+      - name: Commit materialized clean website
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -m 'Materialize clean master website files'
+          git push origin HEAD:master-clean-staging
