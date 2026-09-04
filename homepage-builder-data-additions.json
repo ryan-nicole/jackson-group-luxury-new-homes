@@ -1,0 +1,55 @@
+{
+  "builders_to_add": [
+    {
+      "name": "Sitterle Homes",
+      "communities": [
+        "Cimarron Hills",
+        "Clearwater Ranch",
+        "Parmer Ranch",
+        "Santa Rita Ranch"
+      ]
+    },
+    {
+      "name": "Century Communities",
+      "communities": [
+        "Heights at San Gabriel"
+      ]
+    },
+    {
+      "name": "Giddens Homes",
+      "communities": [
+        "Clearwater Ranch",
+        "Northgate Ranch",
+        "Santa Rita Ranch",
+        "The Hollows",
+        "Riverstone",
+        "Leander Estates",
+        "Scofield Farms Estates",
+        "Burnet Hilltop Estates"
+      ]
+    },
+    {
+      "name": "GFO Home",
+      "communities": [
+        "The Grove at Blackhawk",
+        "Bluffview Reserve",
+        "Enclave at Cele",
+        "Feathergrass",
+        "Heights at San Gabriel",
+        "Highland Village",
+        "Santa Rita Ranch",
+        "Whisper Valley"
+      ]
+    },
+    {
+      "name": "Blackburn Homes",
+      "communities": [
+        "Retreat at Hero Way",
+        "The Heights at San Gabriel",
+        "Brooks Ranch"
+      ]
+    }
+  ],
+  "admin_managed": true,
+  "note": "Builder/community relationships should remain editable because current inventory changes."
+}

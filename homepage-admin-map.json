@@ -1,0 +1,43 @@
+{
+  "homepage": {
+    "featured": {
+      "adminManaged": true,
+      "sectionName": "Featured",
+      "allowedTypes": [
+        "city",
+        "subdivision",
+        "community"
+      ],
+      "maxItems": 3,
+      "fields": [
+        "type",
+        "title",
+        "subtitle",
+        "description",
+        "linkUrl",
+        "image",
+        "published",
+        "sortOrder"
+      ]
+    },
+    "mlsIdx": {
+      "adminManaged": true,
+      "generalSearchMount": "homepageIdxMount",
+      "newConstructionSearchMount": "homepageNewConstructionIdxMount",
+      "searchModes": [
+        "general",
+        "new_construction"
+      ],
+      "fields": [
+        "provider",
+        "widgetIdOrEmbed",
+        "enabled",
+        "searchUrl"
+      ]
+    },
+    "rebateCalculator": {
+      "adminManaged": true,
+      "usesSettingKey": "jg-admin-rebates"
+    }
+  }
+}

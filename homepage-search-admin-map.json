@@ -1,0 +1,18 @@
+{
+  "homepageHomeSearch": {
+    "mlsIdx": {
+      "adminManaged": true,
+      "futureAdminSection": "MLS / IDX",
+      "mountId": "homepageIdxMount",
+      "searchPaths": [
+        "city",
+        "county",
+        "builder",
+        "subdivision",
+        "new_construction",
+        "full_mls"
+      ],
+      "fields": ["provider", "widgetIdOrEmbed", "enabled", "searchUrl"]
+    }
+  }
+}
