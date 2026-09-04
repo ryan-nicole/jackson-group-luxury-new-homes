@@ -1,1 +1,0 @@
-Final homepage header brand adjustment: Jackson Group increased slightly to 1.12rem and Luxury New Construction • New Home Rebates increased slightly to .78rem. Everything else remains unchanged.

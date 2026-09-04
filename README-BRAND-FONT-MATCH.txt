@@ -1,1 +1,0 @@
-Homepage header brand copy now matches the New Home Rebates page typography: Jackson Group uses Georgia serif; the subtitle uses the rebate-page small-text sizing at .72rem. Header layout and all other homepage content remain unchanged.

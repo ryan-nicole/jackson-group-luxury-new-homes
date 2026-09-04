@@ -1,1 +1,0 @@
-Builders directory header now matches the current refined homepage header. Builders is the active navigation item and receives the gold underline. Register to Tour keeps the filled gold treatment.

@@ -1,1 +1,0 @@
-Actual website implementation of Option 1 header branding and the full horizontal home-search bar. Existing Design A curated searches and homepage sections are preserved.
