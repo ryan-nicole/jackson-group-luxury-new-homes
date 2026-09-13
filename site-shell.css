@@ -48,3 +48,50 @@
 .footer-start-actions .footer-register-link{background:#f4ede2!important;color:#1b1711!important;border:1px solid #e1c899!important;box-shadow:0 9px 22px rgba(0,0,0,.14)}
 .footer-start-actions .button.gold:hover,.footer-start-actions .footer-register-link:hover{transform:translateY(-1px);filter:brightness(1.04)}
 @media(max-width:760px){.journey-grid{grid-template-columns:1fr!important}.before-tour{padding:56px 0!important}}
+
+
+/* Homepage rebate result card — balanced refinement */
+#homepage-rebate .homepage-rebate-result{
+  grid-column:1 / -1 !important;
+  width:100% !important;
+  max-width:100% !important;
+  margin:12px 0 0 !important;
+  padding:30px 36px !important;
+  border:1px solid #d9c39e !important;
+  border-radius:24px !important;
+  background:linear-gradient(135deg,#f1e7d7 0%,#f7f2e9 100%) !important;
+  box-shadow:0 14px 34px rgba(68,52,29,.08) !important;
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:center !important;
+  gap:8px !important;
+  min-height:150px !important;
+}
+#homepage-rebate .homepage-rebate-result strong{
+  display:block !important;
+  margin:0 !important;
+  color:#2a2118 !important;
+  font-family:Georgia,serif !important;
+  font-size:clamp(1.75rem,3vw,2.55rem) !important;
+  font-weight:500 !important;
+  line-height:1.12 !important;
+  letter-spacing:-.02em !important;
+}
+#homepage-rebate .homepage-rebate-result small{
+  display:block !important;
+  color:#6d665e !important;
+  font-family:Arial,Helvetica,sans-serif !important;
+  font-size:.98rem !important;
+  line-height:1.55 !important;
+}
+#homepage-rebate .homepage-rebate-actions{
+  grid-column:1 / -1 !important;
+  justify-content:center !important;
+  margin-top:18px !important;
+}
+@media(max-width:700px){
+  #homepage-rebate .homepage-rebate-result{
+    padding:24px 22px !important;
+    min-height:132px !important;
+  }
+}
