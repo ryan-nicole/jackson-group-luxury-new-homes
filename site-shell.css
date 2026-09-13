@@ -181,3 +181,20 @@
 @media(max-width:620px){
   .before-tour-editorial-inner{padding:32px 24px;min-height:260px}
 }
+
+/* Before You Tour single-column refinement */
+.before-tour-showcase-grid{
+  display:block !important;
+  max-width:1180px !important;
+}
+.before-tour-showcase-copy{
+  max-width:1040px !important;
+  padding:14px 0 10px !important;
+}
+.before-tour-showcase h2{
+  max-width:1000px !important;
+}
+.before-tour-showcase .before-tour-copy{
+  max-width:850px !important;
+}
+.before-tour-editorial-panel{display:none !important}
