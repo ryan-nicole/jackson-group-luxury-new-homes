@@ -198,3 +198,45 @@
   max-width:850px !important;
 }
 .before-tour-editorial-panel{display:none !important}
+
+/* ===== Full site redesign Sep 24 ===== */
+:root{--jg-ink:#17140f;--jg-gold:#b58a43;--jg-cream:#f5efe5;--jg-ivory:#fbf8f2;--jg-line:#ddcfbc;--jg-muted:#6f685f}
+.jg-unified-inner{min-height:88px!important;gap:24px!important}
+.jg-unified-logo{height:58px!important}
+.jg-unified-brand{min-width:245px!important}
+.jg-unified-brand strong{font-size:1rem!important;font-weight:500!important}
+.jg-unified-brand small{font-size:.67rem!important}
+.jg-unified-nav{gap:clamp(14px,1.45vw,26px)!important}
+.jg-unified-nav a{font-family:Georgia,serif!important;font-size:.67rem!important;font-weight:500!important;letter-spacing:.012em!important;padding:34px 0 29px!important}
+.jg-unified-nav a.active:after,.jg-unified-nav a:hover:after{bottom:21px!important}
+.jg-unified-register{min-height:48px!important;padding:0 17px!important;font-size:.67rem!important;font-weight:500!important}
+.jg-redesign-section{padding:72px 0;background:var(--jg-ivory)}
+.jg-redesign-section.alt{background:#eee4d5}
+.jg-redesign-kicker{font:700 .72rem/1.2 Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8d6a30}
+.jg-redesign-title{font:500 clamp(2.4rem,4vw,4rem)/1.04 Georgia,serif;color:var(--jg-ink);margin:9px 0 16px}
+.jg-redesign-copy{font:400 1rem/1.75 Arial,sans-serif;color:var(--jg-muted);max-width:760px}
+.jg-rebate-offer{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
+.jg-rebate-figure{background:#1b1814;color:#fff;border-radius:22px;padding:34px;border:1px solid #3e3529}
+.jg-rebate-figure .price-label{font:700 .7rem Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#d6b16d}
+.jg-rebate-figure .price-display{font:500 clamp(2.4rem,4vw,3.8rem) Georgia,serif;margin:8px 0 22px}
+.jg-rebate-figure input[type=range]{width:100%;accent-color:#b58a43}
+.jg-rebate-result{margin-top:24px;padding-top:22px;border-top:1px solid #514638}
+.jg-rebate-result span{display:block;color:#cbbda9;font:700 .68rem Arial,sans-serif;text-transform:uppercase;letter-spacing:.12em}
+.jg-rebate-result strong{display:block;font:500 2.8rem Georgia,serif;color:#e0b867;margin:5px 0}
+.jg-help-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}
+.jg-help-card{padding:26px 22px;border:1px solid var(--jg-line);background:#fff;text-decoration:none;color:var(--jg-ink);min-height:180px;display:flex;flex-direction:column}
+.jg-help-card span{font:700 .67rem Arial,sans-serif;color:#997333;letter-spacing:.12em}
+.jg-help-card h3{font:500 1.35rem Georgia,serif;margin:16px 0 8px}
+.jg-help-card p{font:400 .88rem/1.55 Arial,sans-serif;color:var(--jg-muted);margin:0}
+.jg-about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:start}
+.jg-contact-card{background:#1c1915;color:#fff;padding:32px;border-radius:18px}
+.jg-contact-card a{color:#e0b867;text-decoration:none;font-family:Georgia,serif;font-size:1.15rem}
+.jg-builder-list{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--jg-line);margin-top:28px}
+.jg-builder-list a{padding:18px 12px;border-bottom:1px solid var(--jg-line);text-decoration:none;color:var(--jg-ink);font-family:Georgia,serif}
+.jg-search-unified{border:1px solid var(--jg-line);background:#fff;padding:26px;border-radius:18px;box-shadow:0 14px 36px rgba(35,28,19,.06)}
+.jg-search-unified-grid{display:grid;grid-template-columns:2fr repeat(4,1fr) auto;gap:10px}
+.jg-search-unified input,.jg-search-unified select{min-height:50px;border:1px solid #d8cdbd;padding:0 12px;background:#fff}
+.jg-search-unified button{border:0;background:#b58a43;color:#17120b;padding:0 22px;font-family:Georgia,serif}
+.jg-claim-button{background:#b58a43!important;color:#17120b!important;border:1px solid #cda65f!important}
+@media(max-width:900px){.jg-rebate-offer,.jg-about-grid{grid-template-columns:1fr}.jg-help-grid{grid-template-columns:1fr 1fr}.jg-builder-list{grid-template-columns:1fr 1fr}.jg-search-unified-grid{grid-template-columns:1fr 1fr}.jg-search-unified-grid>*:first-child{grid-column:1/-1}}
+@media(max-width:600px){.jg-help-grid,.jg-builder-list,.jg-search-unified-grid{grid-template-columns:1fr}.jg-search-unified-grid>*:first-child{grid-column:auto}}
