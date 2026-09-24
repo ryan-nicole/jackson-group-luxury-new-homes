@@ -20,3 +20,6 @@ function JGInitRebates(){
  document.querySelectorAll('[data-rebate-note]').forEach(el=>el.remove());
 }
 document.addEventListener('DOMContentLoaded',JGInitRebates);if(document.readyState!=='loading')JGInitRebates();
+
+// Redesign range-price display sync
+(function(){function fmt(n){return new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n||0)}function sync(){document.querySelectorAll('[data-calculator]').forEach(function(c){var p=c.querySelector('[data-price]'),d=c.querySelector('[data-price-display]');if(p&&d){var u=function(){d.textContent=fmt(Number(p.value))};p.addEventListener('input',u);u()}})}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',sync);else sync()})();
