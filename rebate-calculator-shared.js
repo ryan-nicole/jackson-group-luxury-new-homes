@@ -1,4 +1,3 @@
-
 window.JG_REBATE_CONFIG={threshold:450000,lowerRate:.0075,upperRate:.01,upperTierOffset:350,startPrice:350000,priceStep:50000};
 window.JGParsePrice=v=>Number(String(v??'').replace(/[^0-9.]/g,''))||0;
 window.JGFormatPrice=v=>{const n=JGParsePrice(v);return n?n.toLocaleString('en-US',{maximumFractionDigits:0}):''};
@@ -9,6 +8,11 @@ function JGInitRebates(){
   const price=calc.querySelector('[data-price],input[type="number"],input[name*="price" i],input[data-rebate-price]');
   const result=calc.querySelector('[data-rebate-result],.builder-rebate-result strong,.premium-result strong,#homepageRebateResult strong');
   if(!price||!result)return;
+  const display=calc.querySelector('[data-price-display]');
+  if(price.type==='range'){
+    const renderRange=()=>{const n=Number(price.value)||350000;if(display)display.textContent=JGFormatCurrency(n);result.textContent=JGFormatCurrency(JGCalculateRebate(n).rebate)};
+    price.addEventListener('input',renderRange);renderRange();return;
+  }
   price.type='text';price.inputMode='numeric';price.setAttribute('data-rebate-price','true');
   price.value=JGFormatPrice(price.value||350000);
   const render=()=>{result.textContent=JGFormatCurrency(JGCalculateRebate(price.value).rebate)};
@@ -20,6 +24,3 @@ function JGInitRebates(){
  document.querySelectorAll('[data-rebate-note]').forEach(el=>el.remove());
 }
 document.addEventListener('DOMContentLoaded',JGInitRebates);if(document.readyState!=='loading')JGInitRebates();
-
-// Redesign range-price display sync
-(function(){function fmt(n){return new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n||0)}function sync(){document.querySelectorAll('[data-calculator]').forEach(function(c){var p=c.querySelector('[data-price]'),d=c.querySelector('[data-price-display]');if(p&&d){var u=function(){d.textContent=fmt(Number(p.value))};p.addEventListener('input',u);u()}})}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',sync);else sync()})();
