@@ -40,3 +40,29 @@ window.JGRecordPropertyView=function(){const k="jg-property-detail-views";const 
   if(hash==='#quick-move-in') showFullResults('Quick Move-In Homes');
   if(hash==='#newly-listed') showFullResults('Newly Listed New Construction');
 })();
+
+/* Redesigned unified search + city/neighborhood routing */
+(function(){
+  const form=document.querySelector('.jg-search-unified-grid');
+  const results=document.getElementById('results');
+  if(!form||!results)return;
+  const params=new URLSearchParams(location.search);
+  const fields=['location','price','beds','baths','type'];
+  fields.forEach(name=>{
+    const el=form.elements[name];
+    if(el&&params.get(name)) el.value=params.get(name);
+  });
+  function render(){
+    const values=fields.map(name=>[name,form.elements[name]?.value]).filter(x=>x[1]);
+    const label=values.length?values.map(([k,v])=>k==='location'?v:`${k}: ${v}`).join(' • '):'All available homes';
+    results.innerHTML=`<div class="jg-redesign-kicker">MLS / IDX Results</div><h3>${label}</h3><p class="jg-redesign-copy">Your selected filters are ready. Live matching listings will populate here when the IDX connection is added.</p>`;
+  }
+  form.addEventListener('submit',e=>{
+    e.preventDefault();
+    const q=new URLSearchParams(new FormData(form));
+    history.replaceState(null,'',location.pathname+'?'+q.toString()+'#results');
+    render();
+    results.scrollIntoView({behavior:'smooth',block:'start'});
+  });
+  if([...params.keys()].length){render(); if(location.hash==='#results') setTimeout(()=>results.scrollIntoView({block:'start'}),50);}
+})();
