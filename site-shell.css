@@ -282,3 +282,16 @@
 .footer-start{padding:10px 0}.footer-start h3{font:500 2rem Georgia,serif}.footer-start p{max-width:460px}
 @media(max-width:1000px){.jg-home-search-modern{grid-template-columns:1fr 1fr 1fr}.jg-home-search-location{grid-column:1/-1}.jg-before-rebate-grid,.jg-register-form-grid{grid-template-columns:1fr}.jg-city-list{grid-template-columns:1fr}.jg-city-list a:nth-child(odd){border-right:0}}
 @media(max-width:650px){.jg-home-search-modern{grid-template-columns:1fr}.jg-home-search-location{grid-column:auto}.jg-home-search-modern button{min-height:52px}.jg-form-callout{grid-template-columns:1fr}.jg-register-strip .wrap{padding-top:25px;padding-bottom:25px;align-items:flex-start;flex-direction:column}.jg-city-list a{grid-template-columns:1fr}.jg-before-rebate-grid{gap:30px}}
+
+/* ===== Final consistency pass ===== */
+.jg-unified-logo-wrap,.friendly-brand{background:#050505!important}
+.jg-unified-logo,.friendly-brand img{display:block;background:#050505!important}
+.footer-placeholder{margin:.35rem 0 0;color:#827a70;font-size:.78rem;font-style:italic}
+.site-footer .footer-top{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding-top:48px;padding-bottom:48px}
+.site-footer .footer-start{border-left:1px solid #3e352a;padding-left:42px}
+.site-footer .footer-start-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.site-footer .footer-register-link{display:inline-flex;align-items:center;color:#e0b867;text-decoration:none;font:500 .82rem Georgia,serif;padding:13px 4px}
+.site-footer .footer-links-grid{padding-top:36px;padding-bottom:36px}
+.site-footer .footer-links-grid h3{font:500 1rem Georgia,serif}
+.site-footer .footer-links-grid a{font-size:.78rem}
+@media(max-width:800px){.site-footer .footer-top{grid-template-columns:1fr;gap:25px}.site-footer .footer-start{border-left:0;border-top:1px solid #3e352a;padding-left:0;padding-top:25px}}
