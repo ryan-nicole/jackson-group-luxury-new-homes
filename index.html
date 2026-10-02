@@ -22,20 +22,17 @@
   <div class="hero-media"></div>
   <div class="hero-overlay"></div>
   <div class="container design-a-content">
-    <div class="eyebrow light">Jackson Group • Texas Real Estate</div>
+    
     <h1>Find Your Next Home.</h1>
     <p class="design-a-lead">Search available new construction by location, builder, subdivision, or the features that matter most to you.</p>
 
-    <form class="option1-horizontal-search" action="homes/index.html#results" method="get">
-<label class="option1-location-field"><span class="option1-field-label">Where are you looking?</span><span class="option1-location-row"><span class="option1-location-icon">⌖</span><input name="location" type="text" placeholder="City, county, subdivision, builder or ZIP"></span></label>
-<label><span class="option1-field-label">Price</span><select name="price"><option value="">Any</option><option value="300000-400000">$300K–$400K</option><option value="400000-500000">$400K–$500K</option><option value="500000-650000">$500K–$650K</option><option value="650000-800000">$650K–$800K</option><option value="800000+">$800K+</option></select></label>
-<label><span class="option1-field-label">Beds</span><select name="beds"><option value="">Any</option><option>2+</option><option>3+</option><option>4+</option><option>5+</option></select></label>
-<label><span class="option1-field-label">Baths</span><select name="baths"><option value="">Any</option><option>2+</option><option>3+</option><option>4+</option></select></label>
-<label><span class="option1-field-label">Builder</span><select name="builder"><option value="">Any Builder</option><option>Highland Homes</option><option>Meritage Homes</option><option>Ashton Woods</option><option>Tri Pointe Homes</option><option>Sitterle Homes</option><option>Century Communities</option><option>Giddens Homes</option><option>GFO Home</option><option>Blackburn Homes</option></select></label>
-<label><span class="option1-field-label">More</span><select name="more"><option value="">More Filters</option><option value="quick-move-in">Quick Move-In</option><option value="reduced">Recently Reduced</option><option value="newly-listed">Newly Listed</option><option value="single-story">Single Story</option></select></label>
-<button type="submit">Search Homes <span>→</span></button>
-<p class="option1-search-note">Work with Jackson Group before your first tour to help protect your options and learn about available new home rebates.</p>
-</form>
+    <form class="jg-home-search-modern" action="homes/index.html#results" method="get">
+<div class="jg-home-search-location"><span>Where are you looking?</span><input name="location" type="text" placeholder="City, neighborhood, builder, ZIP or address"></div>
+<label><span>Price</span><select name="price"><option value="">Any Price</option><option value="150000-200000">$150K–$200K</option><option value="200000-300000">$200K–$300K</option><option value="300000-450000">$300K–$450K</option><option value="450000-600000">$450K–$600K</option><option value="600000-800000">$600K–$800K</option><option value="800000+">$800K+</option></select></label>
+<label><span>Beds</span><select name="beds"><option value="">Any</option><option>2+</option><option>3+</option><option>4+</option><option>5+</option></select></label>
+<label><span>Baths</span><select name="baths"><option value="">Any</option><option>2+</option><option>3+</option><option>4+</option></select></label>
+<label><span>More</span><select name="type"><option value="">More Filters</option><option>Quick Move-In</option><option>Recently Reduced</option><option>New Construction</option><option>Single Story</option></select></label>
+<button type="submit">Search Homes →</button></form>
   </div>
 </section>
 
@@ -47,21 +44,21 @@
     </div>
 
     <div class="design-a-curated-grid">
-      <a class="design-a-curated-card" href="homes/index.html#recently-reduced">
+      <a class="design-a-curated-card" href="homes/index.html?type=Recently+Reduced#results">
         <span>Price Improvements</span>
         <h3>Recently Reduced New Homes</h3>
         <p>See new construction with recent price reductions.</p>
         <b>Explore Homes →</b>
       </a>
 
-      <a class="design-a-curated-card" href="homes/index.html#quick-move-in">
+      <a class="design-a-curated-card" href="homes/index.html?type=Quick+Move-In#results">
         <span>Move-In Ready</span>
         <h3>Quick Move-In Homes</h3>
         <p>Find new homes available sooner.</p>
         <b>Explore Homes →</b>
       </a>
 
-      <a class="design-a-curated-card" href="homes/index.html#newly-listed">
+      <a class="design-a-curated-card" href="homes/index.html?type=New+Construction#results">
         <span>Just Added</span>
         <h3>Newly Listed New Construction</h3>
         <p>See the latest new-construction inventory.</p>
@@ -74,29 +71,15 @@
     </div>
   </div>
 </section>
-<section class="before-tour before-tour-showcase" aria-labelledby="before-tour-title">
-  <div class="container before-tour-showcase-grid">
-    <div class="before-tour-showcase-copy">
-      <p class="eyebrow">Before You Tour</p>
-      <h2 id="before-tour-title">Before you step inside a model home,<br>start with a strategy.</h2>
-      <p class="before-tour-lead"><strong>Buying new construction? You may qualify for a new home rebate.</strong></p>
-      <p class="before-tour-copy">Connect with Jackson Group before touring a model home so we can help protect your options, compare builder opportunities, and plan your rebate from the very beginning.</p>
-      <a class="before-tour-register" href="register/index.html">Register Before You Tour <span aria-hidden="true">→</span></a>
-      <p class="before-tour-tagline">The right move starts before the tour.</p>
-    </div>
-  </div>
-</section>
-<section class="jg-redesign-section alt" id="homepage-rebate"><div class="container jg-rebate-offer">
-<div><div class="jg-redesign-kicker">New Home Rebate</div><h2 class="jg-redesign-title">Know what your rebate could look like before you tour.</h2><p class="jg-redesign-copy">Move the price slider to see a planning estimate. Jackson Group can confirm the details for your transaction before your first builder visit.</p><p class="jg-redesign-copy" style="font-size:.82rem">Estimates are illustrative. Final eligibility and amount depend on the transaction, compensation, buyer agreement, lender requirements, builder policies, closing conditions and applicable law.</p><div style="margin-top:24px"><a class="button black" href="rebates/index.html">Explore New Home Rebates</a></div></div>
-<aside class="jg-rebate-figure" data-calculator><span class="price-label">New home price</span><div class="price-display" data-price-display>$350,000</div><input data-price type="range" min="200000" max="1500000" step="50000" value="350000" aria-label="New home price"><div class="jg-rebate-result"><span>Estimated new home rebate</span><strong data-rebate-result>$2,625</strong><small>Planning estimate only</small></div></aside>
-</div></section>
-<section class="jg-redesign-section"><div class="container"><div class="jg-redesign-kicker">Builder Visit Form</div><h2 class="jg-redesign-title">Your builder information, organized before you tour.</h2><p class="jg-redesign-copy">The Jackson Group online builder form is being designed so clients can complete it online, keep a printable copy, and send a business copy to Jackson Group. We’ll finalize the exact questions and delivery options separately.</p></div></section>
-<section class="jg-redesign-section alt"><div class="container"><div class="jg-redesign-kicker">What Can We Help You With?</div><h2 class="jg-redesign-title">Start with the part of your move that matters now.</h2><p class="jg-redesign-copy">Choose a starting point and we’ll take you to the right place.</p><div class="jg-help-grid"><a class="jg-help-card" href="homes/index.html"><span>01</span><h3>Find a Home</h3><p>Search available homes and new construction.</p></a><a class="jg-help-card" href="builders/index.html"><span>02</span><h3>Compare Builders</h3><p>Explore the builders Jackson Group works with.</p></a><a class="jg-help-card" href="rebates/index.html"><span>03</span><h3>Plan My Rebate</h3><p>Understand your potential new-home rebate.</p></a><a class="jg-help-card" href="sell/index.html"><span>04</span><h3>Sell &amp; Buy</h3><p>Coordinate your current home with your next move.</p></a></div></div></section>
+<section class="before-tour before-tour-showcase" aria-labelledby="before-tour-title"><div class="container jg-before-rebate-grid"><div class="before-tour-showcase-copy"><p class="eyebrow">Before You Tour</p><h2 id="before-tour-title">Start with a strategy before the model-home visit.</h2><p class="before-tour-lead"><strong>Register before you tour so Jackson Group can help protect your options and discuss potential rebate eligibility from the beginning.</strong></p><p class="before-tour-copy">Use the calculator here for a quick estimate, then register before your first builder visit.</p><a class="before-tour-register" href="register/index.html">Register Before You Tour <span aria-hidden="true">→</span></a></div><aside class="jg-rebate-figure" data-calculator><span class="price-label">New home price</span><div class="price-display" data-price-display>$350,000</div><input data-price type="range" min="150000" max="1500000" step="50000" value="350000" aria-label="New home price"><div class="jg-rebate-result"><span>Estimated new home rebate</span><strong data-rebate-result>$2,625</strong><small>Estimates are illustrative. Final eligibility and amount depend on the transaction, compensation, buyer agreement, lender requirements, builder policies, closing conditions and applicable law.</small></div><a class="jg-rebate-more" href="rebates/index.html">Learn About New Home Rebates →</a></aside></div></section>
+
+
+<section class="jg-redesign-section alt"><div class="container"><div class="jg-redesign-kicker">What Can We Help You With?</div><h2 class="jg-redesign-title">Start with the part of your move that matters now.</h2><p class="jg-redesign-copy">Choose a starting point and we’ll take you to the right place.</p><div class="jg-help-grid"><a class="jg-help-card" href="homes/index.html"><span>01</span><h3>Find a Home</h3><p>Search available homes and new construction.</p></a><a class="jg-help-card" href="builders/index.html"><span>02</span><h3>Explore Cities</h3><p>Browse cities and neighborhoods, then jump into available homes.</p></a><a class="jg-help-card" href="rebates/index.html"><span>03</span><h3>Plan My Rebate</h3><p>Understand your potential new-home rebate.</p></a><a class="jg-help-card" href="sell/index.html"><span>04</span><h3>Sell &amp; Buy</h3><p>Coordinate your current home with your next move.</p></a></div></div></section>
 
 
 </main>
 <footer class="site-footer friendly-footer">
 <div class="container footer-top"><div class="footer-brand friendly-brand"><img src="assets/jackson-group-logo.jpg" alt="Jackson Group logo"><div><strong>Jackson Group</strong><p>Backed by more than 30 years of real estate experience. Explore Texas homes, new construction, builders, and new home rebate opportunities.</p></div></div><div class="footer-start"><h3>Ready to Start?</h3><p>Search homes now, or register before your first builder visit.</p><div class="footer-start-actions"><a class="button gold" href="homes/index.html">Search Homes</a><a class="footer-register-link" href="register/index.html">Register Before You Tour →</a></div></div></div>
-<div class="container footer-links-grid"><div><h3>Find a Home</h3><a href="homes/index.html">Search Homes</a><a href="builders/index.html">City Directory</a></div><div><h3>Buyer Resources</h3><a href="register/index.html">Builder Registration Form</a><a href="sell/index.html">Sell Your Current Home</a><a href="rebates/index.html">New Home Rebates</a><a href="how-it-works/index.html">Register</a><a href="about/index.html">About Jackson Group</a></div><div><h3>Plan Your Move</h3><div class="footer-plan-blank" aria-label="Reserved for future information"></div></div></div><div class="container footer-bottom"><span>Jackson Group • Texas Real Estate</span><span>Rebate eligibility, builder offerings, inventory, pricing and incentives vary by transaction and may change.</span></div></footer>
+<div class="container footer-links-grid"><div><h3>Find a Home</h3><a href="about/index.html">Connect With Jackson Group</a><a href="homes/index.html">Search Homes</a><a href="builders/index.html">City Directory</a></div><div><h3>Buyer Resources</h3><a href="rebates/index.html">New Home Rebates</a><a href="register/index.html">Builder Registration Form</a><a href="sell/index.html">Sell Your Current Home</a></div><div><h3>Plan Your Move</h3><div class="footer-plan-blank" aria-label="Reserved for future information"></div></div></div><div class="container footer-bottom"><span>Jackson Group • Texas Real Estate</span><span>Rebate eligibility, builder offerings, inventory, pricing and incentives vary by transaction and may change.</span></div></footer>
 <script src="script.js"></script><script src="rebate-calculator-shared.js"></script>
 </body></html>
