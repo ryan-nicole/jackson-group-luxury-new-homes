@@ -240,3 +240,45 @@
 .jg-claim-button{background:#b58a43!important;color:#17120b!important;border:1px solid #cda65f!important}
 @media(max-width:900px){.jg-rebate-offer,.jg-about-grid{grid-template-columns:1fr}.jg-help-grid{grid-template-columns:1fr 1fr}.jg-builder-list{grid-template-columns:1fr 1fr}.jg-search-unified-grid{grid-template-columns:1fr 1fr}.jg-search-unified-grid>*:first-child{grid-column:1/-1}}
 @media(max-width:600px){.jg-help-grid,.jg-builder-list,.jg-search-unified-grid{grid-template-columns:1fr}.jg-search-unified-grid>*:first-child{grid-column:auto}}
+
+/* ===== Handwritten review round — Oct 1 ===== */
+.jg-unified-inner{width:min(1540px,calc(100% - 42px))!important;grid-template-columns:auto auto 1fr auto!important;gap:22px!important}
+.jg-unified-logo-wrap{background:#050505!important;overflow:hidden}
+.jg-unified-logo{height:62px!important;mix-blend-mode:multiply}
+.jg-unified-brand{min-width:220px!important}
+.jg-unified-nav{justify-content:space-evenly!important;gap:clamp(22px,2.1vw,40px)!important}
+.jg-unified-nav a{font-size:.76rem!important}
+.jg-unified-register{font-size:.74rem!important}
+.jg-home-search-modern{width:min(1320px,calc(100% - 20px));margin:34px auto 0;display:grid;grid-template-columns:2.25fr repeat(3,.72fr) .95fr 1.15fr;background:#fbf7ef;border:1px solid #c99a42;border-radius:18px;box-shadow:0 20px 50px rgba(0,0,0,.25);overflow:hidden;text-align:left}
+.jg-home-search-modern>div,.jg-home-search-modern label{min-width:0;display:flex;flex-direction:column;justify-content:center;padding:14px 15px;border-right:1px solid #ded3c3}
+.jg-home-search-modern span{font:500 .82rem Georgia,serif;color:#332c23;margin-bottom:5px}
+.jg-home-search-modern input,.jg-home-search-modern select{width:100%;border:0;outline:0;background:transparent;font:400 .82rem Arial,sans-serif;color:#625b51}
+.jg-home-search-modern button{margin:8px;border:0;border-radius:10px;background:#b78a3e;color:#151008;font:700 .83rem Georgia,serif;cursor:pointer}
+.jg-before-rebate-grid{display:grid;grid-template-columns:1fr .82fr;gap:58px;align-items:center}
+.jg-before-rebate-grid .before-tour-showcase-copy{padding:0}
+.jg-rebate-figure input[type=range]{accent-color:#b58a43}
+.jg-rebate-figure small{display:block;color:#bfb3a3;font:400 .74rem/1.55 Arial,sans-serif;margin-top:8px}
+.jg-rebate-more{display:inline-block;margin-top:20px;color:#e0b867;text-decoration:none;font:500 .88rem Georgia,serif}
+.jg-idx-results{margin-top:34px;padding:34px;border:1px solid var(--jg-line);background:#fff;min-height:190px}
+.jg-idx-results h3{font:500 1.8rem Georgia,serif;margin:8px 0}
+.jg-form-callout{display:grid;grid-template-columns:1fr auto;gap:50px;align-items:center}
+.jg-register-strip{background:#1a1713;color:#fff;border-top:1px solid #493c2b;border-bottom:1px solid #493c2b}
+.jg-register-strip .wrap{min-height:126px;display:flex;align-items:center;justify-content:space-between;gap:34px}
+.jg-register-strip span{display:block;color:#d2a958;font:700 .68rem Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;margin-bottom:8px}
+.jg-register-strip strong{font:500 1.25rem/1.4 Georgia,serif}
+.jg-register-strip a{color:#17120b;background:#c99a42;text-decoration:none;padding:15px 21px;font:700 .75rem Arial,sans-serif;text-transform:uppercase;letter-spacing:.06em;white-space:nowrap}
+.jg-city-list{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--jg-line);margin-top:30px}
+.jg-city-list a{display:grid;grid-template-columns:1fr 1.4fr auto;align-items:center;gap:20px;padding:22px 15px;border-bottom:1px solid var(--jg-line);text-decoration:none;color:var(--jg-ink)}
+.jg-city-list a:nth-child(odd){border-right:1px solid var(--jg-line)}
+.jg-city-list strong{font:500 1.2rem Georgia,serif}.jg-city-list small{color:var(--jg-muted);font:400 .78rem/1.4 Arial,sans-serif}.jg-city-list span{color:#8b672d;font:700 .72rem Arial,sans-serif}
+.jg-register-landing-hero{background:linear-gradient(105deg,rgba(12,10,8,.94),rgba(30,24,17,.88));color:#fff;padding:105px 0}
+.jg-register-landing-hero h1{max-width:850px;font:500 clamp(3rem,6vw,6rem)/.98 Georgia,serif;margin:10px 0 20px}
+.jg-register-landing-hero p{max-width:760px;color:#d8cfc2;font:400 1.05rem/1.7 Arial,sans-serif}
+.jg-register-form-hero{padding:75px 0 35px;background:#f3ebdf}
+.jg-register-form-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:45px;align-items:start}
+.jg-registration-note{background:#1b1814;color:#fff;padding:34px;border-radius:18px}.jg-registration-note>span{color:#d6ad61;text-transform:uppercase;letter-spacing:.12em;font-size:.7rem}.jg-registration-note h2{font:500 2rem Georgia,serif}.jg-registration-note p{color:#cfc5b7;line-height:1.65}
+.site-footer .friendly-brand img{background:#050505!important;border-radius:0!important;mix-blend-mode:multiply}
+.footer-top{background:#15130f;padding-left:28px;padding-right:28px;border-top:1px solid #3d3428}
+.footer-start{padding:10px 0}.footer-start h3{font:500 2rem Georgia,serif}.footer-start p{max-width:460px}
+@media(max-width:1000px){.jg-home-search-modern{grid-template-columns:1fr 1fr 1fr}.jg-home-search-location{grid-column:1/-1}.jg-before-rebate-grid,.jg-register-form-grid{grid-template-columns:1fr}.jg-city-list{grid-template-columns:1fr}.jg-city-list a:nth-child(odd){border-right:0}}
+@media(max-width:650px){.jg-home-search-modern{grid-template-columns:1fr}.jg-home-search-location{grid-column:auto}.jg-home-search-modern button{min-height:52px}.jg-form-callout{grid-template-columns:1fr}.jg-register-strip .wrap{padding-top:25px;padding-bottom:25px;align-items:flex-start;flex-direction:column}.jg-city-list a{grid-template-columns:1fr}.jg-before-rebate-grid{gap:30px}}
