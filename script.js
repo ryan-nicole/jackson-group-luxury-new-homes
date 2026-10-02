@@ -28,7 +28,7 @@ if(b){
     if(x.includes('new-construction')&&x.includes('rebates')){location.href='register/index.html';return;}
     if(x.includes('sell-current')){location.href='sell/index.html';return;}
     if(x.includes('rebates')){location.href='rebates/index.html';return;}
-    if(x.includes('new-construction')){location.href='homes/index.html#new-construction-search';return;}
+    if(x.includes('new-construction')){location.href='homes/index.html?type=New+Construction#results';return;}
     location.href='homes/index.html';
   });
 }
