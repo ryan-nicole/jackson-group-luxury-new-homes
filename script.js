@@ -11,9 +11,9 @@ document.querySelectorAll('[data-calculator]').forEach(c=>{
   const price=c.querySelector('[data-price]');
   const result=c.querySelector('[data-rebate-result]');
   if(!price||!result)return;
-  price.min='350000';
+  price.min=price.getAttribute('min')||'150000';
   price.step='50000';
-  if(!price.value || Number(price.value)<350000) price.value='350000';
+  if(!price.value) price.value='350000';
   function update(){result.textContent=money(calculateJacksonRebate(price.value));}
   price.addEventListener('input',update);
   update();
@@ -59,11 +59,11 @@ window.JG_REBATE_START_PRICE=350000;
     /* Hold the Featured area for a future concept instead of showing filler. */
     document.querySelector('section.featured#featured')?.remove();
 
-    /* Ensure homepage rebate input starts at the approved amount. */
-    const rebateInput=document.querySelector('#homepage-rebate [data-price]');
+    /* Keep the redesigned calculator's own minimum; default display remains $350,000. */
+    const rebateInput=document.querySelector('[data-calculator] [data-price]');
     if(rebateInput){
-      rebateInput.min='350000'; rebateInput.step='50000';
-      if(Number(rebateInput.value)<350000) rebateInput.value='350000';
+      rebateInput.step='50000';
+      if(!rebateInput.value) rebateInput.value='350000';
       rebateInput.dispatchEvent(new Event('input',{bubbles:true}));
     }
   }
