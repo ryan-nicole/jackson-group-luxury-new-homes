@@ -295,3 +295,14 @@
 .site-footer .footer-links-grid h3{font:500 1rem Georgia,serif}
 .site-footer .footer-links-grid a{font-size:.78rem}
 @media(max-width:800px){.site-footer .footer-top{grid-template-columns:1fr;gap:25px}.site-footer .footer-start{border-left:0;border-top:1px solid #3e352a;padding-left:0;padding-top:25px}}
+
+/* Oct 6 handwritten review */
+.jg-unified-logo,.friendly-brand img{display:block!important;opacity:1!important;visibility:visible!important}
+.jg-home-help{background:#fff!important}
+.jg-home-curated{background:#fff!important}
+.design-a-hero .design-a-content{transform:translateY(-34px)}
+.rebate-center-copy h1{font-family:Georgia,serif!important;font-weight:500!important}
+.jg-rebate-hero-buttons{display:flex!important;gap:14px!important;align-items:center!important;flex-wrap:wrap!important}
+.jg-rebate-hero-buttons .button{display:inline-flex!important;align-items:center!important;justify-content:center!important;min-height:50px!important;padding:0 22px!important;border-radius:5px!important;text-decoration:none!important}
+.jg-rebate-result strong{color:#2a2114!important}
+@media(max-width:620px){.design-a-hero .design-a-content{transform:translateY(-18px)}.jg-rebate-hero-buttons{display:grid!important}.jg-rebate-hero-buttons .button{width:100%!important}}
