@@ -306,3 +306,18 @@
 .jg-rebate-hero-buttons .button{display:inline-flex!important;align-items:center!important;justify-content:center!important;min-height:50px!important;padding:0 22px!important;border-radius:5px!important;text-decoration:none!important}
 .jg-rebate-result strong{color:#2a2114!important}
 @media(max-width:620px){.design-a-hero .design-a-content{transform:translateY(-18px)}.jg-rebate-hero-buttons{display:grid!important}.jg-rebate-hero-buttons .button{width:100%!important}}
+
+/* Final screenshot-approved design updates */
+.jg-rebate-result strong,.jg-rebate-figure [data-rebate-result]{color:#e0b867!important;font-weight:500!important}
+.jg-areas-hero{background:#e8d9c7!important}
+.jg-register-form-hero{background:#eee2d4!important}
+.jg-contact-phone-space{min-height:36px;margin-top:18px;border-top:1px solid rgba(214,177,109,.2)}
+.jg-seller-widget-space{min-height:85px;min-width:210px}
+.rebate-center-copy h1{font-size:clamp(3rem,5.1vw,5.25rem)!important;line-height:1.04!important;max-width:760px!important}
+/* Shared prominent action-button treatment, preserving smaller navigation and inline links */
+.jg-rebate-hero-buttons .button,.jg-premium-cta,.jg-form-callout .button,.jg-register-strip a,.jg-register-form-grid button[type=submit],.jg-unified-register,.before-tour-register,.jg-search-unified-grid button,.jg-area-search button,.jg-form-callout a.button,.jg-register-form-grid .btn.primary{display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:24px!important;min-height:55px!important;padding:13px 26px!important;border-radius:5px!important;font:600 .78rem/1.25 Georgia,serif!important;text-transform:uppercase!important;letter-spacing:.02em!important;text-decoration:none!important;cursor:pointer}
+.jg-rebate-hero-buttons .button.gold,.jg-premium-cta,.jg-register-strip a,.jg-unified-register,.before-tour-register,.jg-search-unified-grid button,.jg-area-search button{background:#c99a42!important;color:#151008!important;border:1px solid #c99a42!important}
+.jg-rebate-hero-buttons .button.outline-light{background:rgba(15,13,11,.55)!important;color:#fff!important;border:1px solid #f1e3cb!important}
+.jg-premium-cta span,.jg-rebate-hero-buttons .button span{font-size:1.15rem;line-height:1}
+.jg-rebate-hero-buttons .button{min-height:58px!important;padding:15px 27px!important}
+@media(max-width:650px){.jg-seller-widget-space{min-height:40px;min-width:0}.jg-rebate-hero-buttons .button{width:100%!important}}
