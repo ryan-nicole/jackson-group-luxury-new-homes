@@ -321,3 +321,14 @@
 .jg-premium-cta span,.jg-rebate-hero-buttons .button span{font-size:1.15rem;line-height:1}
 .jg-rebate-hero-buttons .button{min-height:58px!important;padding:15px 27px!important}
 @media(max-width:650px){.jg-seller-widget-space{min-height:40px;min-width:0}.jg-rebate-hero-buttons .button{width:100%!important}}
+
+/* October 13 final user-requested contact, logo and footer refinements */
+.jg-unified-logo-wrap,.jg-unified-logo,.site-footer .friendly-brand,.site-footer .friendly-brand img{background:transparent!important;mix-blend-mode:normal!important;opacity:1!important;visibility:visible!important}
+.jg-unified-logo{height:76px!important;max-width:215px!important;object-fit:contain!important}
+.site-footer .friendly-brand img{display:block!important;max-width:190px!important;height:auto!important;object-fit:contain!important}
+.site-footer .footer-start-actions .button.gold,.site-footer .footer-start-actions .footer-register-link{display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:16px!important;min-height:55px!important;padding:13px 24px!important;border-radius:5px!important;font:600 .78rem/1.25 Georgia,serif!important;text-transform:uppercase!important;letter-spacing:.02em!important;text-decoration:none!important}
+.site-footer .footer-start-actions .button.gold{background:#c99a42!important;color:#151008!important;border:1px solid #c99a42!important}
+.site-footer .footer-start-actions .footer-register-link{background:transparent!important;color:#f6ebd7!important;border:1px solid #f6ebd7!important}
+.site-footer .footer-bottom{display:flex!important;justify-content:space-between!important;gap:18px!important;flex-wrap:wrap!important}
+.jg-footer-phone{margin-top:12px;font-size:.88rem}.jg-footer-phone a,.jg-contact-phone a{color:#e0b867;text-decoration:none}
+.jg-areas-hero .eyebrow{color:#a77b37!important}
