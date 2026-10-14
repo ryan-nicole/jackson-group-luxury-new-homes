@@ -342,3 +342,13 @@
 
 /* Refine original logo crop: remove small light strip at left while retaining top crop */
 .jg-unified-logo,.site-footer .friendly-brand img{clip-path:inset(9% 0 0 3%)!important}
+
+/* Rebate registration feature: existing page, no new route */
+.jg-rebate-register-feature{background:#171410;color:#f7f0e6;padding:78px 0 85px}
+.jg-rebate-register-inner{max-width:1040px}
+.jg-rebate-register-feature .jg-redesign-kicker{color:#d7ad65!important}
+.jg-rebate-register-feature h2{font:500 clamp(2.4rem,5vw,4.6rem)/1.09 Georgia,serif;margin:18px 0 24px;color:#f7f0e6}
+.jg-rebate-register-feature h2 span{color:#d7ad65}
+.jg-rebate-register-feature p{max-width:850px;font:400 1.05rem/1.8 Arial,sans-serif;color:#e1d8cb;margin:0 0 17px}
+.jg-rebate-register-feature .jg-premium-cta{margin-top:20px}
+.jg-rebate-register-feature small{display:block;max-width:820px;margin-top:20px;color:#cfc2ad;font:400 .82rem/1.6 Arial,sans-serif}
