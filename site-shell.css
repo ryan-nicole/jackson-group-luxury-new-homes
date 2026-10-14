@@ -336,3 +336,6 @@
 /* Footer email contact */
 .site-footer .jg-footer-email{margin-top:12px;font-size:.88rem;overflow-wrap:anywhere}
 .site-footer .jg-footer-email a{color:#e0b867;text-decoration:none}
+
+/* Crop the light strip along the upper edge of the original Jackson Group logo */
+.jg-unified-logo,.site-footer .friendly-brand img{clip-path:inset(9% 0 0 0)!important;margin-top:-5px!important}
