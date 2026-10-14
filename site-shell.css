@@ -339,3 +339,6 @@
 
 /* Crop the light strip along the upper edge of the original Jackson Group logo */
 .jg-unified-logo,.site-footer .friendly-brand img{clip-path:inset(9% 0 0 0)!important;margin-top:-5px!important}
+
+/* Refine original logo crop: remove small light strip at left while retaining top crop */
+.jg-unified-logo,.site-footer .friendly-brand img{clip-path:inset(9% 0 0 3%)!important}
