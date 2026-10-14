@@ -332,3 +332,7 @@
 .site-footer .footer-bottom{display:flex!important;justify-content:space-between!important;gap:18px!important;flex-wrap:wrap!important}
 .jg-footer-phone{margin-top:12px;font-size:.88rem}.jg-footer-phone a,.jg-contact-phone a{color:#e0b867;text-decoration:none}
 .jg-areas-hero .eyebrow{color:#a77b37!important}
+
+/* Footer email contact */
+.site-footer .jg-footer-email{margin-top:12px;font-size:.88rem;overflow-wrap:anywhere}
+.site-footer .jg-footer-email a{color:#e0b867;text-decoration:none}
