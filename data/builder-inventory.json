@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "updatedAt": "2026-10-15",
-  "notes": "Builder website facts only. Do not use builder photos without authorization. Reconfirm price, availability and completion prior to publication and regularly thereafter.",
+  "notes": "Builder website facts only. Do not use builder photos without authorization. Reconfirm price, availability and completion prior to publication and regularly thereafter. All published listings require builder marketing approval before production launch.",
   "homes": [
     {
       "id": "highland-616-high-summit-drive",
@@ -61,19 +61,19 @@
       "marketingPermission": "not-confirmed"
     },
     {
-      "id": "highland-1317-cypress-paul-street",
+      "id": "highland-1313-cypress-paul-street",
       "published": true,
       "builder": "Highland Homes",
-      "address": "1317 Cypress Paul Street",
+      "address": "1313 Cypress Paul Street",
       "city": "Georgetown",
       "state": "TX",
       "community": "Parkside Peninsula",
-      "price": 599990,
+      "price": 589990,
       "beds": 4,
       "baths": 3.5,
-      "sqft": 2587,
+      "sqft": 2601,
       "status": "move-in-ready",
-      "plan": "Bernini",
+      "plan": "Torres",
       "sourceUrl": "https://www.highlandhomes.com/austin/georgetown/parkside-peninsula",
       "verifiedOn": "2026-10-15",
       "image": null,
