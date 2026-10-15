@@ -21,7 +21,7 @@
     body.append(make('p','', [h.city,h.state||'TX',h.community].filter(Boolean).join(' · ')));
     if(Number.isFinite(Number(h.price))&&Number(h.price)>0)body.append(make('strong','jg-builder-card-price',Number(h.price).toLocaleString('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0})));
     body.append(make('p','',[h.beds? h.beds+' Beds':'',h.baths? h.baths+' Baths':'',h.sqft?Number(h.sqft).toLocaleString()+' Sq. Ft.':''].filter(Boolean).join(' · ')));
-    const link=make('a','jg-builder-card-action','Ask About This Home →');link.href='../register/index.html';body.append(link);card.append(body);grid.append(card);
+    const link=make('a','jg-builder-card-action','Ask About This Home →');link.href='../register/index.html';body.append(link);if(h.sourceUrl){const source=make('a','jg-builder-card-source','View builder details ↗');source.href=h.sourceUrl;source.target='_blank';source.rel='noopener noreferrer';body.append(source);}card.append(body);grid.append(card);
    });
   }
   render();form?.addEventListener('submit',()=>setTimeout(render,0));
